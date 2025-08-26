@@ -212,7 +212,7 @@
 	{
 		"name": "People Playground",
 		"id": "people",
-		"path": "/webgl/people/",
+		"path": "/webgl/people-playground/",
 		"img": "/people.png"
 	},
 	{
@@ -244,5 +244,29 @@
 		"id": "rw2",
 		"path": "/flash/rw2/",
 		"img": "/rw2.png"
+	},
+	{
+		"name": "Milkman Karlson",
+		"id": "milkmankarlson",
+		"path": "/webgl/milkmank/",
+		"img": "/milkmank.png"
+	},
+	{
+		"name": "Cuphead",
+		"id": "cuphead",
+		"path": "/webgl/cuphead/",
+		"img": "/cuphead.png"
+	},
+	{
+		"name": "Bendy and the Ink Machine",
+		"id": "batim",
+		"path": "/webgl/bendy/",
+		"img": "/batim.png"
+	},
+	{
+		"name": "Stick With It",
+		"id": "swi",
+		"path": "/webgl/stickwithit/",
+		"img": "/stickwithit.png"
 	}
 ]
