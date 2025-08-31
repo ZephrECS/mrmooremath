@@ -268,5 +268,35 @@
 		"id": "swi",
 		"path": "/webgl/stickwithit/",
 		"img": "/stickwithit.png"
+	},
+	{
+		"name": "Bloons Tower Defense",
+		"id": "btd",
+		"path": "/flash/btd/",
+		"img": "/btd.png"
+	},
+	{
+		"name": "Bloons Tower Defense 2",
+		"id": "btd2",
+		"path": "/flash/btd2/",
+		"img": "/btd2.png"
+	},
+	{
+		"name": "Bloons Tower Defense 3",
+		"id": "btdd3",
+		"path": "/flash/btd3/",
+		"img": "/btd3.png"
+	},
+	{
+		"name": "Bloons Tower Defense 4",
+		"id": "btd4",
+		"path": "/flash/btd4/",
+		"img": "/btd4.png"
+	},
+	{
+		"name": "Bowerwhelm",
+		"id": "bwh",
+		"path": "/webgl/bowerwhelm/",
+		"img": "/bowerwhelm.png"
 	}
 ]
