@@ -6,6 +6,20 @@
 		<title>Quasar</title>
 		<link href="assets/css/main.css" rel="stylesheet" />
 	</head>
+	<!-- Google tag (gtag.js) -->
+	<script
+		async
+		src="https://www.googletagmanager.com/gtag/js?id=G-7JPJ866MG9"
+	></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag("js", new Date());
+
+		gtag("config", "G-7JPJ866MG9");
+	</script>
 	<body>
 		<img
 			class="cursor"
@@ -57,11 +71,34 @@
 						<path d="m9 9 6 6" />
 					</svg>
 				</button>
+				<button id="fullscreen">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						class="lucide lucide-maximize-icon lucide-maximize"
+					>
+						<path d="M8 3H5a2 2 0 0 0-2 2v3" />
+						<path d="M21 8V5a2 2 0 0 0-2-2h-3" />
+						<path d="M3 16v3a2 2 0 0 0 2 2h3" />
+						<path d="M16 21h3a2 2 0 0 0 2-2v-3" />
+					</svg>
+				</button>
 			</div>
 			<iframe id="actualGameFrame"></iframe>
 		</div>
 		<div class="container"></div>
 		<h6 style="text-align: center">made with <3</h6>
+		<script
+			type="text/javascript"
+			src="//pl27564720.revenuecpmgate.com/3b/e6/9c/3be69c01ded7a2bd023abd58db066b4c.js"
+		></script>
 	</body>
 	<script src="assets/js/cards.js"></script>
 	<script src="assets/js/cursor.js"></script>

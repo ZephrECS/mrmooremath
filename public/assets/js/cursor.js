@@ -6,7 +6,7 @@ let cursorX = 0;
 let cursorY = 0;
 
 if (localStorage.getItem("cursorSpeed") == null) {
-	localStorage.setItem("cursorSpeed", 0.1);
+	localStorage.setItem("cursorSpeed", 1);
 }
 
 window.addEventListener("mousemove", (e) => {

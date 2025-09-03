@@ -1,5 +1,5 @@
 document.addEventListener("click", () => {
-	if (Math.random() < 0.5) {
+	if (Math.random() < 0.00001) {
 		const screen = document.createElement("div");
 		screen.className = "surprise";
 
@@ -8,7 +8,7 @@ document.addEventListener("click", () => {
 		pic.className = "surprisemf";
 
 		const sound = new Audio("/assets/audio/imaginegettingjumpscared.mp3");
-		sound.volume = 2.0;
+		sound.volume = 1.0;
 		sound.play();
 
 		screen.appendChild(pic);
@@ -19,7 +19,5 @@ document.addEventListener("click", () => {
 			sound.pause();
 			sound.currentTime = 0;
 		}, 2000 + Math.random() * 500);
-	} else {
-		console.log("safe for now........");
 	}
 });

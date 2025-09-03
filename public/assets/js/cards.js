@@ -33,3 +33,6 @@ document.getElementById("closeFrame").addEventListener("click", () => {
 	gameFrame.style.display = "none";
 	document.getElementById("actualGameFrame").src = "about:blank";
 });
+document.getElementById("fullscreen").addEventListener("click", () => {
+	document.getElementById("actualGameFrame").requestFullscreen();
+});

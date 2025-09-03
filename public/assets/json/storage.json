@@ -300,12 +300,6 @@
 		"img": "/bowerwhelm.png"
 	},
 	{
-		"name": "Baldi's Basics",
-		"id": "baldi",
-		"path": "/webgl/baldi/",
-		"img": "/baldi.png"
-	},
-	{
 		"name": "Baldi's Basics Classic Remastered",
 		"id": "bbcr",
 		"path": "/webgl/bbcr/",
