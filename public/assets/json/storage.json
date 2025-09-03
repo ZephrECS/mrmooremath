@@ -298,5 +298,23 @@
 		"id": "bwh",
 		"path": "/webgl/bowerwhelm/",
 		"img": "/bowerwhelm.png"
+	},
+	{
+		"name": "Baldi's Basics",
+		"id": "baldi",
+		"path": "/webgl/baldi/",
+		"img": "/baldi.png"
+	},
+	{
+		"name": "Baldi's Basics Classic Remastered",
+		"id": "bbcr",
+		"path": "/webgl/bbcr/",
+		"img": "/bbcr.png"
+	},
+	{
+		"name": "Baldi's Basics Plus",
+		"id": "bbp",
+		"path": "/webgl/bbp/",
+		"img": "/bbp.png"
 	}
 ]
