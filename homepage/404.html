@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found - StudyHub</title>
+    <link href="css/study.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="dark-mode">
+    <div class="background-pattern"></div>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                    <path d="M2 17l10 5 10-5"/>
+                    <path d="M2 12l10 5 10-5"/>
+                </svg>
+                <span>StudyHub</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="error-main">
+        <div class="error-container">
+            <div class="error-content">
+                <div class="error-visual">
+                    <div class="error-number">404</div>
+                    <div class="error-icon">
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6"/>
+                            <path d="M12 16h.01"/>
+                        </svg>
+                    </div>
+                </div>
+                
+                <div class="error-text">
+                    <h1>Page Not Found</h1>
+                    <p>The page you're looking for doesn't exist or has been moved.</p>
+                    <p>Don't worry, even the best students sometimes take a wrong turn!</p>
+                </div>
+                
+                <div class="error-actions">
+                    <a href="index.html" class="btn btn-primary">Go Home</a>
+                    <a href="login.html" class="btn btn-secondary">Join Class</a>
+                </div>
+                
+                <div class="error-suggestions">
+                    <h3>What you can do:</h3>
+                    <ul>
+                        <li>Check the URL for typos</li>
+                        <li>Go back to the <a href="index.html">homepage</a></li>
+                        <li>Try joining your <a href="login.html">class</a></li>
+                        <li>Contact your teacher for help</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Add subtle animations
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth page load animation
+            document.body.style.opacity = '0';
+            setTimeout(() => {
+                document.body.style.transition = 'opacity 0.5s ease-in-out';
+                document.body.style.opacity = '1';
+            }, 100);
+
+            // Animate error number
+            const errorNumber = document.querySelector('.error-number');
+            errorNumber.style.transform = 'scale(0)';
+            errorNumber.style.transition = 'transform 0.6s ease-out';
+            
+            setTimeout(() => {
+                errorNumber.style.transform = 'scale(1)';
+            }, 300);
+
+            // Animate error icon
+            const errorIcon = document.querySelector('.error-icon');
+            errorIcon.style.opacity = '0';
+            errorIcon.style.transform = 'translateY(20px)';
+            errorIcon.style.transition = 'all 0.6s ease-out';
+            
+            setTimeout(() => {
+                errorIcon.style.opacity = '1';
+                errorIcon.style.transform = 'translateY(0)';
+            }, 600);
+        });
+    </script>
+</body>
+</html>
