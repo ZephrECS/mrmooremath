@@ -310,5 +310,17 @@
 		"id": "bbp",
 		"path": "/webgl/bbp/",
 		"img": "/bbp.png"
+	},
+	{
+		"name": "1v1.lol",
+		"id": "1v1lol",
+		"path": "/webgl/1v1lol/",
+		"img": "/1v1lol.png"
+	},
+	{
+		"name": "Apes VS Helium",
+		"id": "avh",
+		"path": "/webgl/avh/",
+		"img": "/avh.png"
 	}
 ]
