@@ -33,9 +33,7 @@ app.use((req, res, next) => {
 	} else {
 		res
 			.status(404)
-			.sendFile(
-				join(dirname(fileURLToPath(import.meta.url)), "../homepage/404.html")
-			);
+			.sendFile(join(dirname(fileURLToPath(import.meta.url)), "../homepage"));
 	}
 });
 

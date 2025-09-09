@@ -322,5 +322,11 @@
 		"id": "avh",
 		"path": "/webgl/avh/",
 		"img": "/avh.png"
+	},
+	{
+		"name": "Kindergarten 3",
+		"id": "kg3",
+		"path": "/webgl/kindergarten/3/",
+		"img": "/kg3.png"
 	}
 ]
