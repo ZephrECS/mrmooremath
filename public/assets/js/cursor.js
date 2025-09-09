@@ -11,7 +11,7 @@ if (localStorage.getItem("cursorSpeed") == null) {
 
 window.addEventListener("mousemove", (e) => {
 	mouseX = e.clientX + window.scrollX - 24;
-	mouseY = e.clientY + window.scrollY - 32;
+	mouseY = e.clientY + window.scrollY - 24;
 });
 
 function animate() {
