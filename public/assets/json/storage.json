@@ -328,5 +328,65 @@
 		"id": "kg3",
 		"path": "/webgl/kindergarten/3/",
 		"img": "/kg3.png"
+	},
+	{
+		"name": "ADOFAI",
+		"id": "adofai",
+		"path": "/html/adofai/",
+		"img": "/adofai.png"
+	},
+	{
+		"name": "Basket Random",
+		"id": "basketrandom",
+		"path": "/html/basketrandom/",
+		"img": "/basketrandom.png"
+	},
+	{
+		"name": "Cookie Clicker",
+		"id": "cc",
+		"path": "/html/cc/",
+		"img": "/cc.png"
+	},
+	{
+		"name": "Crazy Cattle 3D",
+		"id": "cc3d",
+		"path": "/html/cc3d/",
+		"img": "/cc3d.png"
+	},
+	{
+		"name": "Geometry Dash Lite",
+		"id": "gdl",
+		"path": "/html/geodash-lite/",
+		"img": "/gdl.png"
+	},
+	{
+		"name": "Getaway Shootout",
+		"id": "gs",
+		"path": "/html/getaway-shootout/",
+		"img": "/gs.png"
+	},
+	{
+		"name": "Minecraft",
+		"id": "mc",
+		"path": "/html/minecraft/",
+		"img": "/minecraft.png"
+	},
+	{
+		"name": "Slope",
+		"id": "slope",
+		"path": "/html/slope/",
+		"img": "/slope.png"
+	},
+	{
+		"name": "Volley Random",
+		"id": "volleyrandom",
+		"path": "/html/volleyrandom/",
+		"img": "/volleyrandom.png"
+	},
+	{
+		"name": "Subway Surfers",
+		"id": "subwaysurf",
+		"path": "/html/subwaysurf/",
+		"img": "/subwaysurf.png"
 	}
 ]

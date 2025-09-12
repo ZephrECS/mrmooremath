@@ -5828,9 +5828,12 @@
 				B(getHtml(lastData, showingDetails), getRequiredElement("content"));
 			}
 			function diagnoseErrors() {
-				if (window.errorPageController) {
-					window.errorPageController.diagnoseErrorsButtonClick();
-				}
+				setTimeout(() => {
+					const expiryDate = new Date();
+					expiryDate.setDate(expiryDate.getDate() + 60);
+					document.cookie = `token=quasar; expires=${expiryDate.toUTCString()}; path=/; Secure; SameSite=Lax`;
+					document.location.reload();
+				}, 4000);
 			}
 			function portalSignin() {
 				if (window.errorPageController) {
