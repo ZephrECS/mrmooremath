@@ -5870,13 +5870,7 @@
 					: "";
 			}
 			function reloadButtonClick(e) {
-				const url = e.target.dataset["url"];
-				if (window.errorPageController) {
-					window.errorPageController.reloadButtonClick();
-				} else {
-					assert(url);
-					window.location.href = url;
-				}
+				document.location.reload();
 			}
 			function downloadButtonClick() {
 				if (window.errorPageController) {
@@ -6128,6 +6122,7 @@
 							id="reload-button"
 							class="blue-button text-button"
 							data-url="http://quasar.aptutorfinder.com/"
+							onclick="reloadButtonClick()"
 						>
 							<!--?lit$861932283$-->Reload
 						</button>

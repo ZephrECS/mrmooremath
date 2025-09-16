@@ -23,18 +23,21 @@ body {
 	cursor: none;
 }
 .nav {
-	position: relative;
-	margin: 20px auto 0 auto;
+	position: fixed;
+	left: 50%;
+	transform: translateX(-50%);
 	padding: 6px;
-	width: 95vw;
+	width: 15vw;
+	min-width: 275px;
 	height: 5vh;
 	min-height: 45px;
 	border-radius: 6px;
-	border: 1px solid rgba(29, 29, 29, 0.658);
+	border: 1px solid white;
 	background: rgba(58, 58, 58, 0.404);
-	backdrop-filter: blur(12px) saturate(140%);
 	display: flex;
 	align-items: center;
+	z-index: 9999;
+	backdrop-filter: blur(6px);
 }
 .nav h1 {
 	margin: 0;
@@ -64,7 +67,7 @@ body {
 }
 .container {
 	position: relative;
-	margin: 5% auto 0 auto;
+	margin: 1% auto 0 auto;
 	display: grid;
 	gap: 7.5px;
 	width: 90%;
@@ -77,7 +80,7 @@ body {
 .card {
 	width: 150px;
 	height: 200px;
-	border: 1px solid rgba(29, 29, 29, 0.658);
+	border: 1px solid white;
 	background: rgba(58, 58, 58, 0.404);
 	border-radius: 12px;
 	text-align: center;
@@ -102,7 +105,7 @@ body {
 	filter: invert(1);
 	mix-blend-mode: difference;
 	transition: opacity 0.3s ease-in-out;
-	z-index: 999;
+	z-index: 99999;
 }
 .not-found {
 	position: fixed;
@@ -133,6 +136,8 @@ select {
 	text-align: center;
 	box-sizing: border-box;
 	transition: 0.3s ease-in-out;
+	appearance: none;
+	cursor: none;
 }
 select:hover {
 	padding: 5px;
@@ -141,8 +146,7 @@ select:hover {
 	border: 4px solid rgb(255, 255, 255);
 }
 option {
-	background-color: transparent;
-	border-radius: 6px;
+	background: transparent;
 	color: black;
 }
 .settings-container {
@@ -167,7 +171,7 @@ option {
 	padding: 6px;
 	height: 300px;
 	background: rgba(58, 58, 58, 0.404);
-	border: 1px solid rgba(29, 29, 29, 0.658);
+	border: 1px solid white;
 }
 .settings-category h2 {
 	text-align: left;
@@ -199,11 +203,14 @@ option {
 	border: 2px solid white;
 	border-radius: 6px;
 	overflow: hidden;
+	background: rgba(3, 3, 3, 0.418);
+	backdrop-filter: blur(6px);
 }
 
 .controls {
 	display: grid;
 	position: fixed;
+	z-index: 9999;
 }
 
 .surprise {
@@ -226,4 +233,35 @@ option {
 	object-fit: contain;
 	border-radius: 4px;
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.search-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin: 75px 0;
+}
+.search-controls {
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+	width: 500px;
+	gap: 10px;
+	height: 90px;
+	display: flex;
+	align-items: center;
+	border: 1px solid white;
+}
+.search-bar {
+	border-radius: 50px;
+	height: 50px;
+	width: 320px;
+	margin: 10px;
+	background: rgba(58, 58, 58, 0.404);
+	border: 1px solid rgb(185, 185, 185);
+	text-align: center;
+	transition: 0.7s ease-in-out;
+	transform-origin: center;
+	cursor: none;
+}
+.search-bar::placeholder {
+	color: white;
 }
