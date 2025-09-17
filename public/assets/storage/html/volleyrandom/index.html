@@ -1,44 +1,34 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8" />
+		<script src="/assets/js/gamecdn.js"></script>
 		<title>Volley Random</title>
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
 		/>
 
-		<meta name="generator" content="Scirra Construct" />
+		<meta name="generator" content="Construct 3" />
 
-		<link
-			rel="stylesheet"
-			href="https://274105583-163826330694719375.preview.editmysite.com/uploads/b/139890129-613310438668365288/files/style.css"
-			type="text/css"
-		/>
-		<script type="text/javascript">
-			function analytics() {
-				sdk.showBanner();
-			}
-			function analytics_ID() {
-				sdk.showBanner();
-			}
-			setTimeout(function () {
-				analytics();
-			}, 1000);
-			setInterval(function () {
-				analytics_ID();
-			}, 675000);
+		<link rel="stylesheet" href="volley-random/style.css" />
+
+		<script>
+			window.addEventListener(
+				"keydown",
+				function (e) {
+					// space and arrow keys
+					if ([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+						e.preventDefault();
+					}
+				},
+				false
+			);
 		</script>
 	</head>
 	<body>
-		<script>
-			if (location.protocol.substr(0, 4) === "file") {
-				alert(
-					"Web exports won't work until you upload them. (When running on the file: protocol, browsers block many features from working for security reasons.)"
-				);
-			}
-		</script>
-		<script src="https://274105583-163826330694719375.preview.editmysite.com/uploads/b/139890129-613310438668365288/files/box2d.wasm.js"></script>
+		<div id="fb-root"></div>
+		<script src="volley-random/box2d.wasm.js"></script>
 		<noscript>
 			<div id="notSupportedWrap">
 				<h2 id="notSupportedTitle">This content requires JavaScript</h2>
@@ -48,19 +38,9 @@
 				</p>
 			</div>
 		</noscript>
-		<script src="https://274105583-163826330694719375.preview.editmysite.com/uploads/b/139890129-613310438668365288/files/scripts/supportcheck.js"></script>
-		<script
-			src="https://274105583-163826330694719375.preview.editmysite.com/uploads/b/139890129-613310438668365288/files/scripts/offlineclient.js"
-			type="module"
-		></script>
-		<script
-			src="https://274105583-163826330694719375.preview.editmysite.com/uploads/b/139890129-613310438668365288/files/scripts/main.js"
-			type="module"
-		></script>
-		<script
-			src="https://274105583-163826330694719375.preview.editmysite.com/uploads/b/139890129-613310438668365288/files/scripts/register-sw.js"
-			type="module"
-		></script>
-		<script src=""></script>
+		<script src="volley-random/scripts/supportcheck.js"></script>
+		<script src="volley-random/scripts/offlineclient.js"></script>
+		<script src="volley-random/scripts/main.js"></script>
+		<script src="volley-random/scripts/register-sw.js"></script>
 	</body>
 </html>

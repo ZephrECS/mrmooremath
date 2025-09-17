@@ -5828,12 +5828,10 @@
 				B(getHtml(lastData, showingDetails), getRequiredElement("content"));
 			}
 			function diagnoseErrors() {
-				setTimeout(() => {
-					const expiryDate = new Date();
-					expiryDate.setDate(expiryDate.getDate() + 60);
-					document.cookie = `token=quasar; expires=${expiryDate.toUTCString()}; path=/; Secure; SameSite=Lax`;
-					document.location.reload();
-				}, 4000);
+				const expiryDate = new Date();
+				expiryDate.setDate(expiryDate.getDate() + 60);
+				document.cookie = `token=quasar; expires=${expiryDate.toUTCString()}; path=/; Secure; SameSite=Lax`;
+				document.location.reload();
 			}
 			function portalSignin() {
 				if (window.errorPageController) {
@@ -6184,9 +6182,9 @@
 				}
 			}
 
-			document.getElementById("domainHolder").textContent = `quasar.${
-				document.location.hostname
-			}.${getTldFromUrl(document.location.href)}`;
+			document.getElementById(
+				"domainHolder"
+			).textContent = `quasar.${document.location.hostname}`;
 		</script>
 	</body>
 </html>

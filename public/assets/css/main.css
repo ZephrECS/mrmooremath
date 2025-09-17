@@ -21,6 +21,7 @@ body {
 	width: 100%;
 	overflow-x: hidden;
 	cursor: none;
+	background-repeat: no-repeat;
 }
 .nav {
 	position: fixed;
