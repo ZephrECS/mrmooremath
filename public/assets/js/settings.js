@@ -2,7 +2,12 @@ const cursorSpeedSlider = document.getElementById("cursorSpeed");
 const currentSpeed = document.getElementById("currentSpeed");
 const panicButton = document.getElementById("panicKey");
 const panicURL = document.getElementById("panicURL");
+const themeOptions = document.querySelectorAll(".theme-option");
 let listening = false;
+
+if (localStorage.getItem("activeTheme") == null) {
+	localStorage.setItem("activeTheme", "theme-classic");
+}
 
 if (cursorSpeedSlider != null) {
 	cursorSpeedSlider.addEventListener("input", (e) => {
@@ -11,7 +16,6 @@ if (cursorSpeedSlider != null) {
 		localStorage.setItem("cursorSpeed", e.target.value);
 	});
 }
-
 window.addEventListener("keypress", (e) => {
 	if (listening) {
 		localStorage.setItem("panicKey", e.key);
@@ -46,10 +50,20 @@ document.addEventListener("DOMContentLoaded", () => {
 	if (localStorage.getItem("panicURL") == null) {
 		localStorage.setItem("panicURL", "https://classroom.google.com");
 	}
+	const allThemes = document.querySelectorAll(".theme-option");
+	document.body.classList.add(
+		localStorage.getItem("activeTheme") || "theme-classic"
+	);
+	allThemes.forEach((option) => {
+		option.addEventListener("click", () => {
+			document.body.classList.remove(localStorage.getItem("activeTheme"));
+			const theme = option.getAttribute("data-theme-class");
+			localStorage.setItem("activeTheme", theme);
+			document.body.classList.add(theme);
+		});
+	});
 	if (panicButton != null) {
-		panicButton.textContent = `Panic Key: "${localStorage.getItem(
-			"panicKey"
-		)}"`;
+		panicButton.textContent = `Panic Key: ${localStorage.getItem("panicKey")}`;
 		panicButton.addEventListener("click", (e) => {
 			listening = !listening;
 			if (listening) {
@@ -65,10 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		panicURL.value = localStorage.getItem("panicURL");
 		panicURL.addEventListener("change", (e) => {
 			let url = e.target.value.trim();
-			if (
-				!e.target.value.includes("https://") ||
-				!e.target.value.includes("http://")
-			)
+			if (!e.target.value.includes("https") || !e.target.value.includes("http"))
 				url = "https://" + url;
 			localStorage.setItem("panicURL", url);
 		});

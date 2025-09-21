@@ -28,13 +28,6 @@
 		"category": "Horror"
 	},
 	{
-		"name": "Alien Hominid",
-		"id": "ah",
-		"path": "/html/alien/",
-		"img": "/alien.png",
-		"category": "Action"
-	},
-	{
 		"name": "F2F: Home Alone",
 		"id": "f2fha",
 		"path": "/webgl/f2fha/",
@@ -460,5 +453,168 @@
 		"path": "/webgl/adcap/",
 		"img": "/adcap.png",
 		"category": "Clicker"
+	},
+	{
+		"id": "customgba",
+		"name": "Custom GBA Game",
+		"description": "Upload your own file",
+		"img": "/gba.png",
+		"path": "/emulator/gba/custom",
+		"category": "Arcade"
+	},
+	{
+		"id": "customds",
+		"name": "Custom DS Game",
+		"description": "Upload your own file",
+		"img": "/ds.png",
+		"path": "/emulator/ds/custom",
+		"category": "Arcade"
+	},
+	{
+		"id": "customn64",
+		"name": "Custom N64 Game",
+		"img": "/n64.png",
+		"path": "/emulator/n64/custom",
+		"category": "Arcade"
+	},
+	{
+		"id": "mariokart",
+		"name": "Mario Kart 64",
+		"img": "/mariokart.png",
+		"path": "/emulator/n64/mariokart",
+		"category": "Arcade"
+	},
+	{
+		"id": "sm64",
+		"name": "Super Mario 64",
+		"img": "/sm64.png",
+		"path": "/emulator/n64/sm64",
+		"category": "Arcade"
+	},
+	{
+		"id": "ssb64",
+		"name": "Super Smash Bros 64",
+		"img": "/ssb64.png",
+		"path": "/emulator/n64/ssb64",
+		"category": "Arcade"
+	},
+	{
+		"id": "tlozalttp",
+		"name": "The Legend of Zelda: A Link to the Past",
+		"img": "/tlozalttp.png",
+		"path": "/emulator/n64/tlozalttp",
+		"category": "Adventure"
+	},
+	{
+		"id": "tlozmm",
+		"name": "The Legend of Zelda: Majora's Mask",
+		"img": "/tlozmm.png",
+		"path": "/emulator/n64/tlozmm",
+		"category": "Adventure"
+	},
+	{
+		"id": "tlozoot",
+		"name": "The Legend of Zelda: Ocarina of Time",
+		"img": "/tlozoot.png",
+		"path": "/emulator/n64/tlozoot",
+		"category": "Adventure"
+	},
+	{
+		"id": "tloztmc",
+		"name": "The Legend of Zelda: The Minish Cap",
+		"img": "/tloztmc.png",
+		"path": "/emulator/n64/tloztmc",
+		"category": "Adventure"
+	},
+	{
+		"id": "hsbtb",
+		"name": "Henry Stickmin: Breaking the Bank",
+		"img": "/btb.png",
+		"path": "/flash/btb",
+		"category": "puzzle"
+	},
+	{
+		"id": "hsetp",
+		"name": "Henry Stickmin: Escaping the Prison",
+		"img": "/etp.png",
+		"path": "/flash/etp",
+		"category": "puzzle"
+	},
+	{
+		"id": "hsstd",
+		"name": "Henry Stickmin: Stealing the Diamond",
+		"img": "/std.png",
+		"path": "/flash/std",
+		"category": "puzzle"
+	},
+	{
+		"id": "hsita",
+		"name": "Henry Stickmin: Infiltrating the Airship",
+		"img": "/ita.png",
+		"path": "/flash/ita",
+		"category": "puzzle"
+	},
+	{
+		"id": "hsftc",
+		"name": "Henry Stickmin: Fleeing the Complex",
+		"img": "/ftc.png",
+		"path": "/flash/ftc",
+		"category": "puzzle"
+	},
+	{
+		"id": "bigw",
+		"name": "Big Weiner",
+		"img": "/bigweiner.png",
+		"path": "/webgl/BigWeinerPort",
+		"category": "Simulation"
+	},
+	{
+		"id": "tomoc",
+		"name": "Tomodachi Collection",
+		"img": "/tomoc.png",
+		"path": "/emulator/ds/tomoc",
+		"category": "Simulation"
+	},
+	{
+		"id": "acww",
+		"name": "Animal Crossing: Wild World",
+		"img": "/acww.png",
+		"path": "/emulator/ds/acww",
+		"category": "Simulation"
+	},
+	{
+		"id": "mkds",
+		"name": "Mario Kart DS",
+		"img": "/mkds.png",
+		"path": "/emulator/ds/mkds",
+		"category": "Simulation"
+	},
+	{
+		"id": "nsmb",
+		"name": "New Super Mario Bros",
+		"img": "/nsmb.png",
+		"path": "/emulator/ds/nsmb",
+		"category": "Simulation"
+	},
+	{
+		"id": "cookmama",
+		"name": "Cooking Mama",
+		"img": "/cookmama.png",
+		"path": "/emulator/ds/cookingmama",
+		"category": "Simulation"
+	},
+	{
+		"id": "tlozst",
+		"name": "The Legend of Zelda: Spirit Tracks",
+		"img": "/tlozst.png",
+		"path": "/emulator/ds/tlozst",
+		"category": "Adventure"
+	},
+	{
+		"id": "tlozph",
+		"name": "The Legend of Zelda: Phantom Hourglass",
+		"img": "/tlozph.png",
+		"path": "/emulator/ds/tlozph",
+		"category": "Adventure"
 	}
 ]

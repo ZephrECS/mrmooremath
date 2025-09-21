@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("themes.css");
 
 * {
 	font-family: "Inter", sans-serif;
-	color: white;
 	scrollbar-width: none;
+	cursor: none;
+	color: var(--main-text);
 }
 html {
 	min-height: 100%;
@@ -12,16 +14,15 @@ html {
 	cursor: none;
 }
 body {
-	background: linear-gradient(
-		90deg,
-		hsla(254, 100%, 73%, 1) 0%,
-		hsla(226, 100%, 64%, 1) 100%
-	);
+	background: var(--background-gradient);
 	min-height: 100%;
-	width: 100%;
+	min-width: 100%;
 	overflow-x: hidden;
 	cursor: none;
 	background-repeat: no-repeat;
+}
+body::-webkit-scrollbar {
+	display: none;
 }
 .nav {
 	position: fixed;
@@ -32,9 +33,9 @@ body {
 	min-width: 275px;
 	height: 5vh;
 	min-height: 45px;
-	border-radius: 6px;
-	border: 1px solid white;
-	background: rgba(58, 58, 58, 0.404);
+	border-radius: var(--main-radius);
+	border: var(--main-border);
+	background: var(--main-bg);
 	display: flex;
 	align-items: center;
 	z-index: 9999;
@@ -44,6 +45,7 @@ body {
 	margin: 0;
 	line-height: 1;
 	user-select: none;
+	color: var(--main-text);
 }
 .nav .buttons {
 	margin-left: auto;
@@ -53,18 +55,19 @@ body {
 .nav .buttons button {
 	height: 48px;
 	width: 48px;
-	background: transparent;
-	border: 1px solid white;
-	border-radius: 6px;
+	background: var(--button-bg, transparent);
+	border: var(--main-border);
+	border-radius: var(--main-radius);
+	color: var(--main-text);
 	transition: 0.4s ease-in-out;
 	cursor: none;
 }
 .nav .buttons button:hover {
 	height: 48px;
 	width: 48px;
-	background: rgba(255, 255, 255, 0.3);
-	border: 1px solid white;
-	border-radius: 6px;
+	background: var(--button-hover-bg, rgba(255, 255, 255, 0.3));
+	border: var(--main-border);
+	border-radius: var(--main-radius);
 }
 .container {
 	position: relative;
@@ -72,18 +75,16 @@ body {
 	display: grid;
 	gap: 7.5px;
 	width: 90%;
-	grid-template-columns: repeat(auto-fit, minmax(150px, max-content));
-	justify-items: center;
-	place-items: center;
-	align-items: center;
+	grid-template-columns: repeat(auto-fill, minmax(150px, max-content));
 	justify-content: center;
+	place-items: center;
 }
 .card {
 	width: 150px;
 	height: 200px;
-	border: 1px solid white;
-	background: rgba(58, 58, 58, 0.404);
-	border-radius: 12px;
+	border: var(--main-border);
+	background: var(--main-bg);
+	border-radius: var(--card-radius, 12px);
 	text-align: center;
 	box-sizing: border-box;
 	transition: 0.3s ease-in-out;
@@ -91,7 +92,7 @@ body {
 }
 .card:hover {
 	padding: 4px;
-	border: 4px solid rgb(255, 255, 255);
+	border: var(--accent-border);
 }
 
 .card img {
@@ -113,25 +114,26 @@ body {
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
-	border: 2px solid rgb(185, 185, 185);
+	border: var(--notfound-border);
 	padding: 6px;
-	border-radius: 6px;
+	border-radius: var(--main-radius);
 	height: 200px;
-	background: rgba(49, 49, 49, 0.322);
+	background: var(--notfound-bg);
 	text-align: center;
 }
 .not-found button {
-	background: transparent;
-	border: 1px solid white;
+	background: var(--button-bg, transparent);
+	border: var(--main-border);
 	font-size: 2rem;
-	border-radius: 6px;
+	border-radius: var(--main-radius);
 	margin-top: 20px;
 }
 
 select {
-	background: transparent;
-	border: 1px solid white;
-	border-radius: 6px;
+	background: var(--main-bg);
+	border: var(--main-border);
+	border-radius: var(--main-radius);
+	color: var(--main-text);
 	width: 125px;
 	height: 30px;
 	text-align: center;
@@ -141,14 +143,16 @@ select {
 	cursor: none;
 }
 select:hover {
-	padding: 5px;
-	width: 130px;
-	height: 35px;
-	border: 4px solid rgb(255, 255, 255);
+	border: var(--main-border);
+	background: var(--button-hover-bg, rgba(255, 255, 255, 0.1));
+	outline: none;
 }
 option {
-	background: transparent;
-	color: black;
+	background: var(--option-bg);
+	color: var(--option-text);
+}
+p {
+	color: var(--main-text);
 }
 .settings-container {
 	margin-top: 80px;
@@ -168,10 +172,10 @@ option {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	border-radius: 12px;
+	border-radius: var(--settings-radius, 12px);
 	padding: 24px;
-	background: rgba(58, 58, 58, 0.404);
-	border: 1px solid white;
+	background: var(--main-bg);
+	border: var(--main-border);
 	backdrop-filter: blur(6px);
 	box-sizing: border-box;
 }
@@ -181,19 +185,21 @@ option {
 	font-weight: 600;
 	text-align: center;
 	width: 100%;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	border-bottom: var(--header-border);
 	padding-bottom: 12px;
+	color: var(--main-text);
 }
 .settings-category h3 {
 	margin: 16px 0 8px 0;
 	font-size: 1.1rem;
 	font-weight: 500;
+	color: var(--main-text);
 }
 .settings-category h5 {
 	margin: 12px 0 6px 0;
 	font-size: 0.9rem;
 	font-weight: 400;
-	color: rgba(255, 255, 255, 0.8);
+	color: var(--main-text);
 }
 .setting-item {
 	width: 100%;
@@ -213,7 +219,7 @@ option {
 	position: fixed;
 	top: 50%;
 	transform: translateY(-50%);
-	z-index: 9999;
+	z-index: 99999;
 }
 .controls button {
 	position: relative;
@@ -242,7 +248,7 @@ option {
 .controls {
 	display: grid;
 	position: fixed;
-	z-index: 9999;
+	z-index: 999999;
 }
 
 .surprise {
@@ -273,63 +279,62 @@ option {
 	margin: 75px 0;
 }
 .search-controls {
-	background: rgba(0, 0, 0, 0.5);
+	background: var(--main-bg);
 	border-radius: 10px;
 	width: 500px;
 	gap: 10px;
 	height: 90px;
 	display: flex;
 	align-items: center;
-	border: 1px solid white;
+	border: var(--main-border);
 }
 .search-bar {
 	border-radius: 50px;
 	height: 50px;
 	width: 320px;
 	margin: 10px;
-	background: rgba(58, 58, 58, 0.404);
-	border: 1px solid rgb(185, 185, 185);
+	background: var(--main-bg);
+	border: var(--search-border);
 	text-align: center;
 	transition: 0.7s ease-in-out;
 	transform-origin: center;
 	cursor: none;
 }
 .search-bar::placeholder {
-	color: white;
-}
-#categories {
-	transform-origin: center;
+	color: var(--main-text);
 }
 
 #panicKey {
-	background: rgba(58, 58, 58, 0.404);
-	border: 1px solid rgb(185, 185, 185);
-	border-radius: 6px;
+	background: var(--main-bg);
+	border: var(--search-border);
+	border-radius: var(--main-radius);
 	width: 150px;
 	height: 32px;
 	text-align: left;
 	cursor: none;
 	padding: 0 12px;
 	transition: 0.3s ease-in-out;
+	color: var(--main-text);
 }
 #panicKey:hover {
-	border: 2px solid white;
-	background: rgba(255, 255, 255, 0.1);
+	border: var(--main-border);
+	background: var(--button-hover-bg, rgba(255, 255, 255, 0.1));
 }
 #panicURL {
-	background: rgba(58, 58, 58, 0.404);
-	border: 1px solid rgb(185, 185, 185);
-	border-radius: 6px;
+	background: var(--main-bg);
+	border: var(--search-border);
+	border-radius: var(--main-radius);
 	padding: 10px 12px;
 	width: 100%;
 	max-width: 350px;
 	cursor: none;
 	transition: 0.3s ease-in-out;
+	color: var(--main-text);
 }
 #panicURL:hover,
 #panicURL:focus {
-	border: 2px solid white;
-	background: rgba(255, 255, 255, 0.1);
+	border: var(--main-border);
+	background: var(--button-hover-bg, rgba(255, 255, 255, 0.1));
 	outline: none;
 }
 #cursorSpeed {
@@ -340,4 +345,12 @@ option {
 	min-width: 50px;
 	margin: 0;
 	font-weight: 500;
+}
+.game-options {
+	right: 50px;
+	width: 100px;
+}
+.game-options select {
+	margin: 5px;
+	transform-origin: center;
 }

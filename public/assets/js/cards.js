@@ -2,10 +2,13 @@ const gameFrame = document.querySelector(".gameframe");
 const container = document.querySelector(".container");
 const searchBar = document.querySelector(".search-bar");
 const categoriesSwitcher = document.getElementById("categories");
+const sortMethodSwitcher = document.getElementById("sortMethod");
 
 let activeGames,
 	allGames,
-	activeCategory = "all";
+	originalList,
+	activeCategory = "all",
+	sortMethod = "alphabetically";
 
 function loadIframe(path) {
 	gameFrame.style.display = "block";
@@ -14,15 +17,26 @@ function loadIframe(path) {
 }
 
 async function renderGames() {
-	if (allGames == null) {
+	if (originalList == null) {
 		const response = await fetch("/assets/json/storage.json");
-		const data = await response.json();
-
-		data.sort((a, b) => a.name.localeCompare(b.name));
-
-		allGames = data;
-		activeGames = allGames;
+		originalList = await response.json();
 	}
+	let data = [...originalList];
+
+	switch (sortMethod) {
+		case "alphabetically":
+			data.sort((a, b) => a.name.localeCompare(b.name));
+			break;
+		case "dateadded":
+			data = data.slice().reverse(); // Reverse the original order
+			break;
+		default:
+			data = data.slice().reverse();
+			break;
+	}
+
+	allGames = data;
+	activeGames = allGames;
 	container.innerHTML = "";
 	for (const game of activeGames) {
 		if (
@@ -60,6 +74,10 @@ searchBar.addEventListener("input", (e) => {
 });
 categoriesSwitcher.addEventListener("change", async (e) => {
 	activeCategory = e.target.value.toLowerCase();
+	await renderGames();
+});
+sortMethodSwitcher.addEventListener("change", async (e) => {
+	sortMethod = e.target.value.toLowerCase();
 	await renderGames();
 });
 

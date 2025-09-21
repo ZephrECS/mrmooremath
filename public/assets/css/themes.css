@@ -1,0 +1,350 @@
+.theme-classic {
+	--background-gradient: linear-gradient(
+		90deg,
+		hsla(254, 100%, 73%, 1) 0%,
+		hsla(226, 100%, 64%, 1) 100%
+	);
+	--main-bg: rgba(58, 58, 58, 0.404);
+	--main-border: 1px solid white;
+	--main-radius: 6px;
+	--main-text: white;
+	--accent-border: 4px solid rgb(255, 255, 255);
+	--header-border: 1px solid rgba(255, 255, 255, 0.3);
+	--search-border: 1px solid rgb(185, 185, 185);
+	--notfound-bg: rgba(49, 49, 49, 0.322);
+	--notfound-border: 2px solid rgb(185, 185, 185);
+	--option-bg: transparent;
+	--option-text: black;
+	--card-radius: 12px;
+	--settings-radius: 12px;
+}
+
+.theme-midnight {
+	--background-gradient: linear-gradient(90deg, #232526 0%, #414345 100%);
+	--main-bg: rgba(30, 32, 34, 0.85);
+	--main-border: 1px solid #8ecae6;
+	--main-radius: 6px;
+	--main-text: #caf0f8;
+	--accent-border: 4px solid #8ecae6;
+	--header-border: 1px solid #8ecae6;
+	--search-border: 1px solid #8ecae6;
+	--notfound-bg: rgba(20, 22, 24, 0.7);
+	--notfound-border: 2px solid #8ecae6;
+	--option-bg: transparent;
+	--option-text: #caf0f8;
+	--card-radius: 12px;
+	--settings-radius: 12px;
+}
+
+.theme-sunset {
+	--background-gradient: linear-gradient(90deg, #c24a2c 0%, #322299 100%);
+	--main-bg: rgba(255, 153, 102, 0.2);
+	--main-border: 1px solid #6b5bf3;
+	--main-radius: 6px;
+	--main-text: #fff0e6;
+	--accent-border: 4px solid #5642db;
+	--header-border: 1px solid #5642db;
+	--search-border: 1px solid #5642db;
+	--notfound-bg: rgba(255, 94, 98, 0.15);
+	--notfound-border: 2px solid #ff6038;
+	--option-bg: transparent;
+	--option-text: #ff5e62;
+	--card-radius: 12px;
+	--settings-radius: 12px;
+}
+
+.theme-forest {
+	--background-gradient: linear-gradient(90deg, #11998e 0%, #38ef7d 100%);
+	--main-bg: rgba(17, 153, 142, 0.2);
+	--main-border: 1px solid #38ef7d;
+	--main-radius: 6px;
+	--main-text: #eafff5;
+	--accent-border: 4px solid #38ef7d;
+	--header-border: 1px solid #11998e;
+	--search-border: 1px solid #38ef7d;
+	--notfound-bg: rgba(56, 239, 125, 0.15);
+	--notfound-border: 2px solid #11998e;
+	--option-bg: transparent;
+	--option-text: #11998e;
+	--card-radius: 12px;
+	--settings-radius: 12px;
+}
+
+.theme-candy {
+	--background-gradient: linear-gradient(90deg, #ff6a88 0%, #ff99ac 100%);
+	--main-bg: rgba(255, 106, 136, 0.2);
+	--main-border: 1px solid #ff99ac;
+	--main-radius: 6px;
+	--main-text: #fff0f6;
+	--accent-border: 4px solid #ff99ac;
+	--header-border: 1px solid #ff6a88;
+	--search-border: 1px solid #ff99ac;
+	--notfound-bg: rgba(255, 153, 172, 0.15);
+	--notfound-border: 2px solid #ff6a88;
+	--option-bg: transparent;
+	--option-text: #ff6a88;
+	--card-radius: 12px;
+	--settings-radius: 12px;
+}
+
+.theme-ocean {
+	--background-gradient: linear-gradient(90deg, #2193b0 0%, #6dd5ed 100%);
+	--main-bg: rgba(33, 147, 176, 0.2);
+	--main-border: 1px solid #6dd5ed;
+	--main-radius: 6px;
+	--main-text: #e0f7fa;
+	--accent-border: 4px solid #6dd5ed;
+	--header-border: 1px solid #2193b0;
+	--search-border: 1px solid #6dd5ed;
+	--notfound-bg: rgba(109, 213, 237, 0.15);
+	--notfound-border: 2px solid #2193b0;
+	--option-bg: transparent;
+	--option-text: #2193b0;
+	--card-radius: 12px;
+	--settings-radius: 12px;
+}
+
+.theme-lime {
+	--background-gradient: linear-gradient(90deg, #a8ff78 0%, #78ffd6 100%);
+	--main-bg: rgba(168, 255, 120, 0.2);
+	--main-border: 1px solid #377563;
+	--main-radius: 6px;
+	--main-text: #2e4d1c;
+	--accent-border: 4px solid #78ffd6;
+	--header-border: 1px solid #a8ff78;
+	--search-border: 1px solid #a8ff78;
+	--notfound-bg: rgba(120, 255, 214, 0.15);
+	--notfound-border: 2px solid #a8ff78;
+	--option-bg: transparent;
+	--option-text: #2e4d1c;
+	--card-radius: 12px;
+	--settings-radius: 12px;
+}
+
+.theme-rose {
+	--background-gradient: linear-gradient(90deg, #f857a6 0%, #ff5858 100%);
+	--main-bg: rgba(248, 87, 166, 0.2);
+	--main-border: 1px solid #ff5858;
+	--main-radius: 6px;
+	--main-text: #fff0f6;
+	--accent-border: 4px solid #ff5858;
+	--header-border: 1px solid #f857a6;
+	--search-border: 1px solid #f857a6;
+	--notfound-bg: rgba(255, 88, 88, 0.15);
+	--notfound-border: 2px solid #f857a6;
+	--option-bg: transparent;
+	--option-text: #f857a6;
+	--card-radius: 12px;
+	--settings-radius: 12px;
+}
+
+.theme-sky {
+	--background-gradient: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+	--main-bg: rgba(67, 206, 162, 0.2);
+	--main-border: 1px solid #185a9d;
+	--main-radius: 6px;
+	--main-text: #e0f7fa;
+	--accent-border: 4px solid #43cea2;
+	--header-border: 1px solid #43cea2;
+	--search-border: 1px solid #43cea2;
+	--notfound-bg: rgba(24, 90, 157, 0.15);
+	--notfound-border: 2px solid #43cea2;
+	--option-bg: transparent;
+	--option-text: #185a9d;
+	--card-radius: 12px;
+	--settings-radius: 12px;
+}
+
+.theme-solar {
+	--background-gradient: linear-gradient(90deg, #f7971e 0%, #ffd200 100%);
+	--main-bg: rgba(247, 151, 30, 0.2);
+	--main-border: 1px solid #ffd200;
+	--main-radius: 6px;
+	--main-text: #fffbe6;
+	--accent-border: 4px solid #ffd200;
+	--header-border: 1px solid #f7971e;
+	--search-border: 1px solid #ffd200;
+	--notfound-bg: rgba(255, 210, 0, 0.15);
+	--notfound-border: 2px solid #f7971e;
+	--option-bg: transparent;
+	--option-text: #f7971e;
+	--card-radius: 12px;
+	--settings-radius: 12px;
+}
+
+.theme-onyx {
+	--background-gradient: linear-gradient(90deg, #232526 0%, #414345 100%);
+	--main-bg: rgba(30, 30, 30, 0.95);
+	--main-border: 1px solid #444;
+	--main-radius: 6px;
+	--main-text: #e0e0e0;
+	--accent-border: 4px solid #444;
+	--header-border: 1px solid #444;
+	--search-border: 1px solid #444;
+	--notfound-bg: rgba(40, 40, 40, 0.8);
+	--notfound-border: 2px solid #444;
+	--option-bg: transparent;
+	--option-text: #e0e0e0;
+	--card-radius: 12px;
+	--settings-radius: 12px;
+}
+.theme-cyber {
+	--background-gradient: linear-gradient(90deg, #182830 0%, #0f2027 100%);
+	--main-bg: rgba(15, 32, 39, 0.95);
+	--main-border: 1px solid #00fff7;
+	--main-radius: 6px;
+	--main-text: #00fff7;
+	--accent-border: 4px solid #00fff7;
+	--header-border: 1px solid #00fff7;
+	--search-border: 1px solid #00fff7;
+	--notfound-bg: rgba(0, 255, 247, 0.08);
+	--notfound-border: 2px solid #00fff7;
+	--option-bg: transparent;
+	--option-text: #00fff7;
+	--card-radius: 12px;
+	--settings-radius: 12px;
+}
+.theme-violet {
+	--background-gradient: linear-gradient(90deg, #0c0028 0%, #6a3093 100%);
+	--main-bg: rgba(106, 48, 147, 0.2);
+	--main-border: 1px solid #a044ff;
+	--main-radius: 6px;
+	--main-text: #e0d7ff;
+	--accent-border: 4px solid #a044ff;
+	--header-border: 1px solid #6a3093;
+	--search-border: 1px solid #a044ff;
+	--notfound-bg: rgba(160, 68, 255, 0.08);
+	--notfound-border: 2px solid #6a3093;
+	--option-bg: transparent;
+	--option-text: #a044ff;
+	--card-radius: 12px;
+	--settings-radius: 12px;
+}
+.theme-abyss {
+	--background-gradient: linear-gradient(90deg, #000428 0%, #004e92 100%);
+	--main-bg: rgba(0, 4, 40, 0.95);
+	--main-border: 1px solid #1976d2;
+	--main-radius: 6px;
+	--main-text: #b3cfff;
+	--accent-border: 4px solid #1976d2;
+	--header-border: 1px solid #1976d2;
+	--search-border: 1px solid #1976d2;
+	--notfound-bg: rgba(25, 118, 210, 0.08);
+	--notfound-border: 2px solid #1976d2;
+	--option-bg: transparent;
+	--option-text: #1976d2;
+	--card-radius: 12px;
+	--settings-radius: 12px;
+}
+.theme-carbon {
+	--background-gradient: linear-gradient(90deg, #232526 0%, #393939 100%);
+	--main-bg: rgba(57, 57, 57, 0.95);
+	--main-border: 1px solid #888;
+	--main-radius: 6px;
+	--main-text: #eaeaea;
+	--accent-border: 4px solid #888;
+	--header-border: 1px solid #888;
+	--search-border: 1px solid #888;
+	--notfound-bg: rgba(80, 80, 80, 0.08);
+	--notfound-border: 2px solid #888;
+	--option-bg: transparent;
+	--option-text: #eaeaea;
+	--card-radius: 12px;
+	--settings-radius: 12px;
+}
+
+.theme-options-grid {
+	display: grid;
+	width: 100%;
+	grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+	gap: 8px;
+	margin-top: 16px;
+	cursor: none;
+}
+.theme-option {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 8px;
+	cursor: none;
+}
+.theme-option span {
+	color: var(--main-text);
+}
+.theme-preview {
+	width: 64px;
+	height: 40px;
+	border-radius: 8px;
+	border: 2px solid #fff;
+	margin-bottom: 4px;
+	box-sizing: border-box;
+	cursor: none;
+}
+
+.theme-preview.theme-classic {
+	background: var(
+		--background-gradient,
+		linear-gradient(
+			90deg,
+			hsla(254, 100%, 73%, 1) 0%,
+			hsla(226, 100%, 64%, 1) 100%
+		)
+	);
+	border: var(--main-border, 1px solid white);
+}
+.theme-preview.theme-midnight {
+	background: linear-gradient(90deg, #232526 0%, #414345 100%);
+	border: 1px solid #8ecae6;
+}
+.theme-preview.theme-sunset {
+	background: linear-gradient(90deg, #c24a2c 0%, #322299 100%);
+	border: 1px solid #ff5e62;
+}
+.theme-preview.theme-forest {
+	background: linear-gradient(90deg, #11998e 0%, #38ef7d 100%);
+	border: 1px solid #38ef7d;
+}
+.theme-preview.theme-candy {
+	background: linear-gradient(90deg, #ff6a88 0%, #ff99ac 100%);
+	border: 1px solid #ff99ac;
+}
+.theme-preview.theme-ocean {
+	background: linear-gradient(90deg, #2193b0 0%, #6dd5ed 100%);
+	border: 1px solid #6dd5ed;
+}
+.theme-preview.theme-lime {
+	background: linear-gradient(90deg, #a8ff78 0%, #78ffd6 100%);
+	border: 1px solid #78ffd6;
+}
+.theme-preview.theme-rose {
+	background: linear-gradient(90deg, #f857a6 0%, #ff5858 100%);
+	border: 1px solid #ff5858;
+}
+.theme-preview.theme-sky {
+	background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+	border: 1px solid #185a9d;
+}
+.theme-preview.theme-solar {
+	background: linear-gradient(90deg, #f7971e 0%, #ffd200 100%);
+	border: 1px solid #ffd200;
+}
+.theme-preview.theme-onyx {
+	background: linear-gradient(90deg, #232526 0%, #414345 100%);
+	border: 1px solid #444;
+}
+.theme-preview.theme-cyber {
+	background: linear-gradient(90deg, #182830 0%, #0f2027 100%);
+	border: 1px solid #00fff7;
+}
+.theme-preview.theme-violet {
+	background: linear-gradient(90deg, #0c0028 0%, #6a3093 100%);
+	border: 1px solid #a044ff;
+}
+.theme-preview.theme-abyss {
+	background: linear-gradient(90deg, #000428 0%, #004e92 100%);
+	border: 1px solid #1976d2;
+}
+.theme-preview.theme-carbon {
+	background: linear-gradient(90deg, #232526 0%, #393939 100%);
+	border: 1px solid #888;
+}
