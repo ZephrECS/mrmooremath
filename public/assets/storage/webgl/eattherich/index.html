@@ -39,7 +39,7 @@
 			}
 
 			function resizeUnityContainer() {
-				var container = document.getElementById("unityContainer");
+				var container = document.getElementById("gameContainer");
 				container.style.width = window.innerWidth + "px";
 				container.style.height = window.innerHeight + "px";
 			}
@@ -50,7 +50,7 @@
 				var json = {
 					companyName: "DefaultCompany",
 					productName: "Eat The Rich",
-					dataUrl: "EatTheRichPort.data.unityweb",
+					dataUrl: dataUrl,
 					wasmCodeUrl: "EatTheRichPort.wasm.code.unityweb",
 					wasmFrameworkUrl: "EatTheRichPort.wasm.framework.unityweb",
 					wasmSymbolsUrl: "EatTheRichPort.wasm.symbols.unityweb",

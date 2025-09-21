@@ -616,5 +616,12 @@
 		"img": "/tlozph.png",
 		"path": "/emulator/ds/tlozph",
 		"category": "Adventure"
+	},
+	{
+		"id": "kssu",
+		"name": "Kirby Super Star Ultra",
+		"img": "/kssu.png",
+		"path": "/emulator/ds/kssu",
+		"category": "Adventure"
 	}
 ]
