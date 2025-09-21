@@ -623,5 +623,19 @@
 		"img": "/kssu.png",
 		"path": "/emulator/ds/kssu",
 		"category": "Adventure"
+	},
+	{
+		"id": "assessexam",
+		"name": "Assessment Examination",
+		"img": "/assessexam.png",
+		"path": "/webgl/assessexam",
+		"category": "Horror"
+	},
+	{
+		"id": "efr",
+		"name": "Egg Fried Rice",
+		"img": "/efr.png",
+		"path": "/webgl/EggFriedRicePort",
+		"category": "Horror"
 	}
 ]
