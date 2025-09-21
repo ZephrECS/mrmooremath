@@ -637,5 +637,19 @@
 		"img": "/efr.png",
 		"path": "/webgl/EggFriedRicePort",
 		"category": "Horror"
+	},
+	{
+		"id": "ptr",
+		"name": "Parappa the Rapper",
+		"img": "/ptr.png",
+		"path": "/emulator/psx/ptr",
+		"category": "puzzle"
+	},
+	{
+		"id": "re3nem",
+		"name": "Resident Evil 3: Nemesis",
+		"img": "/re3nem.png",
+		"path": "/emulator/psx/re3nem",
+		"category": "Adventure"
 	}
 ]
