@@ -651,5 +651,19 @@
 		"img": "/re3nem.png",
 		"path": "/emulator/psx/re3nem",
 		"category": "Adventure"
+	},
+	{
+		"id": "ffs",
+		"name": "Flash Flight Simulator",
+		"img": "/ffs.png",
+		"path": "/flash/ffs",
+		"category": "Simulation"
+	},
+	{
+		"id": "sth2",
+		"name": "Storm the House 2",
+		"img": "/sth2.png",
+		"path": "/flash/sth2",
+		"category": "Strategy"
 	}
 ]
