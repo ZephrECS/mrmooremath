@@ -14,12 +14,18 @@ app.use(express.json());
 
 app.use((req, res, next) => {
 	const folder = req.cookies.token === "quasar" ? "public" : "homepage";
-	express.static(join(__dirname, "..", folder))(req, res, next);
+	express.static(join(dirname(fileURLToPath(import.meta.url)), `../${folder}`))(
+		req,
+		res,
+		next
+	);
 });
 
 app.use((req, res) => {
 	const folder = req.cookies.token === "quasar" ? "public" : "homepage";
-	res.status(404).sendFile(join(__dirname, "..", folder, "404.html"));
+	res
+		.status(404)
+		.sendFile(join(dirname(fileURLToPath(import.meta.url)), `../${folder}`));
 });
 
 const PORT = process.env.PORT || 3000;
