@@ -5,9 +5,9 @@ import cookieParser from "cookie-parser";
 import "dotenv/config";
 import helmet from "helmet";
 
-app.use(helmet({ hsts: false }));
-
 const app = express();
+
+app.use(helmet({ hsts: false }));
 
 app.use(cookieParser());
 app.use(express.json());
@@ -24,7 +24,7 @@ app.use((req, res) => {
 
 const PORT = process.env.PORT || 3000;
 
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
 	console.log(`Listening on port ${PORT}`);
 	console.log(`http://localhost:${PORT}`);
 });
