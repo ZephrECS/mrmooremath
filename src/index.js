@@ -3,11 +3,8 @@ import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import cookieParser from "cookie-parser";
 import "dotenv/config";
-import helmet from "helmet";
 
 const app = express();
-
-app.use(helmet({ hsts: false }));
 
 app.use(cookieParser());
 app.use(express.json());
