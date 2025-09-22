@@ -11,7 +11,6 @@ const app = express();
 
 app.use(cookieParser());
 app.use(express.json());
-app.set("trust proxy", true);
 
 app.use((req, res, next) => {
 	const folder = req.cookies.token === "quasar" ? "public" : "homepage";
