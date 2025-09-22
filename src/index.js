@@ -8,36 +8,19 @@ const app = express();
 
 app.use(cookieParser());
 app.use(express.json());
+app.set("trust proxy", true);
 
 app.use((req, res, next) => {
-	if (req.cookies.token && req.cookies.token === "quasar") {
-		express.static(join(dirname(fileURLToPath(import.meta.url)), "../public"))(
-			req,
-			res,
-			next
-		);
-	} else {
-		express.static(
-			join(dirname(fileURLToPath(import.meta.url)), "../homepage")
-		)(req, res, next);
-	}
+	const folder = req.cookies.token === "quasar" ? "public" : "homepage";
+	express.static(join(__dirname, "..", folder))(req, res, next);
 });
 
-app.use((req, res, next) => {
-	if (req.cookies.token) {
-		res
-			.status(404)
-			.sendFile(
-				join(dirname(fileURLToPath(import.meta.url)), "../public/404.html")
-			);
-	} else {
-		res
-			.status(404)
-			.sendFile(join(dirname(fileURLToPath(import.meta.url)), "../homepage"));
-	}
+app.use((req, res) => {
+	const folder = req.cookies.token === "quasar" ? "public" : "homepage";
+	res.status(404).sendFile(join(__dirname, "..", folder, "404.html"));
 });
 
-const PORT = process.env.PORT || 3002;
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
 	console.log(`Listening on port ${PORT}`);
