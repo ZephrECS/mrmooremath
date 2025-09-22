@@ -3,6 +3,9 @@ import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import cookieParser from "cookie-parser";
 import "dotenv/config";
+import helmet from "helmet";
+
+app.use(helmet({ hsts: false }));
 
 const app = express();
 
