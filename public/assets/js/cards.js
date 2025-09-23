@@ -9,6 +9,7 @@ let activeGames,
 	originalList,
 	activeCategory = "all",
 	sortMethod = "alphabetically";
+search = "";
 
 function loadIframe(path) {
 	gameFrame.style.display = "block";
@@ -28,35 +29,39 @@ async function renderGames() {
 			data.sort((a, b) => a.name.localeCompare(b.name));
 			break;
 		case "dateadded":
-			data = data.slice().reverse(); // Reverse the original order
+			data = data.slice().reverse();
 			break;
 		default:
 			data = data.slice().reverse();
 			break;
 	}
-
 	allGames = data;
-	activeGames = allGames;
+	activeGames = allGames.filter((game) => {
+		const categoryMatch =
+			game.category.toLowerCase() == activeCategory || activeCategory == "all";
+
+		const searchMatch =
+			search === "" ||
+			game.name.toLowerCase().trim().includes(search.toLowerCase()) ||
+			game.id.toLowerCase().trim().includes(search.toLowerCase());
+
+		return categoryMatch && searchMatch;
+	});
 	container.innerHTML = "";
 	for (const game of activeGames) {
-		if (
-			game.category.toLowerCase() == activeCategory ||
-			activeCategory == "all"
-		) {
-			const card = document.createElement("div");
-			card.id = game.id;
-			card.classList.add("card");
-			const img = document.createElement("img");
-			img.src = `/assets/img${game.img}`;
-			card.appendChild(img);
-			const p = document.createElement("p");
-			p.textContent = game.name;
-			card.appendChild(p);
-			container.appendChild(card);
-			card.addEventListener("click", () => {
-				loadIframe(game.path);
-			});
-		}
+		const card = document.createElement("div");
+		card.id = game.id;
+		card.classList.add("card");
+		const img = document.createElement("img");
+		img.src = `/assets/img${game.img}`;
+		card.appendChild(img);
+		const p = document.createElement("p");
+		p.textContent = game.name;
+		card.appendChild(p);
+		container.appendChild(card);
+		card.addEventListener("click", () => {
+			loadIframe(game.path);
+		});
 	}
 }
 
@@ -65,11 +70,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 	searchBar.placeholder = `Search all of our ${activeGames.length} gаmes!`;
 });
 searchBar.addEventListener("input", (e) => {
-	activeGames = allGames.filter(
-		(game) =>
-			game.name.toLowerCase().trim().includes(e.target.value) ||
-			game.id.toLowerCase().trim().includes(e.target.value)
-	);
+	search = e.target.value.trim();
 	renderGames();
 });
 categoriesSwitcher.addEventListener("change", async (e) => {
