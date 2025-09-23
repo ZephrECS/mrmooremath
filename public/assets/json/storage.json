@@ -665,5 +665,26 @@
 		"img": "/sth2.png",
 		"path": "/flash/sth2",
 		"category": "Strategy"
+	},
+	{
+		"id": "soccran",
+		"name": "Soccer Random",
+		"img": "/soccran.png",
+		"path": "/html/soccerrandom",
+		"category": "Sports"
+	},
+	{
+		"id": "boxingran",
+		"name": "Boxing Random",
+		"img": "/boxingran.png",
+		"path": "/html/boxingrandom",
+		"category": "Sports"
+	},
+	{
+		"id": "roofsnip",
+		"name": "Rooftop Snipers",
+		"img": "/roofsnip.png",
+		"path": "/html/rooftopsnipers",
+		"category": "Arcade"
 	}
 ]
