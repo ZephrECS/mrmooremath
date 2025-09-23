@@ -686,5 +686,40 @@
 		"img": "/roofsnip.png",
 		"path": "/html/rooftopsnipers",
 		"category": "Arcade"
+	},
+	{
+		"id": "vex3",
+		"name": "Vex 3",
+		"img": "/vex3.png",
+		"path": "/html/vex3",
+		"category": "Platformer"
+	},
+	{
+		"id": "vex4",
+		"name": "Vex 4",
+		"img": "/vex4.png",
+		"path": "/html/vex4",
+		"category": "Platformer"
+	},
+	{
+		"id": "vex5",
+		"name": "Vex 5",
+		"img": "/vex5.png",
+		"path": "/html/vex5",
+		"category": "Platformer"
+	},
+	{
+		"id": "vex6",
+		"name": "Vex 6",
+		"img": "/vex6.png",
+		"path": "/html/vex6",
+		"category": "Platformer"
+	},
+	{
+		"id": "vex7",
+		"name": "Vex 7",
+		"img": "/vex7.png",
+		"path": "/html/vex7",
+		"category": "Platformer"
 	}
 ]
