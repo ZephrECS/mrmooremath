@@ -10,8 +10,7 @@ app.use(cookieParser());
 app.use(express.json());
 
 app.use((req, res, next) => {
-	const folder = req.cookies.token === "quasar" ? "public" : "homepage";
-	express.static(join(dirname(fileURLToPath(import.meta.url)), `../${folder}`))(
+	express.static(join(dirname(fileURLToPath(import.meta.url)), `../public`))(
 		req,
 		res,
 		next
@@ -19,10 +18,9 @@ app.use((req, res, next) => {
 });
 
 app.use((req, res) => {
-	const folder = req.cookies.token === "quasar" ? "public" : "homepage";
 	res
 		.status(404)
-		.sendFile(join(dirname(fileURLToPath(import.meta.url)), `../${folder}`));
+		.sendFile(join(dirname(fileURLToPath(import.meta.url)), `../public`));
 });
 
 const PORT = process.env.PORT || 3000;
