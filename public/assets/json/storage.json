@@ -721,5 +721,12 @@
 		"img": "/vex7.png",
 		"path": "/html/vex7",
 		"category": "Platformer"
+	},
+	{
+		"id": "lbp",
+		"name": "LittleBigPlanet",
+		"img": "/lbp.png",
+		"path": "/emualtor/psp/lbp",
+		"category": "Platformer"
 	}
 ]
