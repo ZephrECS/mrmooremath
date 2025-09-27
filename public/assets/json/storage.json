@@ -726,7 +726,7 @@
 		"id": "lbp",
 		"name": "LittleBigPlanet",
 		"img": "/lbp.png",
-		"path": "/emualtor/psp/lbp",
+		"path": "/emulator/psp/lbp",
 		"category": "Platformer"
 	}
 ]
