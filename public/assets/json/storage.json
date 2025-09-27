@@ -3,462 +3,462 @@
 		"name": "2048",
 		"id": "2048",
 		"path": "/html/2048/",
-		"img": "/2048.png",
+		"img": "/2048.webp",
 		"category": "Puzzle"
 	},
 	{
 		"name": "A Dark Room",
 		"id": "adr",
 		"path": "/html/adr/",
-		"img": "/adr.png",
+		"img": "/adr.webp",
 		"category": "Adventure"
 	},
 	{
 		"name": "Customer Support",
 		"id": "customersupport",
 		"path": "/webgl/customersupport/",
-		"img": "/customersupport.png",
+		"img": "/customersupport.webp",
 		"category": "Horror"
 	},
 	{
 		"name": "Backrooms",
 		"id": "br",
 		"path": "/html/br/",
-		"img": "/backrooms.png",
+		"img": "/backrooms.webp",
 		"category": "Horror"
 	},
 	{
 		"name": "F2F: Home Alone",
 		"id": "f2fha",
 		"path": "/webgl/f2fha/",
-		"img": "/f2fha.png",
+		"img": "/f2fha.webp",
 		"category": "Horror"
 	},
 	{
 		"name": "RE:RUN",
 		"id": "rerun",
 		"path": "/webgl/rerun/",
-		"img": "/rerun.png",
+		"img": "/rerun.webp",
 		"category": "Action"
 	},
 	{
 		"name": "Go To Bed",
 		"id": "gtb",
 		"path": "/webgl/gtb/",
-		"img": "/gotobed.png",
+		"img": "/gotobed.webp",
 		"category": "Horror"
 	},
 	{
 		"name": "Grindcraft",
 		"id": "grindcraft",
 		"path": "/html/grindcraft/",
-		"img": "/grindcraft.png",
+		"img": "/grindcraft.webp",
 		"category": "Simulation"
 	},
 	{
 		"name": "The Deadseat",
 		"id": "deadseat",
 		"path": "/webgl/deadseat/",
-		"img": "/deadseat.png",
+		"img": "/deadseat.webp",
 		"category": "Horror"
 	},
 	{
 		"name": "Kindergarten",
 		"id": "kg",
 		"path": "/webgl/kindergarten/1/",
-		"img": "/kg.png",
+		"img": "/kg.webp",
 		"category": "Adventure"
 	},
 	{
 		"name": "Kindergarten 2",
 		"id": "kg2",
 		"path": "/webgl/kindergarten/2/",
-		"img": "/kg2.png",
+		"img": "/kg2.webp",
 		"category": "Adventure"
 	},
 	{
 		"name": "Eat the Rich",
 		"id": "etr",
 		"path": "/webgl/eattherich/",
-		"img": "/eattherich.png",
+		"img": "/eattherich.webp",
 		"category": "Simulation"
 	},
 	{
 		"name": "Raft",
 		"id": "raft",
 		"path": "/webgl/raft/",
-		"img": "/raft.png",
+		"img": "/raft.webp",
 		"category": "Survival"
 	},
 	{
 		"name": "7 Days in Purgatory",
 		"id": "7dip",
 		"path": "/webgl/7dip/",
-		"img": "/7dip.png",
+		"img": "/7dip.webp",
 		"category": "Simulation"
 	},
 	{
 		"name": "Duck Life 1",
 		"id": "dl1",
 		"path": "/flash/dl1/",
-		"img": "/dl1.png",
+		"img": "/dl1.webp",
 		"category": "Simulation"
 	},
 	{
 		"name": "Duck Life 2",
 		"id": "dl2",
 		"path": "/flash/dl2/",
-		"img": "/dl2.png",
+		"img": "/dl2.webp",
 		"category": "Simulation"
 	},
 	{
 		"name": "Duck Life 3",
 		"id": "dl3",
 		"path": "/flash/dl3/",
-		"img": "/dl3.png",
+		"img": "/dl3.webp",
 		"category": "Simulation"
 	},
 	{
 		"name": "Duck Life 4",
 		"id": "dl4",
 		"path": "/flash/dl4/",
-		"img": "/dl4.png",
+		"img": "/dl4.webp",
 		"category": "Simulation"
 	},
 	{
 		"name": "Papa's Bakeria",
 		"id": "pbake",
 		"path": "/flash/pbake/",
-		"img": "/pbake.png",
+		"img": "/pbake.webp",
 		"category": "Arcade"
 	},
 	{
 		"name": "Papa's Burgeria",
 		"id": "pburg",
 		"path": "/flash/pburg/",
-		"img": "/pburg.png",
+		"img": "/pburg.webp",
 		"category": "Arcade"
 	},
 	{
 		"name": "Papa's Cheeseria",
 		"id": "pchee",
 		"path": "/flash/pchee/",
-		"img": "/pchee.png",
+		"img": "/pchee.webp",
 		"category": "Arcade"
 	},
 	{
 		"name": "Papa's Cupcakeria",
 		"id": "pcupc",
 		"path": "/flash/pcupc/",
-		"img": "/pcupc.png",
+		"img": "/pcupc.webp",
 		"category": "Arcade"
 	},
 	{
 		"name": "Papa's Donuteria",
 		"id": "pdonut",
 		"path": "/flash/pdonut/",
-		"img": "/pdonut.png",
+		"img": "/pdonut.webp",
 		"category": "Arcade"
 	},
 	{
 		"name": "Papa's Freezeria",
 		"id": "pfreeze",
 		"path": "/flash/pfreeze/",
-		"img": "/pfreeze.png",
+		"img": "/pfreeze.webp",
 		"category": "Arcade"
 	},
 	{
 		"name": "Papa's Hotdoggeria",
 		"id": "photdog",
 		"path": "/flash/photdog/",
-		"img": "/photdog.png",
+		"img": "/photdog.webp",
 		"category": "Arcade"
 	},
 	{
 		"name": "Papa's Pancakeria",
 		"id": "ppan",
 		"path": "/flash/ppan/",
-		"img": "/ppan.png",
+		"img": "/ppan.webp",
 		"category": "Arcade"
 	},
 	{
 		"name": "Papa's Pastaria",
 		"id": "ppasta",
 		"path": "/flash/ppasta/",
-		"img": "/ppasta.png",
+		"img": "/ppasta.webp",
 		"category": "Arcade"
 	},
 	{
 		"name": "Papa's Pizzaria",
 		"id": "ppizza",
 		"path": "/flash/ppizza/",
-		"img": "/ppizza.png",
+		"img": "/ppizza.webp",
 		"category": "Arcade"
 	},
 	{
 		"name": "Papa's Scooperia",
 		"id": "pscoop",
 		"path": "/flash/pscoop/",
-		"img": "/pscoop.png",
+		"img": "/pscoop.webp",
 		"category": "Arcade"
 	},
 	{
 		"name": "Papa's Sushieria",
 		"id": "psushi",
 		"path": "/flash/psushi/",
-		"img": "/psushi.png",
+		"img": "/psushi.webp",
 		"category": "Arcade"
 	},
 	{
 		"name": "Papa's Wingeria",
 		"id": "pwing",
 		"path": "/flash/pwing/",
-		"img": "/pwing.png",
+		"img": "/pwing.webp",
 		"category": "Arcade"
 	},
 	{
 		"name": "Custom Flash Game",
 		"id": "flash",
 		"path": "/flash/custom/",
-		"img": "/flash.png",
+		"img": "/flash.webp",
 		"category": "Arcade"
 	},
 	{
 		"name": "Worlds Hardest Game",
 		"id": "whg",
 		"path": "/flash/whg/",
-		"img": "/whg.png",
+		"img": "/whg.webp",
 		"category": "Puzzle"
 	},
 	{
 		"name": "Worlds Hardest Game 2",
 		"id": "whg2",
 		"path": "/flash/whg2/",
-		"img": "/whg2.png",
+		"img": "/whg2.webp",
 		"category": "Puzzle"
 	},
 	{
 		"name": "People Playground",
 		"id": "people",
 		"path": "/webgl/people-playground/",
-		"img": "/people.png",
+		"img": "/people.webp",
 		"category": "Sandbox"
 	},
 	{
 		"name": "Achievement Unlocked",
 		"id": "au",
 		"path": "/flash/au1/",
-		"img": "/au.png",
+		"img": "/au.webp",
 		"category": "Puzzle"
 	},
 	{
 		"name": "Achievement Unlocked 2",
 		"id": "au2",
 		"path": "/flash/au2/",
-		"img": "/au2.png",
+		"img": "/au2.webp",
 		"category": "Puzzle"
 	},
 	{
 		"name": "Achievement Unlocked 3",
 		"id": "au3",
 		"path": "/flash/au3/",
-		"img": "/au3.png",
+		"img": "/au3.webp",
 		"category": "Puzzle"
 	},
 	{
 		"name": "Raft Wars",
 		"id": "rw",
 		"path": "/flash/rw/",
-		"img": "/rw.png",
+		"img": "/rw.webp",
 		"category": "Action"
 	},
 	{
 		"name": "Raft Wars 2",
 		"id": "rw2",
 		"path": "/flash/rw2/",
-		"img": "/rw2.png",
+		"img": "/rw2.webp",
 		"category": "Action"
 	},
 	{
 		"name": "Milkman Karlson",
 		"id": "milkmankarlson",
 		"path": "/webgl/milkmank/",
-		"img": "/milkmank.png",
+		"img": "/milkmank.webp",
 		"category": "Platformer"
 	},
 	{
 		"name": "Cuphead",
 		"id": "cuphead",
 		"path": "/webgl/cuphead/",
-		"img": "/cuphead.png",
+		"img": "/cuphead.webp",
 		"category": "Platformer"
 	},
 	{
 		"name": "Bendy and the Ink Machine",
 		"id": "batim",
 		"path": "/webgl/bendy/",
-		"img": "/batim.png",
+		"img": "/batim.webp",
 		"category": "Horror"
 	},
 	{
 		"name": "Stick With It",
 		"id": "swi",
 		"path": "/webgl/stickwithit/",
-		"img": "/stickwithit.png",
+		"img": "/stickwithit.webp",
 		"category": "Arcade"
 	},
 	{
 		"name": "Bloons Tower Defense",
 		"id": "btd",
 		"path": "/flash/btd/",
-		"img": "/btd.png",
+		"img": "/btd.webp",
 		"category": "Strategy"
 	},
 	{
 		"name": "Bloons Tower Defense 2",
 		"id": "btd2",
 		"path": "/flash/btd2/",
-		"img": "/btd2.png",
+		"img": "/btd2.webp",
 		"category": "Strategy"
 	},
 	{
 		"name": "Bloons Tower Defense 3",
 		"id": "btdd3",
 		"path": "/flash/btd3/",
-		"img": "/btd3.png",
+		"img": "/btd3.webp",
 		"category": "Strategy"
 	},
 	{
 		"name": "Bloons Tower Defense 4",
 		"id": "btd4",
 		"path": "/flash/btd4/",
-		"img": "/btd4.png",
+		"img": "/btd4.webp",
 		"category": "Strategy"
 	},
 	{
 		"name": "Bowerwhelm",
 		"id": "bwh",
 		"path": "/webgl/bowerwhelm/",
-		"img": "/bowerwhelm.png",
+		"img": "/bowerwhelm.webp",
 		"category": "Action"
 	},
 	{
 		"name": "Baldi's Basics Classic Remastered",
 		"id": "bbcr",
 		"path": "/webgl/bbcr/",
-		"img": "/bbcr.png",
+		"img": "/bbcr.webp",
 		"category": "Horror"
 	},
 	{
 		"name": "Baldi's Basics Plus",
 		"id": "bbp",
 		"path": "/webgl/bbp/",
-		"img": "/bbp.png",
+		"img": "/bbp.webp",
 		"category": "Horror"
 	},
 	{
 		"name": "1v1.lol",
 		"id": "1v1lol",
 		"path": "/webgl/1v1lol/",
-		"img": "/1v1lol.png",
+		"img": "/1v1lol.webp",
 		"category": "Shooter"
 	},
 	{
 		"name": "Apes VS Helium",
 		"id": "avh",
 		"path": "/webgl/avh/",
-		"img": "/avh.png",
+		"img": "/avh.webp",
 		"category": "Strategy"
 	},
 	{
 		"name": "Kindergarten 3",
 		"id": "kg3",
 		"path": "/webgl/kindergarten/3/",
-		"img": "/kg3.png",
+		"img": "/kg3.webp",
 		"category": "Adventure"
 	},
 	{
 		"name": "ADOFAI",
 		"id": "adofai",
 		"path": "/html/adofai/",
-		"img": "/adofai.png",
+		"img": "/adofai.webp",
 		"category": "Rhythm"
 	},
 	{
 		"name": "Basket Random",
 		"id": "basketrandom",
 		"path": "/html/basketrandom/",
-		"img": "/basketrandom.png",
+		"img": "/basketrandom.webp",
 		"category": "Sports"
 	},
 	{
 		"name": "Cookie Clicker",
 		"id": "cc",
 		"path": "/html/cc/",
-		"img": "/cc.png",
+		"img": "/cc.webp",
 		"category": "Clicker"
 	},
 	{
 		"name": "Crazy Cattle 3D",
 		"id": "cc3d",
 		"path": "/html/cc3d/",
-		"img": "/cc3d.png",
+		"img": "/cc3d.webp",
 		"category": "Arcade"
 	},
 	{
 		"name": "Geometry Dash Lite",
 		"id": "gdl",
 		"path": "/html/geodash-lite/",
-		"img": "/gdl.png",
+		"img": "/gdl.webp",
 		"category": "Rhythm"
 	},
 	{
 		"name": "Getaway Shootout",
 		"id": "gs",
 		"path": "/html/getaway-shootout/",
-		"img": "/gs.png",
+		"img": "/gs.webp",
 		"category": "Action"
 	},
 	{
 		"name": "Minecraft",
 		"id": "mc",
 		"path": "/html/minecraft/",
-		"img": "/minecraft.png",
+		"img": "/minecraft.webp",
 		"category": "Sandbox"
 	},
 	{
 		"name": "Slope",
 		"id": "slope",
 		"path": "/html/slope/",
-		"img": "/slope.png",
+		"img": "/slope.webp",
 		"category": "Arcade"
 	},
 	{
 		"name": "Volley Random",
 		"id": "volleyrandom",
 		"path": "/html/volleyrandom/",
-		"img": "/volleyrandom.png",
+		"img": "/volleyrandom.webp",
 		"category": "Sports"
 	},
 	{
 		"name": "Subway Surfers",
 		"id": "subwaysurf",
 		"path": "/html/subwaysurf/",
-		"img": "/subwaysurf.png",
+		"img": "/subwaysurf.webp",
 		"category": "Arcade"
 	},
 	{
 		"name": "Adventure Capitalist",
 		"id": "adcap",
 		"path": "/webgl/adcap/",
-		"img": "/adcap.png",
+		"img": "/adcap.webp",
 		"category": "Clicker"
 	},
 	{
 		"id": "customgba",
 		"name": "Custom GBA Game",
 		"description": "Upload your own file",
-		"img": "/gba.png",
+		"img": "/gba.webp",
 		"path": "/emulator/gba/custom",
 		"category": "Arcade"
 	},
@@ -466,267 +466,274 @@
 		"id": "customds",
 		"name": "Custom DS Game",
 		"description": "Upload your own file",
-		"img": "/ds.png",
+		"img": "/ds.webp",
 		"path": "/emulator/ds/custom",
 		"category": "Arcade"
 	},
 	{
 		"id": "customn64",
 		"name": "Custom N64 Game",
-		"img": "/n64.png",
+		"img": "/n64.webp",
 		"path": "/emulator/n64/custom",
 		"category": "Arcade"
 	},
 	{
 		"id": "mariokart",
 		"name": "Mario Kart 64",
-		"img": "/mariokart.png",
+		"img": "/mariokart.webp",
 		"path": "/emulator/n64/mariokart",
 		"category": "Arcade"
 	},
 	{
 		"id": "sm64",
 		"name": "Super Mario 64",
-		"img": "/sm64.png",
+		"img": "/sm64.webp",
 		"path": "/emulator/n64/sm64",
 		"category": "Arcade"
 	},
 	{
 		"id": "ssb64",
 		"name": "Super Smash Bros 64",
-		"img": "/ssb64.png",
+		"img": "/ssb64.webp",
 		"path": "/emulator/n64/ssb64",
 		"category": "Arcade"
 	},
 	{
 		"id": "tlozalttp",
 		"name": "The Legend of Zelda: A Link to the Past",
-		"img": "/tlozalttp.png",
+		"img": "/tlozalttp.webp",
 		"path": "/emulator/n64/tlozalttp",
 		"category": "Adventure"
 	},
 	{
 		"id": "tlozmm",
 		"name": "The Legend of Zelda: Majora's Mask",
-		"img": "/tlozmm.png",
+		"img": "/tlozmm.webp",
 		"path": "/emulator/n64/tlozmm",
 		"category": "Adventure"
 	},
 	{
 		"id": "tlozoot",
 		"name": "The Legend of Zelda: Ocarina of Time",
-		"img": "/tlozoot.png",
+		"img": "/tlozoot.webp",
 		"path": "/emulator/n64/tlozoot",
 		"category": "Adventure"
 	},
 	{
 		"id": "tloztmc",
 		"name": "The Legend of Zelda: The Minish Cap",
-		"img": "/tloztmc.png",
+		"img": "/tloztmc.webp",
 		"path": "/emulator/n64/tloztmc",
 		"category": "Adventure"
 	},
 	{
 		"id": "hsbtb",
 		"name": "Henry Stickmin: Breaking the Bank",
-		"img": "/btb.png",
+		"img": "/btb.webp",
 		"path": "/flash/btb",
 		"category": "puzzle"
 	},
 	{
 		"id": "hsetp",
 		"name": "Henry Stickmin: Escaping the Prison",
-		"img": "/etp.png",
+		"img": "/etp.webp",
 		"path": "/flash/etp",
 		"category": "puzzle"
 	},
 	{
 		"id": "hsstd",
 		"name": "Henry Stickmin: Stealing the Diamond",
-		"img": "/std.png",
+		"img": "/std.webp",
 		"path": "/flash/std",
 		"category": "puzzle"
 	},
 	{
 		"id": "hsita",
 		"name": "Henry Stickmin: Infiltrating the Airship",
-		"img": "/ita.png",
+		"img": "/ita.webp",
 		"path": "/flash/ita",
 		"category": "puzzle"
 	},
 	{
 		"id": "hsftc",
 		"name": "Henry Stickmin: Fleeing the Complex",
-		"img": "/ftc.png",
+		"img": "/ftc.webp",
 		"path": "/flash/ftc",
 		"category": "puzzle"
 	},
 	{
 		"id": "bigw",
 		"name": "Big Weiner",
-		"img": "/bigweiner.png",
+		"img": "/bigweiner.webp",
 		"path": "/webgl/BigWeinerPort",
 		"category": "Simulation"
 	},
 	{
 		"id": "tomoc",
 		"name": "Tomodachi Collection",
-		"img": "/tomoc.png",
+		"img": "/tomoc.webp",
 		"path": "/emulator/ds/tomoc",
 		"category": "Simulation"
 	},
 	{
 		"id": "acww",
 		"name": "Animal Crossing: Wild World",
-		"img": "/acww.png",
+		"img": "/acww.webp",
 		"path": "/emulator/ds/acww",
 		"category": "Simulation"
 	},
 	{
 		"id": "mkds",
 		"name": "Mario Kart DS",
-		"img": "/mkds.png",
+		"img": "/mkds.webp",
 		"path": "/emulator/ds/mkds",
 		"category": "Simulation"
 	},
 	{
 		"id": "nsmb",
 		"name": "New Super Mario Bros",
-		"img": "/nsmb.png",
+		"img": "/nsmb.webp",
 		"path": "/emulator/ds/nsmb",
 		"category": "Simulation"
 	},
 	{
 		"id": "cookmama",
 		"name": "Cooking Mama",
-		"img": "/cookmama.png",
+		"img": "/cookmama.webp",
 		"path": "/emulator/ds/cookingmama",
 		"category": "Simulation"
 	},
 	{
 		"id": "tlozst",
 		"name": "The Legend of Zelda: Spirit Tracks",
-		"img": "/tlozst.png",
+		"img": "/tlozst.webp",
 		"path": "/emulator/ds/tlozst",
 		"category": "Adventure"
 	},
 	{
 		"id": "tlozph",
 		"name": "The Legend of Zelda: Phantom Hourglass",
-		"img": "/tlozph.png",
+		"img": "/tlozph.webp",
 		"path": "/emulator/ds/tlozph",
 		"category": "Adventure"
 	},
 	{
 		"id": "kssu",
 		"name": "Kirby Super Star Ultra",
-		"img": "/kssu.png",
+		"img": "/kssu.webp",
 		"path": "/emulator/ds/kssu",
 		"category": "Adventure"
 	},
 	{
 		"id": "assessexam",
 		"name": "Assessment Examination",
-		"img": "/assessexam.png",
+		"img": "/assessexam.webp",
 		"path": "/webgl/assessexam",
 		"category": "Horror"
 	},
 	{
 		"id": "efr",
 		"name": "Egg Fried Rice",
-		"img": "/efr.png",
+		"img": "/efr.webp",
 		"path": "/webgl/EggFriedRicePort",
 		"category": "Horror"
 	},
 	{
 		"id": "ptr",
 		"name": "Parappa the Rapper",
-		"img": "/ptr.png",
+		"img": "/ptr.webp",
 		"path": "/emulator/psx/ptr",
 		"category": "puzzle"
 	},
 	{
 		"id": "re3nem",
 		"name": "Resident Evil 3: Nemesis",
-		"img": "/re3nem.png",
+		"img": "/re3nem.webp",
 		"path": "/emulator/psx/re3nem",
 		"category": "Adventure"
 	},
 	{
 		"id": "ffs",
 		"name": "Flash Flight Simulator",
-		"img": "/ffs.png",
+		"img": "/ffs.webp",
 		"path": "/flash/ffs",
 		"category": "Simulation"
 	},
 	{
 		"id": "sth2",
 		"name": "Storm the House 2",
-		"img": "/sth2.png",
+		"img": "/sth2.webp",
 		"path": "/flash/sth2",
 		"category": "Strategy"
 	},
 	{
 		"id": "soccran",
 		"name": "Soccer Random",
-		"img": "/soccran.png",
+		"img": "/soccran.webp",
 		"path": "/html/soccerrandom",
 		"category": "Sports"
 	},
 	{
 		"id": "boxingran",
 		"name": "Boxing Random",
-		"img": "/boxingran.png",
+		"img": "/boxingran.webp",
 		"path": "/html/boxingrandom",
 		"category": "Sports"
 	},
 	{
 		"id": "roofsnip",
 		"name": "Rooftop Snipers",
-		"img": "/roofsnip.png",
+		"img": "/roofsnip.webp",
 		"path": "/html/rooftopsnipers",
 		"category": "Arcade"
 	},
 	{
 		"id": "vex3",
 		"name": "Vex 3",
-		"img": "/vex3.png",
+		"img": "/vex3.webp",
 		"path": "/html/vex3",
 		"category": "Platformer"
 	},
 	{
 		"id": "vex4",
 		"name": "Vex 4",
-		"img": "/vex4.png",
+		"img": "/vex4.webp",
 		"path": "/html/vex4",
 		"category": "Platformer"
 	},
 	{
 		"id": "vex5",
 		"name": "Vex 5",
-		"img": "/vex5.png",
+		"img": "/vex5.webp",
 		"path": "/html/vex5",
 		"category": "Platformer"
 	},
 	{
 		"id": "vex6",
 		"name": "Vex 6",
-		"img": "/vex6.png",
+		"img": "/vex6.webp",
 		"path": "/html/vex6",
 		"category": "Platformer"
 	},
 	{
 		"id": "vex7",
 		"name": "Vex 7",
-		"img": "/vex7.png",
+		"img": "/vex7.webp",
 		"path": "/html/vex7",
 		"category": "Platformer"
 	},
 	{
 		"id": "lbp",
 		"name": "LittleBigPlanet",
-		"img": "/lbp.png",
+		"img": "/lbp.webp",
 		"path": "/emulator/psp/lbp",
 		"category": "Platformer"
+	},
+	{
+		"id": "gowgos",
+		"name": "God of War: Ghost of Sparta",
+		"img": "/gowgos.webp",
+		"path": "/emulator/psp/gowgos",
+		"category": "Adventure"
 	}
 ]
