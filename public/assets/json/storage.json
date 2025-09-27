@@ -562,13 +562,6 @@
 		"category": "puzzle"
 	},
 	{
-		"id": "bigw",
-		"name": "Big Weiner",
-		"img": "/bigweiner.webp",
-		"path": "/webgl/BigWeinerPort",
-		"category": "Simulation"
-	},
-	{
 		"id": "tomoc",
 		"name": "Tomodachi Collection",
 		"img": "/tomoc.webp",
@@ -730,10 +723,52 @@
 		"category": "Platformer"
 	},
 	{
-		"id": "gowgos",
-		"name": "God of War: Ghost of Sparta",
-		"img": "/gowgos.webp",
-		"path": "/emulator/psp/gowgos",
-		"category": "Adventure"
+		"id": "2048cup",
+		"name": "2048 Cupcakes",
+		"img": "/2048cup.webp",
+		"path": "/html/2048cup",
+		"category": "Strategy"
+	},
+	{
+		"id": "angrybirds",
+		"name": "Angry Birds",
+		"img": "/angrybirds.webp",
+		"path": "/html/angrybirds",
+		"category": "Strategy"
+	},
+	{
+		"id": "angrybirdsshowdown",
+		"name": "Angry Birds Showdown",
+		"img": "/angrybirdsshowdown.webp",
+		"path": "/html/angrybirdsshowdown",
+		"category": "Strategy"
+	},
+	{
+		"id": "angrybirdsspace",
+		"name": "Angry Birds Space",
+		"img": "/angrybirdsspace.webp",
+		"path": "/html/angrybirdsspace",
+		"category": "Strategy"
+	},
+	{
+		"id": "aquapark",
+		"name": "Aquapark.io",
+		"img": "/aquapark.webp",
+		"path": "/html/aquapark",
+		"category": "Strategy"
+	},
+	{
+		"id": "bottlejump",
+		"name": "Bottle Jump 3D",
+		"img": "/bottlejump.webp",
+		"path": "/html/bottlejump",
+		"category": "Strategy"
+	},
+	{
+		"id": "bouncemasters",
+		"name": "Bouncemasters",
+		"img": "/bouncemasters.webp",
+		"path": "/html/bouncemasters",
+		"category": "Strategy"
 	}
 ]
