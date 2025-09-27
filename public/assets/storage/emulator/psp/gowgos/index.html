@@ -66,7 +66,7 @@
 								buffers.push(data);
 								document.getElementById(
 									"loadingText"
-								).textContent = `LOADING (${index}/10)`;
+								).textContent = `LOADING (${index + 1}/10)`;
 								fetchPart(index + 1);
 							})
 							.catch(reject);
@@ -81,12 +81,6 @@
 					parts.push(file + ".part" + i);
 				}
 				return parts;
-			}
-
-			function resizeUnityContainer() {
-				var container = document.getElementById("unityContainer");
-				container.style.width = window.innerWidth + "px";
-				container.style.height = window.innerHeight + "px";
 			}
 			Promise.all([mergeFiles(getParts("game.zip", 1, 10))]).then(
 				([gameUrl]) => {
