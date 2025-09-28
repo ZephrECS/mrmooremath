@@ -235,6 +235,9 @@ p {
 	mix-blend-mode: difference;
 	isolation: isolate;
 }
+.controls button svg {
+	cursor: pointer;
+}
 .gameframe iframe {
 	width: 99vw;
 	height: 98vh;
@@ -249,6 +252,7 @@ p {
 	display: grid;
 	position: fixed;
 	z-index: 999999;
+	cursor: pointer;
 }
 
 .surprise {
