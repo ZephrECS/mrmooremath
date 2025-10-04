@@ -772,6 +772,13 @@
 		"category": "Strategy"
 	},
 	{
+		"id": "bowmasters",
+		"name": "bowmasters",
+		"img": "/bowmasters.webp",
+		"path": "/html/bowmasters",
+		"category": "Strategy"
+	},
+	{
 		"id": "rs1",
 		"name": "Riddle School",
 		"img": "/rs1.webp",
