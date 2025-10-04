@@ -819,5 +819,40 @@
 		"img": "/rt2.webp",
 		"path": "/flash/rt2",
 		"category": "Strategy"
+	},
+	{
+		"id": "stm",
+		"name": "Spank the Monkey",
+		"img": "/stm.webp",
+		"path": "/flash/stm",
+		"category": "Casual"
+	},
+	{
+		"id": "fnaf",
+		"name": "Five Nights at Freddy's",
+		"img": "/fnaf.webp",
+		"path": "/html/fnaf/1",
+		"category": "Horror"
+	},
+	{
+		"id": "fnaf2",
+		"name": "Five Nights at Freddy's 2",
+		"img": "/fnaf2.webp",
+		"path": "/html/fnaf/2",
+		"category": "Horror"
+	},
+	{
+		"id": "fnaf3",
+		"name": "Five Nights at Freddy's 3",
+		"img": "/fnaf3.webp",
+		"path": "/html/fnaf/3",
+		"category": "Horror"
+	},
+	{
+		"id": "fnaf4",
+		"name": "Five Nights at Freddy's 4",
+		"img": "/fnaf4.webp",
+		"path": "/html/fnaf/4",
+		"category": "Horror"
 	}
 ]
