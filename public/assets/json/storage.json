@@ -861,5 +861,33 @@
 		"img": "/fnaf4.webp",
 		"path": "/html/fnaf/4",
 		"category": "Horror"
+	},
+	{
+		"id": "fnafps",
+		"name": "FNAF Pizzeria Simulator",
+		"img": "/fnafps.webp",
+		"path": "/html/fnaf/ps",
+		"category": "Horror"
+	},
+	{
+		"id": "fnafsl",
+		"name": "FNAF Sister Locataion",
+		"img": "/fnafsl.webp",
+		"path": "/html/fnaf/sl",
+		"category": "Horror"
+	},
+	{
+		"id": "fnafucn",
+		"name": "FNAF Ultimate Custom Night",
+		"img": "/fnafucn.webp",
+		"path": "/html/fnaf/ucn",
+		"category": "Horror"
+	},
+	{
+		"id": "fnafworld",
+		"name": "FNAF World",
+		"img": "/fnafworld.webp",
+		"path": "/html/fnaf/world",
+		"category": "Horror"
 	}
 ]
