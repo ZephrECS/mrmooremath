@@ -14,6 +14,11 @@ search = "";
 function loadIframe(path) {
 	gameFrame.style.display = "block";
 	document.getElementById("actualGameFrame").src = `/assets/storage${path}`;
+	gameFrame.contentWindow.addEventListener("keypress", (e) => {
+		if (e.key == localStorage.getItem("panicKey")) {
+			window.open(localStorage.getItem("panicURL"));
+		}
+	});
 	console.log("loading:" + path);
 }
 

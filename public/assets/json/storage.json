@@ -773,7 +773,7 @@
 	},
 	{
 		"id": "bowmasters",
-		"name": "bowmasters",
+		"name": "Bowmasters",
 		"img": "/bowmasters.webp",
 		"path": "/html/bowmasters",
 		"category": "Strategy"
@@ -889,5 +889,12 @@
 		"img": "/fnafworld.webp",
 		"path": "/html/fnaf/world",
 		"category": "Horror"
+	},
+	{
+		"id": "sc",
+		"name": "Space Company",
+		"img": "/sc.webp",
+		"path": "/html/spacecompany",
+		"category": "Clicker"
 	}
 ]
