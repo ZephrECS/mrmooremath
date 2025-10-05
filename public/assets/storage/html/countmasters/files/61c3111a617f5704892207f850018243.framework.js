@@ -7458,15 +7458,8 @@ code.google.com/p/crypto-js/wiki/License
 			if (Module["extraStackTrace"]) js += "\n" + Module["extraStackTrace"]();
 			return demangleAll(js);
 		}
-		function _AddUserScoreSDK(score) {
-			window.CrazyGames.SDK.user.addScore(score);
-		}
-		function _AnalyticsTrackOrderSDK(provider, order) {
-			window.CrazyGames.SDK.analytics.trackOrder(
-				window.unityStringify(provider),
-				JSON.parse(window.unityStringify(order))
-			);
-		}
+		function _AddUserScoreSDK(score) {}
+		function _AnalyticsTrackOrderSDK(provider, order) {}
 		function _CopyToClipboardSDK(text) {
 			const elem = document.createElement("textarea");
 			elem.value = window.unityStringify(text);
@@ -7476,62 +7469,20 @@ code.google.com/p/crypto-js/wiki/License
 			document.execCommand("copy");
 			document.body.removeChild(elem);
 		}
-		function _DataClearSDK() {
-			window.CrazyGames.SDK.data.clear();
-		}
-		function _DataGetItemSDK(key) {
-			var data = window.CrazyGames.SDK.data.getItem(window.unityStringify(key));
-			var bufferSize = lengthBytesUTF8(data + "") + 1;
-			var buffer = _malloc(bufferSize);
-			stringToUTF8(data, buffer, bufferSize);
-			return buffer;
-		}
-		function _DataHasKeySDK(key) {
-			var data = window.CrazyGames.SDK.data.getItem(window.unityStringify(key));
-			return data !== null;
-		}
-		function _DataRemoveItemSDK(key) {
-			window.CrazyGames.SDK.data.removeItem(window.unityStringify(key));
-		}
-		function _DataSetItemSDK(key, value) {
-			window.CrazyGames.SDK.data.setItem(
-				window.unityStringify(key),
-				window.unityStringify(value)
-			);
-		}
+		function _DataClearSDK() {}
+		function _DataGetItemSDK(key) {}
+		function _DataHasKeySDK(key) {}
+		function _DataRemoveItemSDK(key) {}
+		function _DataSetItemSDK(key, value) {}
 		function _GameplayStartSDK() {
 			window.CrazyGames.SDK.game.gameplayStart();
 		}
-		function _GameplayStopSDK() {
-			window.CrazyGames.SDK.game.gameplayStop();
-		}
-		function _GetEnvironmentSDK() {
-			var environment = window.CrazyGames.SDK.environment;
-			var bufferSize = lengthBytesUTF8(environment) + 1;
-			var buffer = _malloc(bufferSize);
-			stringToUTF8(environment, buffer, bufferSize);
-			return buffer;
-		}
-		function _GetGameSettingsJSONSDK() {
-			var settingsJson = JSON.stringify(window.CrazyGames.SDK.game.settings);
-			var bufferSize = lengthBytesUTF8(settingsJson) + 1;
-			var buffer = _malloc(bufferSize);
-			stringToUTF8(settingsJson, buffer, bufferSize);
-			return buffer;
-		}
-		function _GetInviteLinkParamSDK(paramName) {
-			var urlParams = new URLSearchParams(window.location.search);
-			var paramValue = urlParams.get(window.unityStringify(paramName));
-			if (paramValue === null) {
-				paramValue = "";
-			}
-			var bufferSize = lengthBytesUTF8(paramValue) + 1;
-			var buffer = _malloc(bufferSize);
-			stringToUTF8(paramValue, buffer, bufferSize);
-			return buffer;
-		}
+		function _GameplayStopSDK() {}
+		function _GetEnvironmentSDK() {}
+		function _GetGameSettingsJSONSDK() {}
+		function _GetInviteLinkParamSDK(paramName) {}
 		function _GetIsQaToolSDK() {
-			return window.CrazyGames.SDK.isQaTool;
+			return true;
 		}
 		function _GetJSMemoryInfo(totalJSptr, usedJSptr) {
 			if (performance.memory) {
@@ -7542,75 +7493,12 @@ code.google.com/p/crypto-js/wiki/License
 				HEAPF64[usedJSptr >> 3] = NaN;
 			}
 		}
-		function _GetSystemInfoSDK() {
-			var systemInfoJson = JSON.stringify(
-				window.CrazyGames.SDK.user.systemInfo
-			);
-			var bufferSize = lengthBytesUTF8(systemInfoJson) + 1;
-			var buffer = _malloc(bufferSize);
-			stringToUTF8(systemInfoJson, buffer, bufferSize);
-			return buffer;
-		}
-		function _GetUserSDK() {
-			window.CrazyGames.SDK.user
-				.getUser()
-				.then(function (user) {
-					SendMessage(
-						"CrazySDKSingleton",
-						"JSLibCallback_GetUser",
-						JSON.stringify({ userJson: JSON.stringify(user) })
-					);
-				})
-				.catch(function (error) {
-					SendMessage(
-						"CrazySDKSingleton",
-						"JSLibCallback_GetUser",
-						JSON.stringify({ errorJson: JSON.stringify(error) })
-					);
-				});
-		}
-		function _GetUserTokenSDK() {
-			window.CrazyGames.SDK.user
-				.getUserToken()
-				.then(function (token) {
-					SendMessage(
-						"CrazySDKSingleton",
-						"JSLibCallback_GetUserToken",
-						JSON.stringify({ token: token })
-					);
-				})
-				.catch(function (error) {
-					SendMessage(
-						"CrazySDKSingleton",
-						"JSLibCallback_GetUserToken",
-						JSON.stringify({ errorJson: JSON.stringify(error) })
-					);
-				});
-		}
-		function _GetXsollaUserTokenSDK() {
-			window.CrazyGames.SDK.user
-				.getXsollaUserToken()
-				.then(function (token) {
-					SendMessage(
-						"CrazySDKSingleton",
-						"JSLibCallback_GetXsollaUserToken",
-						JSON.stringify({ token: token })
-					);
-				})
-				.catch(function (error) {
-					SendMessage(
-						"CrazySDKSingleton",
-						"JSLibCallback_GetXsollaUserToken",
-						JSON.stringify({ errorJson: JSON.stringify(error) })
-					);
-				});
-		}
-		function _HappyTimeSDK() {
-			window.CrazyGames.SDK.game.happytime();
-		}
-		function _HideInviteButtonSDK() {
-			window.CrazyGames.SDK.game.hideInviteButton();
-		}
+		function _GetSystemInfoSDK() {}
+		function _GetUserSDK() {}
+		function _GetUserTokenSDK() {}
+		function _GetXsollaUserTokenSDK() {}
+		function _HappyTimeSDK() {}
+		function _HideInviteButtonSDK() {}
 		function _InitSDK(version) {
 			if (typeof UTF8ToString !== "undefined") {
 				window.unityStringify = UTF8ToString;
@@ -7660,9 +7548,7 @@ code.google.com/p/crypto-js/wiki/License
 			var userAgent = navigator.userAgent;
 			return /^((?!chrome|android|crios|fxios).)*safari/i.test(userAgent);
 		}
-		function _IsUserAccountAvailableSDK() {
-			return window.CrazyGames.SDK.user.isUserAccountAvailable;
-		}
+		function _IsUserAccountAvailableSDK() {}
 		var JS_Accelerometer = null;
 		var JS_Accelerometer_callback = 0;
 		function _JS_Accelerometer_IsRunning() {
@@ -10212,89 +10098,13 @@ code.google.com/p/crypto-js/wiki/License
 			}
 			requestOptions.timeout = timeout;
 		}
-		function _RequestAdSDK(adType) {
-			var adTypeStr = window.unityStringify(adType);
-			var callbacks = {
-				adStarted: function () {
-					window.UnitySDK.unlockPointer();
-					SendMessage("CrazySDKSingleton", "JSLibCallback_AdStarted");
-				},
-				adFinished: function () {
-					window.UnitySDK.lockPointer();
-					SendMessage("CrazySDKSingleton", "JSLibCallback_AdFinished");
-				},
-				adError: function (error) {
-					SendMessage(
-						"CrazySDKSingleton",
-						"JSLibCallback_AdError",
-						JSON.stringify(error)
-					);
-				},
-			};
-			window.CrazyGames.SDK.ad.requestAd(adTypeStr, callbacks);
-		}
-		function _RequestBannersSDK(bannersJSON) {
-			var banners = JSON.parse(window.unityStringify(bannersJSON));
-			window.CrazyGames.SDK.banner.requestOverlayBanners(
-				banners,
-				function (bannerId, message, error) {}
-			);
-		}
-		function _RequestInviteUrlSDK(paramsStr) {
-			var params = JSON.parse(window.unityStringify(paramsStr));
-			var url = window.CrazyGames.SDK.game.inviteLink(params);
-			var bufferSize = lengthBytesUTF8(url) + 1;
-			var buffer = _malloc(bufferSize);
-			stringToUTF8(url, buffer, bufferSize);
-			return buffer;
-		}
-		function _ShowAccountLinkPromptSDK() {
-			window.CrazyGames.SDK.user
-				.showAccountLinkPrompt()
-				.then(function (response) {
-					SendMessage(
-						"CrazySDKSingleton",
-						"JSLibCallback_ShowAccountLinkPrompt",
-						JSON.stringify({ linkAccountResponseStr: JSON.stringify(response) })
-					);
-				})
-				.catch(function (error) {
-					SendMessage(
-						"CrazySDKSingleton",
-						"JSLibCallback_ShowAccountLinkPrompt",
-						JSON.stringify({ errorJson: JSON.stringify(error) })
-					);
-				});
-		}
-		function _ShowAuthPromptSDK() {
-			window.CrazyGames.SDK.user
-				.showAuthPrompt()
-				.then(function (user) {
-					SendMessage(
-						"CrazySDKSingleton",
-						"JSLibCallback_ShowAuthPrompt",
-						JSON.stringify({ userJson: JSON.stringify(user) })
-					);
-				})
-				.catch(function (error) {
-					SendMessage(
-						"CrazySDKSingleton",
-						"JSLibCallback_ShowAuthPrompt",
-						JSON.stringify({ errorJson: JSON.stringify(error) })
-					);
-				});
-		}
-		function _ShowInviteButtonSDK(paramsStr) {
-			var params = JSON.parse(window.unityStringify(paramsStr));
-			var url = window.CrazyGames.SDK.game.showInviteButton(params);
-			var bufferSize = lengthBytesUTF8(url) + 1;
-			var buffer = _malloc(bufferSize);
-			stringToUTF8(url, buffer, bufferSize);
-			return buffer;
-		}
-		function _SyncUnityGameDataSDK() {
-			window.CrazyGames.SDK.data.syncUnityGameData();
-		}
+		function _RequestAdSDK(adType) {}
+		function _RequestBannersSDK(bannersJSON) {}
+		function _RequestInviteUrlSDK(paramsStr) {}
+		function _ShowAccountLinkPromptSDK() {}
+		function _ShowAuthPromptSDK() {}
+		function _ShowInviteButtonSDK(paramsStr) {}
+		function _SyncUnityGameDataSDK() {}
 		function ___cxa_allocate_exception(size) {
 			return _malloc(size + 16) + 16;
 		}
