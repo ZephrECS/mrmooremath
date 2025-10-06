@@ -896,5 +896,12 @@
 		"img": "/sc.webp",
 		"path": "/html/spacecompany",
 		"category": "Clicker"
+	},
+	{
+		"id": "goi",
+		"name": "Getting over It",
+		"img": "/goi.webp",
+		"path": "/webgl/goi",
+		"category": "Strategy"
 	}
 ]
