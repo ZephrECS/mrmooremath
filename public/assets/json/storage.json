@@ -903,5 +903,40 @@
 		"img": "/goi.webp",
 		"path": "/webgl/goi",
 		"category": "Strategy"
+	},
+	{
+		"id": "bitlife",
+		"name": "Bitlife",
+		"img": "/bitlife.webp",
+		"path": "/webgl/bitlife",
+		"category": "Simulation"
+	},
+	{
+		"id": "retrobowl",
+		"name": "Retro Bowl",
+		"img": "/retrobowl.webp",
+		"path": "/html/retrobowl",
+		"category": "Simulation"
+	},
+	{
+		"id": "granny",
+		"name": "Granny",
+		"img": "/granny.webp",
+		"path": "/webgl/granny/1",
+		"category": "Horror"
+	},
+	{
+		"id": "granny2",
+		"name": "Granny 2",
+		"img": "/granny2.webp",
+		"path": "/webgl/granny/2",
+		"category": "Horror"
+	},
+	{
+		"id": "granny3",
+		"name": "Granny 3",
+		"img": "/granny3.webp",
+		"path": "/webgl/granny/3",
+		"category": "Horror"
 	}
 ]

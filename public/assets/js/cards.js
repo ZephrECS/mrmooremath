@@ -13,11 +13,15 @@ search = "";
 
 function loadIframe(path) {
 	gameFrame.style.display = "block";
-	document.getElementById("actualGameFrame").src = `/assets/storage${path}`;
-	gameFrame.contentWindow.addEventListener("keypress", (e) => {
-		if (e.key == localStorage.getItem("panicKey")) {
-			window.open(localStorage.getItem("panicURL"));
-		}
+	const actualFrame = document.getElementById("actualGameFrame");
+	actualFrame.src = `/assets/storage${path}`;
+
+	actualFrame.addEventListener("load", () => {
+		actualFrame.contentWindow.document.addEventListener("keydown", (e) => {
+			if (e.key === localStorage.getItem("panicKey")) {
+				window.open(localStorage.getItem("panicURL"));
+			}
+		});
 	});
 	console.log("loading:" + path);
 }
@@ -59,6 +63,7 @@ async function renderGames() {
 		card.classList.add("card");
 		const img = document.createElement("img");
 		img.src = `/assets/img${game.img}`;
+		img.alt = game.name;
 		card.appendChild(img);
 		const p = document.createElement("p");
 		p.textContent = game.name;
