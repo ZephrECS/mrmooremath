@@ -62,6 +62,15 @@ document.addEventListener("DOMContentLoaded", () => {
 			document.body.classList.add(theme);
 		});
 	});
+	if (document.getElementById("focusCloaking")) {
+		document.getElementById("focusCloaking").addEventListener("click", () => {
+			document.getElementById("focusCloaking").classList.toggle("active");
+			localStorage.setItem(
+				"focusCloaking",
+				document.getElementById("focusCloaking").classList.contains("active")
+			);
+		});
+	}
 	if (panicButton != null) {
 		panicButton.textContent = `Panic Key: ${localStorage.getItem("panicKey")}`;
 		panicButton.addEventListener("click", (e) => {
@@ -83,5 +92,16 @@ document.addEventListener("DOMContentLoaded", () => {
 				url = "https://" + url;
 			localStorage.setItem("panicURL", url);
 		});
+	}
+});
+
+let faviconLink = document.querySelector('link[rel*="shortcut icon"]');
+document.addEventListener("visibilitychange", (e) => {
+	if (document.hidden) {
+		document.title = "Home";
+		faviconLink.href = "/assets/img/gclass.png";
+	} else {
+		document.title = "Quasar";
+		faviconLink.href = "/assets/img/favicon.png";
 	}
 });

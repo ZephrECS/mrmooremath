@@ -358,3 +358,40 @@ p {
 	margin: 5px;
 	transform-origin: center;
 }
+
+.toggle-switch {
+	position: relative;
+	width: 50px;
+	height: 26px;
+	background: var(--main-bg);
+	border: var(--main-border);
+	border-radius: 13px;
+	transition: all 0.3s ease-in-out;
+	align-self: flex-start;
+}
+
+.toggle-switch:hover {
+	background: var(--button-hover-bg);
+}
+
+.toggle-slider {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 2px;
+	width: 18px;
+	height: 18px;
+	background: var(--main-text);
+	border-radius: 50%;
+	transition: all 0.3s ease-in-out;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-switch.active {
+	background: var(--button-hover-bg, rgba(255, 255, 255, 0.1));
+}
+
+.toggle-switch.active .toggle-slider {
+	left: 26px;
+	background: var(--button-hover-bg, rgba(212, 212, 212, 0.753));
+}

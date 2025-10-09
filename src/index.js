@@ -28,7 +28,9 @@ app.use((req, res, next) => {
 app.use((req, res) => {
 	res
 		.status(404)
-		.sendFile(join(dirname(fileURLToPath(import.meta.url)), `../public`));
+		.sendFile(
+			join(dirname(fileURLToPath(import.meta.url)), `../public/404.html`)
+		);
 });
 
 const PORT = process.env.PORT || 3000;

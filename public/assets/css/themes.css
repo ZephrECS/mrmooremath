@@ -124,12 +124,12 @@
 .theme-rose {
 	--background-gradient: linear-gradient(90deg, #f857a6 0%, #ff5858 100%);
 	--main-bg: rgba(248, 87, 166, 0.2);
-	--main-border: 1px solid #ff5858;
+	--main-border: 1px solid rgb(78, 38, 57);
 	--main-radius: 6px;
 	--main-text: #fff0f6;
-	--accent-border: 4px solid #ff5858;
-	--header-border: 1px solid #f857a6;
-	--search-border: 1px solid #f857a6;
+	--accent-border: 4px solid rgb(78, 38, 57);
+	--header-border: 1px solid rgb(78, 38, 57);
+	--search-border: 1px solid rgb(78, 38, 57);
 	--notfound-bg: rgba(255, 88, 88, 0.15);
 	--notfound-border: 2px solid #f857a6;
 	--option-bg: transparent;
@@ -318,7 +318,7 @@
 }
 .theme-preview.theme-rose {
 	background: linear-gradient(90deg, #f857a6 0%, #ff5858 100%);
-	border: 1px solid #ff5858;
+	border: 1px solid rgb(78, 38, 57);
 }
 .theme-preview.theme-sky {
 	background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
