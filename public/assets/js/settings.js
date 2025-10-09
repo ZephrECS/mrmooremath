@@ -50,6 +50,9 @@ document.addEventListener("DOMContentLoaded", () => {
 	if (localStorage.getItem("panicURL") == null) {
 		localStorage.setItem("panicURL", "https://classroom.google.com");
 	}
+	if (localStorage.getItem("focusCloaking") == null) {
+		localStorage.setItem("focusCloaking", true);
+	}
 	const allThemes = document.querySelectorAll(".theme-option");
 	document.body.classList.add(
 		localStorage.getItem("activeTheme") || "theme-classic"
