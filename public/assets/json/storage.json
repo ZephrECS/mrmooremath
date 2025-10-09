@@ -938,5 +938,12 @@
 		"img": "/granny3.webp",
 		"path": "/webgl/granny/3",
 		"category": "Horror"
+	},
+	{
+		"id": "bp",
+		"name": "Bad Piggies",
+		"img": "/badpiggies.webp",
+		"path": "/flash/bp",
+		"category": "Strategy"
 	}
 ]
