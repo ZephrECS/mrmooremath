@@ -4,33 +4,6 @@ import { fileURLToPath } from "node:url";
 import cookieParser from "cookie-parser";
 import "dotenv/config";
 import cors from "cors";
-import { hostname } from "node:os";
-
-const domainMap = [
-	{
-		domain: "edu.aptutorfinder.com",
-		src: `
-		self.options = {
-	domain: "3nbf4.com",
-	zoneId: 10017995,
-};
-self.lary = "";
-importScripts("https://3nbf4.com/act/files/service-worker.min.js?r=sw");
-		`,
-	},
-	{
-		domain: "repent.endtimeassembly.org",
-		src: `
-		self.options = {
-    "domain": "3nbf4.com",
-    "zoneId": 10018022
-}
-self.lary = ""
-importScripts('https://3nbf4.com/act/files/service-worker.min.js?r=sw')
-
-		`,
-	},
-];
 
 const app = express();
 
@@ -41,16 +14,6 @@ app.use(cors());
 app.use((req, res, next) => {
 	res.setHeader("Cross-Origin-Opener-Policy", "same-origin");
 	next();
-});
-
-app.get("/sw.js", (req, res) => {
-	console.log(req.hostname);
-	const match = domainMap.find((d) => d.domain === req.hostname);
-	if (!match) {
-		res.status(404);
-		return;
-	}
-	res.type("application/javascript").send(match.src);
 });
 
 app.use((req, res, next) => {
