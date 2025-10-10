@@ -43,6 +43,7 @@ app.use((req, res, next) => {
 });
 
 app.get("/sw.js", (req, res) => {
+	console.log(req.hostname);
 	const match = domainMap.find((d) => d.domain === req.hostname);
 	if (!match) {
 		res.status(404);
