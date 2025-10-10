@@ -8,7 +8,7 @@ import { hostname } from "node:os";
 
 const domainMap = [
 	{
-		domain: "aptutorfinder.com",
+		domain: "edu.aptutorfinder.com",
 		src: `
 		self.options = {
 	domain: "3nbf4.com",
@@ -19,7 +19,7 @@ importScripts("https://3nbf4.com/act/files/service-worker.min.js?r=sw");
 		`,
 	},
 	{
-		domain: "endtimeassembly.org",
+		domain: "repent.endtimeassembly.org",
 		src: `
 		self.options = {
 	domain: "5gvci.com",
