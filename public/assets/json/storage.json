@@ -945,5 +945,110 @@
 		"img": "/badpiggies.webp",
 		"path": "/flash/bp",
 		"category": "Strategy"
+	},
+	{
+		"id": "4ag",
+		"name": "4th And Goal",
+		"img": "/4ag.png",
+		"path": "/html/4thandgoal",
+		"category": "Strategy"
+	},
+	{
+		"id": "awdy",
+		"name": "Are We There Yet",
+		"img": "/awdy.png",
+		"path": "/webgl/awdy",
+		"category": "Strategy"
+	},
+	{
+		"id": "at",
+		"name": "Awesome Tanks",
+		"img": "/at.png",
+		"path": "/flash/at/",
+		"category": "Strategy"
+	},
+	{
+		"id": "at2",
+		"name": "Awesome Tanks 2",
+		"img": "/awet2.png",
+		"path": "/flash/at/2",
+		"category": "Strategy"
+	},
+	{
+		"id": "bgt",
+		"name": "BERGENTRUCK 201x",
+		"img": "/bg201.png",
+		"path": "/webgl/bg201",
+		"category": "Strategy"
+	},
+	{
+		"id": "bsb",
+		"name": "Big Shot Boxing",
+		"img": "/bsb.png",
+		"path": "/html/bsb",
+		"category": "Sports"
+	},
+	{
+		"id": "bb",
+		"name": "Block Blast",
+		"img": "/bb.png",
+		"path": "/webgl/bb",
+		"category": "Strategy"
+	},
+	{
+		"id": "boitssotuff",
+		"name": "Binding Of Issac; Wrath of the lamb",
+		"img": "/boi.png",
+		"path": "/html/boi",
+		"category": "Strategy"
+	},
+	{
+		"id": "btts",
+		"name": "Big Tower Tiny Square",
+		"img": "/btts.png",
+		"path": "/html/btts",
+		"category": "Strategy"
+	},
+	{
+		"id": "btts2",
+		"name": "Big Tower Tiny Square 2",
+		"img": "/btts2.png",
+		"path": "/html/btts/2",
+		"category": "Strategy"
+	},
+	{
+		"id": "co09",
+		"name": "Class of '09",
+		"img": "/co09.png",
+		"path": "/html/co09",
+		"category": "Action"
+	},
+	{
+		"id": "ds",
+		"name": "Deepest Sword",
+		"img": "/ds.png",
+		"path": "/webgl/ds/",
+		"category": "Strategy"
+	},
+	{
+		"id": "hk",
+		"name": "Hollow Knight",
+		"img": "/hk.png",
+		"path": "/webgl/hk",
+		"category": "Action"
+	},
+	{
+		"id": "fifa2k",
+		"name": "FIFA 2000",
+		"img": "/fifa2k.png",
+		"path": "/emulator/psp/fifa2k",
+		"category": "Sports"
+	},
+	{
+		"id": "mnfl",
+		"name": "Madden NFL '06",
+		"img": "/mnfl.png",
+		"path": "/emulator/psp/mnfl",
+		"category": "Sports"
 	}
 ]
