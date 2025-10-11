@@ -66,6 +66,14 @@ document.addEventListener("DOMContentLoaded", () => {
 		});
 	});
 	if (document.getElementById("focusCloaking")) {
+		if (localStorage.getItem("focusCloaking")) {
+		}
+		document
+			.getElementById("focusCloaking")
+			.classList.toggle(
+				"active",
+				localStorage.getItem("focusCloaking") === "true"
+			);
 		document.getElementById("focusCloaking").addEventListener("click", () => {
 			document.getElementById("focusCloaking").classList.toggle("active");
 			localStorage.setItem(
@@ -100,7 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 let faviconLink = document.querySelector('link[rel*="shortcut icon"]');
 document.addEventListener("visibilitychange", (e) => {
-	if (document.hidden) {
+	if (document.hidden && localStorage.getItem("focusCloaking") == "true") {
 		document.title = "Home";
 		faviconLink.href = "/assets/img/gclass.png";
 	} else {
