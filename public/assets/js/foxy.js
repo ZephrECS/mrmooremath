@@ -1,5 +1,5 @@
 document.addEventListener("click", () => {
-	if (Math.random() < 0.00001) {
+	if (Math.random() < 0.0001) {
 		const screen = document.createElement("div");
 		screen.className = "surprise";
 
