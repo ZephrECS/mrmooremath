@@ -466,7 +466,7 @@
 		"id": "customds",
 		"name": "Custom DS Game",
 		"description": "Upload your own file",
-		"img": "/ds.webp",
+		"img": "/customds.webp",
 		"path": "/emulator/ds/custom",
 		"category": "Arcade"
 	},
@@ -1041,14 +1041,91 @@
 		"id": "fifa2k",
 		"name": "FIFA 2000",
 		"img": "/fifa2k.webp",
-		"path": "/emulator/psp/fifa2k",
+		"path": "/emulator/gba/fifa2k",
 		"category": "Sports"
 	},
 	{
 		"id": "mnfl",
 		"name": "Madden NFL '06",
 		"img": "/mnfl.webp",
-		"path": "/emulator/psp/mnfl",
+		"path": "/emulator/gba/mnfl",
 		"category": "Sports"
+	},
+	{
+		"id": "pkw",
+		"name": "Pokemon White",
+		"img": "/pkw.webp",
+		"path": "/emulator/ds/pkw",
+		"category": "Adventure"
+	},
+	{
+		"id": "pks",
+		"name": "Pokemon Sapphire",
+		"img": "/pks.webp",
+		"path": "/emulator/gba/pks",
+		"category": "Adventure"
+	},
+	{
+		"id": "pkr",
+		"name": "Pokemon Ruby",
+		"img": "/pkr.webp",
+		"path": "/emulator/gba/pkr",
+		"category": "Adventure"
+	},
+	{
+		"id": "pkp",
+		"name": "Pokemon Platinum",
+		"img": "/pkp.webp",
+		"path": "/emulator/ds/pkp",
+		"category": "Adventure"
+	},
+	{
+		"id": "pkfr",
+		"name": "Pokemon FireRed",
+		"img": "/pkfr.webp",
+		"path": "/emulator/gba/pkfr",
+		"category": "Adventure"
+	},
+	{
+		"id": "pke",
+		"name": "Pokemon Emerald",
+		"img": "/pke.webp",
+		"path": "/emulator/gba/pke",
+		"category": "Adventure"
+	},
+	{
+		"id": "pkd",
+		"name": "Pokemon Diamond",
+		"img": "/pkd.webp",
+		"path": "/emulator/ds/pkd",
+		"category": "Adventure"
+	},
+	{
+		"id": "pvz",
+		"name": "Plants VS Zombies",
+		"img": "/pvz.webp",
+		"path": "/emulator/ds/pvz",
+		"category": "Strategy"
+	},
+	{
+		"id": "cm2",
+		"name": "Cooking Mama 2: Dinner with Friends",
+		"img": "/cm2.webp",
+		"path": "/emulator/ds/cm2",
+		"category": "Simulation"
+	},
+	{
+		"id": "csgoc",
+		"name": "CSGO Clicker",
+		"img": "/csgoc.webp",
+		"path": "/html/csgoc",
+		"category": "Clicker"
+	},
+	{
+		"id": "ting",
+		"name": "There Is No Game",
+		"img": "/ting.webp",
+		"path": "/html/ting",
+		"category": "Strategy"
 	}
 ]

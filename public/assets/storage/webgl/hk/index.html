@@ -1,84 +1,117 @@
+<!DOCTYPE html>
 <html lang="en-us">
-<base href="https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@8b3b8522e7e0c3f94588a5d2364f49e7829f993e/deepest%20sword/">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>Deepest Sword</title>
-  <style>
-    html,
-    body {
-      background: #000;
-      width: 100%;
-      height: 100%;
-      overflow: visible;
-      padding: 0;
-      margin: 0;
-    }
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Unity WebGL Player | Hollow Knight</title>
+		<link rel="shortcut icon" href="TemplateData/favicon.ico" />
+		<link rel="stylesheet" href="TemplateData/style.css" />
+	</head>
+	<body style="overflow: hidden">
+		<div
+			id="loading-text"
+			style="
+				color: black;
+				font-family: Inter, sans-serif;
+				font-size: 48px;
+				text-align: center;
+				margin-top: 20px;
+			"
+		>
+			Parts downloaded (0/9)
+		</div>
+		<div id="unity-container" class="unity-desktop">
+			<canvas id="unity-canvas"></canvas>
+		</div>
+		<script>
+			var container = document.querySelector("#unity-container");
+			var canvas = document.querySelector("#unity-canvas");
+			var loadingBar = document.querySelector("#unity-loading-bar");
+			var progressBarFull = document.querySelector("#unity-progress-bar-full");
+			var fullscreenButton = document.querySelector("#unity-fullscreen-button");
+			var warningBanner = document.querySelector("#unity-warning");
 
-    div#gameContainer {
-      background: transparent !important;
-      position: absolute;
-    }
+			function unityShowBanner(msg, type) {}
 
-    div#gameContainer canvas {
-      position: absolute;
-    }
-  </style>
-</head>
+			function mergeFiles(fileParts) {
+				return new Promise((resolve, reject) => {
+					let buffers = [];
 
-<body>
-  <div id="gameContainer">
-    <canvas id="unity-canvas"></canvas>
-    <script src="Build/WebBuilds.loader.js"></script>
-    <script>
-      createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/WebBuilds.data",
-        frameworkUrl: "Build/WebBuilds.framework.js",
-        codeUrl: "Build/WebBuilds.wasm",
-        streamingAssetsUrl: "StreamingAssets",
-        companyName: "Cosmic Adventure Squad",
-        productName: "Deepest Sword",
-        productVersion: "0.1.5c",
-      }).then(function(instance) {
-        var canvas = instance.Module.canvas;
-        var container = canvas.parentElement;
+					function fetchPart(index) {
+						if (index >= fileParts.length) {
+							let mergedBlob = new Blob(buffers);
+							let mergedFileUrl = URL.createObjectURL(mergedBlob);
+							resolve(mergedFileUrl);
+							return;
+						}
+						fetch(fileParts[index])
+							.then((response) => response.arrayBuffer())
+							.then((data) => {
+								buffers.push(data);
+								document.getElementById(
+									"loading-text"
+								).textContent = `Parts downloaded (${index + 1}/9)`;
+								fetchPart(index + 1);
+							})
+							.catch(reject);
+					}
+					fetchPart(0);
+				});
+			}
 
-        function onResize() {
-          var w;
-          var h;
-
-          if (scaleToFit) {
-            w = window.innerWidth;
-            h = window.innerHeight;
-
-            var r = 540 / 960;
-
-            if (w * r > window.innerHeight) {
-              w = Math.min(w, Math.ceil(h / r));
-            }
-            h = Math.floor(w * r);
-          } else {
-            w = 960;
-            h = 540;
-          }
-
-          container.style.width = canvas.style.width = w + "px";
-          container.style.height = canvas.style.height = h + "px";
-          container.style.top = Math.floor((window.innerHeight - h) / 2) + "px";
-          container.style.left = Math.floor((window.innerWidth - w) / 2) + "px";
-        }
-
-        var scaleToFit;
-        try {
-          scaleToFit = !!JSON.parse("");
-        } catch (e) {
-          scaleToFit = true;
-        }
-        window.addEventListener('resize', onResize);
-        onResize();
-      });
-    </script>
-  </div>
-</body>
-
+			function getParts(file, start, end) {
+				let parts = [];
+				for (let i = start; i <= end; i++) {
+					parts.push(file + ".part" + i);
+				}
+				return parts;
+			}
+			Promise.all([mergeFiles(getParts("Build/bog.data", 1, 9))]).then(
+				([dataUrl]) => {
+					container.hidden = false;
+					var buildUrl = "Build";
+					var loaderUrl = buildUrl + "/bog.loader.js";
+					var config = {
+						dataUrl: dataUrl,
+						frameworkUrl: buildUrl + "/bog.framework.js",
+						codeUrl: buildUrl + "/bog.wasm",
+						streamingAssetsUrl: "StreamingAssets",
+						companyName: "Team Cherry & Truffled",
+						productName: "Hollow Knight",
+						productVersion: "1.0",
+					};
+					if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+						var meta = document.createElement("meta");
+						meta.name = "viewport";
+						meta.content =
+							"width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes";
+						document.getElementsByTagName("head")[0].appendChild(meta);
+						container.className = "unity-mobile";
+						canvas.className = "unity-mobile";
+					} else {
+						function resizeCanvas() {
+							canvas.width = window.innerWidth;
+							canvas.height = window.innerHeight;
+							canvas.style.width = window.innerWidth + "px";
+							canvas.style.height = window.innerHeight + "px";
+						}
+						resizeCanvas();
+						window.addEventListener("resize", resizeCanvas);
+					}
+					var script = document.createElement("script");
+					script.src = loaderUrl;
+					script.onload = () => {
+						createUnityInstance(canvas, config, (progress) => {})
+							.then((unityInstance) => {
+								document.querySelector("#loading-text").remove();
+							})
+							.catch((message) => {
+								alert(message);
+							});
+					};
+					document.body.appendChild(script);
+				}
+			);
+		</script>
+	</body>
 </html>
