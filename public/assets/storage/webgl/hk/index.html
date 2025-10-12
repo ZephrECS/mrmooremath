@@ -66,10 +66,10 @@
 				}
 				return parts;
 			}
-			Promise.all([mergeFiles(getParts("Build/bog.data", 1, 9))]).then(
+			Promise.all([mergeFiles(getParts("build/bog.data", 1, 9))]).then(
 				([dataUrl]) => {
 					container.hidden = false;
-					var buildUrl = "Build";
+					var buildUrl = "build";
 					var loaderUrl = buildUrl + "/bog.loader.js";
 					var config = {
 						dataUrl: dataUrl,
