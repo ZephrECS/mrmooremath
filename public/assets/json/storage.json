@@ -1127,5 +1127,12 @@
 		"img": "/ting.webp",
 		"path": "/html/ting",
 		"category": "Strategy"
+	},
+	{
+		"id": "gag",
+		"name": "Grow a Garden",
+		"img": "/gag.webp",
+		"path": "/webgl/gag",
+		"category": "Simulation"
 	}
 ]
