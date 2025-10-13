@@ -1148,5 +1148,12 @@
 		"img": "/mpds.webp",
 		"path": "/emulator/ds/mpds",
 		"category": "Strategy"
+	},
+	{
+		"id": "ss",
+		"name": "Solar Smash",
+		"img": "/ss.webp",
+		"path": "/html/ss",
+		"category": "Simulation"
 	}
 ]
