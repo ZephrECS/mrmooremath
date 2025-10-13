@@ -1134,5 +1134,12 @@
 		"img": "/gag.webp",
 		"path": "/webgl/gag",
 		"category": "Simulation"
+	},
+	{
+		"id": "blackjack",
+		"name": "Blackjack",
+		"img": "/blackjack.webp",
+		"path": "/html/blackjack",
+		"category": "Strategy"
 	}
 ]
