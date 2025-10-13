@@ -1141,5 +1141,12 @@
 		"img": "/blackjack.webp",
 		"path": "/html/blackjack",
 		"category": "Strategy"
+	},
+	{
+		"id": "mpds",
+		"name": "Mario Party DS",
+		"img": "/mpds.webp",
+		"path": "/emulator/ds/mpds",
+		"category": "Strategy"
 	}
 ]
