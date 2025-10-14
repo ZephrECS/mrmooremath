@@ -364,13 +364,6 @@
 		"category": "Shooter"
 	},
 	{
-		"name": "Apes VS Helium",
-		"id": "avh",
-		"path": "/webgl/avh/",
-		"img": "/avh.webp",
-		"category": "Strategy"
-	},
-	{
 		"name": "Kindergarten 3",
 		"id": "kg3",
 		"path": "/webgl/kindergarten/3/",
@@ -1162,5 +1155,12 @@
 		"img": "/sr3d.webp",
 		"path": "/webgl/sr3d",
 		"category": "Arcade"
+	},
+	{
+		"name": "Apes VS Helium",
+		"id": "avh",
+		"path": "/webgl/avh/",
+		"img": "/avh.webp",
+		"category": "Strategy"
 	}
 ]
