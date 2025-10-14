@@ -1155,5 +1155,12 @@
 		"img": "/ss.webp",
 		"path": "/html/ss",
 		"category": "Simulation"
+	},
+	{
+		"id": "sr3d",
+		"name": "Snow Rider 3D",
+		"img": "/sr3d.webp",
+		"path": "/webgl/sr3d",
+		"category": "Arcade"
 	}
 ]
