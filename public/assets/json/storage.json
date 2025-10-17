@@ -1188,7 +1188,7 @@
 		"name": "Snake",
 		"id": "snake",
 		"path": "/html/snake/",
-		"img": "/snake.webp",
+		"img": "/gsnake.webp",
 		"category": "Strategy"
 	}
 ]
