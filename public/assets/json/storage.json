@@ -1162,5 +1162,33 @@
 		"path": "/webgl/avh/",
 		"img": "/avh.webp",
 		"category": "Strategy"
+	},
+	{
+		"name": "Chess",
+		"id": "chess",
+		"path": "/html/chess/",
+		"img": "/chess.webp",
+		"category": "Strategy"
+	},
+	{
+		"name": "Pool",
+		"id": "pool",
+		"path": "/html/pool/",
+		"img": "/pool.webp",
+		"category": "Strategy"
+	},
+	{
+		"name": "Poker",
+		"id": "poker",
+		"path": "/html/poker/",
+		"img": "/poker.webp",
+		"category": "Strategy"
+	},
+	{
+		"name": "Snake",
+		"id": "snake",
+		"path": "/html/snake/",
+		"img": "/snake.webp",
+		"category": "Strategy"
 	}
 ]
