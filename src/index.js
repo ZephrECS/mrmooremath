@@ -1,5 +1,6 @@
 import express from "express";
-import { join, dirname } from "node:path";
+import path from "path";
+import fs from "fs";
 import { fileURLToPath } from "node:url";
 import cookieParser from "cookie-parser";
 import "dotenv/config";
@@ -11,6 +12,11 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(cors());
 
+const publicDir = path.join(
+	path.dirname(fileURLToPath(import.meta.url)),
+	`../public`
+);
+
 app.use((req, res, next) => {
 	res.setHeader("Cross-Origin-Opener-Policy", "same-origin");
 	res.setHeader("Cross-Origin-Embedder-Policy", "require-corp");
@@ -18,19 +24,44 @@ app.use((req, res, next) => {
 });
 
 app.use((req, res, next) => {
-	express.static(join(dirname(fileURLToPath(import.meta.url)), `../public`))(
-		req,
-		res,
-		next
-	);
+	const isDir = req.path.endsWith("/");
+	if ((req.get("Accept") && req.get("Accept").includes("text/html")) || isDir) {
+		const filePath = isDir
+			? path.join(publicDir, req.path, "index.html")
+			: path.join(publicDir, req.path);
+		fs.readFile(filePath, "utf8", (err, data) => {
+			if (err) return next();
+
+			const analytics = `
+    		<!-- Google tag (gtag.js) -->
+    		<script
+        		async
+        		src="https://www.googletagmanager.com/gtag/js?id=G-7JPJ866MG9">
+    		</script>
+    		<script>
+        		window.dataLayer = window.dataLayer || [];
+        		function gtag() {
+        		    dataLayer.push(arguments);
+        		}
+        		gtag("js", new Date());
+        		gtag("config", "G-7JPJ866MG9");
+    		</script>
+			`;
+
+			const modified = data.replace(/<\/head>/i, `${analytics}\n</head>`);
+			res.send(modified);
+		});
+	} else {
+		next();
+	}
+});
+
+app.use((req, res, next) => {
+	express.static(publicDir)(req, res, next);
 });
 
 app.use((req, res) => {
-	res
-		.status(404)
-		.sendFile(
-			join(dirname(fileURLToPath(import.meta.url)), `../public/404.html`)
-		);
+	res.status(404).sendFile(path.join(publicDir, "/404.html"));
 });
 
 const PORT = process.env.PORT || 3000;
