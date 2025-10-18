@@ -1190,5 +1190,12 @@
 		"path": "/html/snake/",
 		"img": "/gsnake.webp",
 		"category": "Strategy"
+	},
+	{
+		"name": "Drive Mad",
+		"id": "drivemad",
+		"path": "/webgl/drivemad/",
+		"img": "/drivemad.webp",
+		"category": "Simulation"
 	}
 ]
