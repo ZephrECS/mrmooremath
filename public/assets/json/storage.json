@@ -1342,63 +1342,63 @@
 		"name": "Gold Digger FRVR",
 		"id": "gdfrvr",
 		"path": "/html/gdfrvr",
-		"img": "/gdfrvr.png",
+		"img": "/gdfrvr.webp",
 		"category": "Clicker"
 	},
 	{
 		"name": "Google Baseball",
 		"id": "foodsball",
 		"path": "/html/gb",
-		"img": "/gb.png",
+		"img": "/gb.webp",
 		"category": "Strategy"
 	},
 	{
 		"name": "Harold's Bad Day",
 		"id": "hbd",
 		"path": "/html/hbd/",
-		"img": "/hbd.png",
+		"img": "/hbd.webp",
 		"category": "Simulation"
 	},
 	{
 		"name": "Help! No break!",
 		"id": "hnb",
 		"path": "/html/hnb/",
-		"img": "/hnb.png",
+		"img": "/hnb.webp",
 		"category": "Strategy"
 	},
 	{
 		"name": "Hardware Tycoon",
 		"id": "ht",
 		"path": "/html/ht/",
-		"img": "/ht.png",
+		"img": "/ht.webp",
 		"category": "Simulation"
 	},
 	{
 		"name": "Friday Night Funkin'; B-Side",
 		"id": "fnfbside",
 		"path": "/html/fnf/bsides/",
-		"img": "/bsides.png",
+		"img": "/bsides.webp",
 		"category": "Simulation"
 	},
 	{
 		"name": "Going Balls",
 		"id": "gbs",
 		"path": "/webgl/gbs/",
-		"img": "/gbs.png",
+		"img": "/gbs.webp",
 		"category": "Simulation"
 	},
 	{
 		"name": "Grand Action Simulator NY",
 		"id": "gas-ny",
 		"path": "/webgl/gas-ny/",
-		"img": "/gas-ny.png",
+		"img": "/gas-ny.webp",
 		"category": "Simulation"
 	},
 	{
 		"name": "HEI$T",
 		"id": "heist",
 		"path": "/webgl/heist/",
-		"img": "/heist.png",
+		"img": "/heist.webp",
 		"category": "Clicker"
 	}
 ]
