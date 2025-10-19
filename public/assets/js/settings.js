@@ -2,6 +2,7 @@ const cursorSpeedSlider = document.getElementById("cursorSpeed");
 const currentSpeed = document.getElementById("currentSpeed");
 const panicButton = document.getElementById("panicKey");
 const panicURL = document.getElementById("panicURL");
+const abCloak = document.getElementById("abCloak");
 const themeOptions = document.querySelectorAll(".theme-option");
 let listening = false;
 
@@ -66,8 +67,6 @@ document.addEventListener("DOMContentLoaded", () => {
 		});
 	});
 	if (document.getElementById("focusCloaking")) {
-		if (localStorage.getItem("focusCloaking")) {
-		}
 		document
 			.getElementById("focusCloaking")
 			.classList.toggle(
@@ -80,6 +79,33 @@ document.addEventListener("DOMContentLoaded", () => {
 				"focusCloaking",
 				document.getElementById("focusCloaking").classList.contains("active")
 			);
+		});
+	}
+	if (abCloak != null) {
+		abCloak.addEventListener("click", (e) => {
+			const ab = window.open("about:blank", "_blank");
+			if (ab) {
+				ab.document.write(`
+<!DOCTYPE html>
+<html lang="en" style="margin: 0; padding: 0; height: 100vh">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body style="margin: 0; padding: 0; height: 100vh; overflow: hidden">
+		<iframe
+			width="100%"
+			height="100%"
+			style="margin: 0"
+			src="${window.location.origin}"
+		></iframe>
+	</body>
+</html>
+
+					`);
+				window.location.href = "https://classroom.google.com";
+			}
 		});
 	}
 	if (panicButton != null) {

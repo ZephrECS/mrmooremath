@@ -4,7 +4,6 @@
 * {
 	font-family: "Inter", sans-serif;
 	scrollbar-width: none;
-	cursor: none;
 	color: var(--main-text);
 }
 html {
@@ -60,7 +59,6 @@ body::-webkit-scrollbar {
 	border-radius: var(--main-radius);
 	color: var(--main-text);
 	transition: 0.4s ease-in-out;
-	cursor: none;
 }
 .nav .buttons button:hover {
 	height: 48px;
@@ -302,13 +300,12 @@ p {
 	text-align: center;
 	transition: 0.7s ease-in-out;
 	transform-origin: center;
-	cursor: none;
 }
 .search-bar::placeholder {
 	color: var(--main-text);
 }
 
-#panicKey {
+.settings-category button {
 	background: var(--main-bg);
 	border: var(--search-border);
 	border-radius: var(--main-radius);
@@ -320,7 +317,7 @@ p {
 	transition: 0.3s ease-in-out;
 	color: var(--main-text);
 }
-#panicKey:hover {
+.settings-category button:hover {
 	border: var(--main-border);
 	background: var(--button-hover-bg, rgba(255, 255, 255, 0.1));
 }

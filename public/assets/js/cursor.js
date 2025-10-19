@@ -1,9 +1,46 @@
 const cursor = document.querySelector(".cursor");
+const customCursor = document.getElementById("customMouse");
 
 let mouseX = 0;
 let mouseY = 0;
 let cursorX = 0;
 let cursorY = 0;
+
+if (!localStorage.getItem("customCursor")) {
+	localStorage.setItem("customCursor", "true");
+}
+if (customCursor) {
+	customCursor.classList.toggle(
+		"active",
+		localStorage.getItem("customCursor") === "true"
+	);
+	customCursor.addEventListener("click", () => {
+		customCursor.classList.toggle("active");
+		localStorage.setItem(
+			"customCursor",
+			customCursor.classList.contains("active")
+		);
+		if (localStorage.getItem("customCursor") === "false") {
+			cursor.style.opacity = 0;
+			document.documentElement.style.cursor = "auto";
+			document.body.style.cursor = "auto";
+		} else {
+			cursor.style.opacity = 1;
+			document.documentElement.style.cursor = "none";
+			document.body.style.cursor = "none";
+		}
+	});
+}
+
+if (localStorage.getItem("customCursor") === "false") {
+	cursor.style.opacity = 0;
+	document.documentElement.style.cursor = "auto";
+	document.body.style.cursor = "auto";
+} else {
+	cursor.style.opacity = 1;
+	document.documentElement.style.cursor = "none";
+	document.body.style.cursor = "none";
+}
 
 if (localStorage.getItem("cursorSpeed") == null) {
 	localStorage.setItem("cursorSpeed", 1);
