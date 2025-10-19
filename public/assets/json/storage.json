@@ -1400,5 +1400,54 @@
 		"path": "/webgl/heist/",
 		"img": "/heist.webp",
 		"category": "Clicker"
+	},
+	{
+		"name": "Moto X3M",
+		"id": "mx3m",
+		"path": "/html/motox3m/1",
+		"img": "/mx3m.webp",
+		"category": "Simulation"
+	},
+	{
+		"name": "Moto X3M 2",
+		"id": "mx3m2",
+		"path": "/html/motox3m/2",
+		"img": "/mx3m2.webp",
+		"category": "Simulation"
+	},
+	{
+		"name": "Moto X3M 3",
+		"id": "mx3m3",
+		"path": "/html/motox3m/3",
+		"img": "/mx3m3.webp",
+		"category": "Simulation"
+	},
+	{
+		"name": "Moto X3M Pool Party",
+		"id": "mx3mpp",
+		"path": "/html/motox3m/pp",
+		"img": "/mx3mpp.webp",
+		"category": "Simulation"
+	},
+	{
+		"name": "Moto X3M Spooky Land",
+		"id": "mx3msl",
+		"path": "/html/motox3m/sl",
+		"img": "/mx3msl.webp",
+		"category": "Simulation"
+	},
+	{
+		"name": "Moto X3M Winter",
+		"id": "mx3mw",
+		"path": "/html/motox3m/winter",
+		"img": "/mx3mw.webp",
+		"category": "Simulation"
+	},
+	{
+		"name": "Paper.io 2",
+		"id": "pio2",
+		"path": "/html/pio2",
+		"img": "/pio2.webp",
+		"category": "Simulation"
 	}
 ]
