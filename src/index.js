@@ -21,6 +21,9 @@ app.use((req, res, next) => {
 	res.setHeader("Cross-Origin-Opener-Policy", "same-origin");
 	res.setHeader("Cross-Origin-Embedder-Policy", "require-corp");
 	res.setHeader("Cross-Origin-Resource-Policy", "cross-origin");
+	res.set("Cache-Control", "no-store, no-cache, must-revalidate, private");
+	res.set("Pragma", "no-cache");
+	res.set("Expires", "0");
 	next();
 });
 
