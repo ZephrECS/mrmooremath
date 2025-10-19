@@ -1449,5 +1449,12 @@
 		"path": "/html/pio2",
 		"img": "/pio2.webp",
 		"category": "Simulation"
+	},
+	{
+		"name": "Sugar Sugar",
+		"id": "ss",
+		"path": "/flash/ss",
+		"img": "/ss.webp",
+		"category": "Strategy"
 	}
 ]
