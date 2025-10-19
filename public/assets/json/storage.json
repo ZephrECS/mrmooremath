@@ -1202,140 +1202,140 @@
 		"name": "Dad N' Me",
 		"id": "dadnme",
 		"path": "/flash/dadnme",
-		"img": "/dadnme.png",
+		"img": "/dadnme.webp",
 		"category": "Arcade"
 	},
 	{
 		"name": "Football Legends",
 		"id": "ftbl",
 		"path": "/html/ftbl",
-		"img": "/ftbl.png",
+		"img": "/ftbl.webp",
 		"category": "Sports"
 	},
 	{
 		"name": "Friday Night Funkin'",
 		"id": "fnf",
 		"path": "/html/fnf",
-		"img": "/fnftfag.png",
+		"img": "/fnftfag.webp",
 		"category": "Strategy"
 	},
 	{
 		"name": "Fruit Ninja",
 		"id": "fnga",
 		"path": "/html/fruitnja",
-		"img": "/fn.png",
+		"img": "/fn.webp",
 		"category": "Strategy"
 	},
 	{
 		"name": "House Of Hazards",
 		"id": "hoho",
 		"path": "/webgl/hoho/",
-		"img": "/hoho.png",
+		"img": "/hoho.webp",
 		"category": "Strategy"
 	},
 	{
 		"name": "Hobo",
 		"id": "hobo",
 		"path": "/flash/hobo/",
-		"img": "/h.png",
+		"img": "/h.webp",
 		"category": "Action"
 	},
 	{
 		"name": "Hobo 2",
 		"id": "h2",
 		"path": "/flash/hobo/2",
-		"img": "/h2.png",
+		"img": "/h2.webp",
 		"category": "Action"
 	},
 	{
 		"name": "Hobo 3",
 		"id": "h3",
 		"path": "/flash/hobo/3",
-		"img": "/h3.png",
+		"img": "/h3.webp",
 		"category": "Action"
 	},
 	{
 		"name": "Hobo 4",
 		"id": "h4",
 		"path": "/flash/hobo/4",
-		"img": "/h4.png",
+		"img": "/h4.webp",
 		"category": "Action"
 	},
 	{
 		"name": "Hobo 5",
 		"id": "h5",
 		"path": "/flash/hobo/5",
-		"img": "/h5.png",
+		"img": "/h5.webp",
 		"category": "Action"
 	},
 	{
 		"name": "Hobo 6",
 		"id": "h6",
 		"path": "/flash/hobo/6",
-		"img": "/h6.png",
+		"img": "/h6.webp",
 		"category": "Action"
 	},
 	{
 		"name": "Hobo 7",
 		"id": "h7",
 		"path": "/flash/hobo/7",
-		"img": "/h7.png",
+		"img": "/h7.webp",
 		"category": "Action"
 	},
 	{
 		"name": "Hobo Vs Zombies",
 		"id": "hvz",
 		"path": "/flash/hobo/zombies",
-		"img": "/hvz.png",
+		"img": "/hvz.webp",
 		"category": "Simulation"
 	},
 	{
 		"name": "Hypper Sandbox",
 		"id": "hpsb",
 		"path": "/webgl/hpsb/",
-		"img": "/hpsp.png",
+		"img": "/hpsp.webp",
 		"category": "Sandbox"
 	},
 	{
 		"name": "I wanna be the guy",
 		"id": "IWBTG",
 		"path": "/webgl/iwbtg/",
-		"img": "/iwbtg.png",
+		"img": "/iwbtg.webp",
 		"category": "Arcade"
 	},
 	{
 		"name": "Doblox [Roblox Clone]",
 		"id": "dblx",
 		"path": "/webgl/dblx/",
-		"img": "/dblx.png",
+		"img": "/dblx.webp",
 		"category": "Sandbox"
 	},
 	{
 		"name": "Smash Karts",
 		"id": "smashmykart",
 		"path": "/webgl/smashmykart/",
-		"img": "/smk.png",
+		"img": "/smk.webp",
 		"category": "Arcade"
 	},
 	{
 		"name": "Basket Bros",
 		"id": "bbs",
 		"path": "/html/basketbros",
-		"img": "/bbs.png",
+		"img": "/bbs.webp",
 		"category": "Sports"
 	},
 	{
 		"name": "Battle Karts",
 		"id": "bk",
 		"path": "/html/bk",
-		"img": "/bk.png",
+		"img": "/bk.webp",
 		"category": "Sports"
 	},
 	{
 		"name": "Funny Mad Racing",
 		"id": "fmr",
 		"path": "/webgl/fmr",
-		"img": "/fmh.png",
+		"img": "/fmh.webp",
 		"category": "Sports"
 	},
 	{
@@ -1353,52 +1353,52 @@
 		"category": "Strategy"
 	},
 	{
-		"name": "sike not done",
-		"id": "",
-		"path": "/",
-		"img": "/.png",
+		"name": "Harold's Bad Day",
+		"id": "hbd",
+		"path": "/html/hbd/",
+		"img": "/hbd.png",
 		"category": "Simulation"
 	},
 	{
-		"name": "",
-		"id": "",
-		"path": "/",
-		"img": "/.png",
+		"name": "Help! No break!",
+		"id": "hnb",
+		"path": "/html/hnb/",
+		"img": "/hnb.png",
+		"category": "Strategy"
+	},
+	{
+		"name": "Hardware Tycoon",
+		"id": "ht",
+		"path": "/html/ht/",
+		"img": "/ht.png",
 		"category": "Simulation"
 	},
 	{
-		"name": "",
-		"id": "",
-		"path": "/",
-		"img": "/.png",
+		"name": "Friday Night Funkin'; B-Side",
+		"id": "fnfbside",
+		"path": "/html/fnf/bsides/",
+		"img": "/bsides.png",
 		"category": "Simulation"
 	},
 	{
-		"name": "",
-		"id": "",
-		"path": "/",
-		"img": "/.png",
+		"name": "Going Balls",
+		"id": "gbs",
+		"path": "/webgl/gbs/",
+		"img": "/gbs.png",
 		"category": "Simulation"
 	},
 	{
-		"name": "",
-		"id": "",
-		"path": "/",
-		"img": "/.png",
+		"name": "Grand Action Simulator NY",
+		"id": "gas-ny",
+		"path": "/webgl/gas-ny/",
+		"img": "/gas-ny.png",
 		"category": "Simulation"
 	},
 	{
-		"name": "",
-		"id": "",
-		"path": "/",
-		"img": "/.png",
-		"category": "Simulation"
-	},
-	{
-		"name": "",
-		"id": "",
-		"path": "/",
-		"img": "/.png",
-		"category": "Simulation"
+		"name": "HEI$T",
+		"id": "heist",
+		"path": "/webgl/heist/",
+		"img": "/heist.png",
+		"category": "Clicker"
 	}
 ]
