@@ -1339,18 +1339,18 @@
 		"category": "Sports"
 	},
 	{
-		"name": "",
-		"id": "",
-		"path": "/",
-		"img": "/.png",
-		"category": "Simulation"
+		"name": "Gold Digger FRVR",
+		"id": "gdfrvr",
+		"path": "/html/gdfrvr",
+		"img": "/gdfrvr.png",
+		"category": "Clicker"
 	},
 	{
-		"name": "",
-		"id": "",
-		"path": "/",
-		"img": "/.png",
-		"category": "Simulation"
+		"name": "Google Baseball",
+		"id": "foodsball",
+		"path": "/html/gb",
+		"img": "/gb.png",
+		"category": "Strategy"
 	},
 	{
 		"name": "",
