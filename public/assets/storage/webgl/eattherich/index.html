@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-us">
 	<head>
-		<base href="https://cdn.statically.io/gh/slqntdevss/EatTheRichPort/main/" />
 		<meta charset="utf-8" />
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>Unity WebGL Player | Eat The Rich</title>
+		<meta
+			name="viewport"
+			content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+		/>
+		<title>Unity WebGL Player</title>
 		<script src="Build/UnityLoader.js"></script>
 		<script>
 			function mergeFiles(fileParts) {
@@ -39,7 +42,7 @@
 			}
 
 			function resizeUnityContainer() {
-				var container = document.getElementById("gameContainer");
+				var container = document.getElementById("unityContainer");
 				container.style.width = window.innerWidth + "px";
 				container.style.height = window.innerHeight + "px";
 			}
@@ -50,7 +53,7 @@
 				var json = {
 					companyName: "DefaultCompany",
 					productName: "Eat The Rich",
-					dataUrl: dataUrl,
+					dataUrl: "EatTheRichPort.data.unityweb",
 					wasmCodeUrl: "EatTheRichPort.wasm.code.unityweb",
 					wasmFrameworkUrl: "EatTheRichPort.wasm.framework.unityweb",
 					wasmSymbolsUrl: "EatTheRichPort.wasm.symbols.unityweb",
@@ -77,10 +80,22 @@
 			});
 		</script>
 	</head>
-	<body>
-		<div
-			id="gameContainer"
-			style="width: 960px; height: 600px; margin: auto"
-		></div>
+
+	<body style="margin: 0; overflow: hidden">
+		<div class="webgl-content">
+			<div
+				id="loading-text"
+				style="
+					color: white;
+					font-size: 48px;
+					font-family: cursive;
+					text-align: center;
+					margin-top: 20px;
+				"
+			>
+				LOADING...
+			</div>
+			<div id="unityContainer" style="width: 100%; height: 100%"></div>
+		</div>
 	</body>
 </html>

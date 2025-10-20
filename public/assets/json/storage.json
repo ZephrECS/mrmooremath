@@ -1452,9 +1452,16 @@
 	},
 	{
 		"name": "Sugar Sugar",
-		"id": "ss",
+		"id": "sugasuga",
 		"path": "/flash/ss",
-		"img": "/ss.webp",
+		"img": "/sugarsugar.webp",
 		"category": "Strategy"
+	},
+	{
+		"name": "Karlson 2D",
+		"id": "k2d",
+		"path": "/webgl/k2d",
+		"img": "/k2d.webp",
+		"category": "Action"
 	}
 ]
