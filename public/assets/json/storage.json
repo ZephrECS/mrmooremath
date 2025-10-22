@@ -1505,5 +1505,26 @@
 		"path": "/html/ragarch",
 		"img": "/ragarch.webp",
 		"category": "Action"
+	},
+	{
+		"name": "Learn to Fly",
+		"id": "ltf",
+		"path": "/flash/ltf",
+		"img": "/ltf.webp",
+		"category": "Arcade"
+	},
+	{
+		"name": "Learn to Fly 2",
+		"id": "ltf2",
+		"path": "/flash/ltf2",
+		"img": "/ltf2.webp",
+		"category": "Arcade"
+	},
+	{
+		"name": "I don't even know",
+		"id": "idek",
+		"path": "/flash/idek",
+		"img": "/idek.webp",
+		"category": "Arcade"
 	}
 ]
