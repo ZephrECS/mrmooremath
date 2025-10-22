@@ -1292,7 +1292,7 @@
 	{
 		"name": "Hypper Sandbox",
 		"id": "hpsb",
-		"path": "/webgl/hpsb/",
+		"path": "/webgl/hbsp/",
 		"img": "/hpsp.webp",
 		"category": "Sandbox"
 	},
@@ -1462,6 +1462,48 @@
 		"id": "k2d",
 		"path": "/webgl/k2d",
 		"img": "/k2d.webp",
+		"category": "Action"
+	},
+	{
+		"name": "Sandboxels",
+		"id": "sandb",
+		"path": "/html/sandb",
+		"img": "/sandb.webp",
+		"category": "Simulation"
+	},
+	{
+		"name": "Hotline Miami",
+		"id": "hlm",
+		"path": "/webgl/hlm",
+		"img": "/hlm.webp",
+		"category": "Action"
+	},
+	{
+		"name": "Buckshot Roulette",
+		"id": "bsrl",
+		"path": "/webgl/bsrl",
+		"img": "/bsrl.webp",
+		"category": "Action"
+	},
+	{
+		"name": "Run 3",
+		"id": "r3",
+		"path": "/flash/r3",
+		"img": "/run3.webp",
+		"category": "Platformer"
+	},
+	{
+		"name": "Core Ball",
+		"id": "cb",
+		"path": "/html/cb",
+		"img": "/cb.webp",
+		"category": "Arcade"
+	},
+	{
+		"name": "Ragdoll Archer",
+		"id": "ragarch",
+		"path": "/html/ragarch",
+		"img": "/ragarch.webp",
 		"category": "Action"
 	}
 ]

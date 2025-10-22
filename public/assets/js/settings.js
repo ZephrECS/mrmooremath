@@ -36,6 +36,7 @@ window.addEventListener("keypress", (e) => {
 		}
 	}
 });
+
 document.addEventListener("DOMContentLoaded", () => {
 	if (
 		localStorage.getItem("cursorSpeed") != null &&
