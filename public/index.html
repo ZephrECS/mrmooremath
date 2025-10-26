@@ -1,150 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="Play the best PC, Flash, Steam, and HTML5 games, free for everyone to enjoy!"
-    />
-    <meta http-equiv="Content-Language" content="en" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="index, follow" />
-    <title>Quasar</title>
-    <link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png" />
-    <link href="assets/css/main.css" rel="stylesheet" />
-  </head>
-  <body class="theme-classic">
-    <img
-      class="cursor"
-      alt="cursor"
-      src="assets/img/cursor.webp"
-      width="32px"
-      height="32px"
-    />
-    <div class="nav-container">
-      <div class="nav">
-        <h1>Quasar</h1>
-        <div class="buttons">
-          <button onclick="window.location.href='/settings'">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-settings-icon lucide-settings"
-            >
-              <path
-                d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"
-              />
-              <circle cx="12" cy="12" r="3" />
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-    <div class="gameframe" style="display: none">
-      <div class="controls">
-        <button id="closeFrame">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-circle-x-icon lucide-circle-x"
-          >
-            <circle cx="12" cy="12" r="10" />
-            <path d="m15 9-6 6" />
-            <path d="m9 9 6 6" />
-          </svg>
-        </button>
-        <button id="fullscreen">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-maximize-icon lucide-maximize"
-          >
-            <path d="M8 3H5a2 2 0 0 0-2 2v3" />
-            <path d="M21 8V5a2 2 0 0 0-2-2h-3" />
-            <path d="M3 16v3a2 2 0 0 0 2 2h3" />
-            <path d="M16 21h3a2 2 0 0 0 2-2v-3" />
-          </svg>
-        </button>
-        <button id="reload">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-rotate-cw-icon lucide-rotate-cw"
-          >
-            <path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8" />
-            <path d="M21 3v5h-5" />
-          </svg>
-        </button>
-      </div>
-      <iframe id="actualGameFrame"></iframe>
-    </div>
-    <div class="search-container">
-      <div class="search-controls">
-        <input
-          class="search-bar"
-          placeholder="Search all of our N/A gаmes!"
-          type="text"
-        />
-        <div class="game-options">
-          <select id="categories">
-            <option value="all">All</option>
-            <option value="puzzle">Puzzle</option>
-            <option value="adventure">Adventure</option>
-            <option value="simulation">Simulation</option>
-            <option value="horror">Horror</option>
-            <option value="action">Action</option>
-            <option value="platformer">Platformer</option>
-            <option value="strategy">Strategy</option>
-            <option value="shooter">Shooter</option>
-            <option value="casual">Casual</option>
-            <option value="clicker">Idle/Clicker</option>
-            <option value="sports">Sports</option>
-            <option value="arcade">Arcade</option>
-          </select>
-          <select id="sortMethod">
-            <option value="alphabetically">Alphabetically</option>
-            <option value="dateadded">Date Added</option>
-          </select>
-        </div>
-      </div>
-    </div>
-    <div class="container"></div>
-    <h6 style="text-align: center">made with <3</h6>
-    <script
-      type="text/javascript"
-      src="//pl27564720.revenuecpmgate.com/3b/e6/9c/3be69c01ded7a2bd023abd58db066b4c.js"
-    ></script>
-  </body>
-  <script src="assets/js/cards.js"></script>
-  <script src="assets/js/cursor.js"></script>
-  <script src="assets/js/foxy.js"></script>
-  <script src="assets/js/settings.js"></script>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="description"
+			content="Play the best PC, Flash, Steam, and HTML5 games, free for everyone to enjoy!"
+		/>
+		<meta http-equiv="Content-Language" content="en" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="robots" content="index, follow" />
+		<title>Quasar</title>
+		<link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png" />
+		<link href="assets/css/main.css" rel="stylesheet" />
+	</head>
+	<body class="theme-classic">
+		<img
+			class="cursor"
+			alt="cursor"
+			src="assets/img/cursor.webp"
+			width="32px"
+			height="32px"
+		/>
+		<div class="nav-container">
+			<div class="nav">
+				<h1>Quasar</h1>
+				<div class="buttons">
+					<button onclick="window.location.href='/settings'">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							class="lucide lucide-settings-icon lucide-settings"
+						>
+							<path
+								d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"
+							/>
+							<circle cx="12" cy="12" r="3" />
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="gameframe" style="display: none">
+			<div class="controls">
+				<button id="closeFrame">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						class="lucide lucide-circle-x-icon lucide-circle-x"
+					>
+						<circle cx="12" cy="12" r="10" />
+						<path d="m15 9-6 6" />
+						<path d="m9 9 6 6" />
+					</svg>
+				</button>
+				<button id="fullscreen">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						class="lucide lucide-maximize-icon lucide-maximize"
+					>
+						<path d="M8 3H5a2 2 0 0 0-2 2v3" />
+						<path d="M21 8V5a2 2 0 0 0-2-2h-3" />
+						<path d="M3 16v3a2 2 0 0 0 2 2h3" />
+						<path d="M16 21h3a2 2 0 0 0 2-2v-3" />
+					</svg>
+				</button>
+				<button id="reload">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						class="lucide lucide-rotate-cw-icon lucide-rotate-cw"
+					>
+						<path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8" />
+						<path d="M21 3v5h-5" />
+					</svg>
+				</button>
+			</div>
+			<iframe id="actualGameFrame"></iframe>
+		</div>
+		<div class="search-container">
+			<div class="search-controls">
+				<input
+					class="search-bar"
+					placeholder="Search all of our N/A gаmes!"
+					type="text"
+				/>
+				<div class="game-options">
+					<select id="categories">
+						<option value="all">All</option>
+						<option value="puzzle">Puzzle</option>
+						<option value="adventure">Adventure</option>
+						<option value="simulation">Simulation</option>
+						<option value="horror">Horror</option>
+						<option value="action">Action</option>
+						<option value="platformer">Platformer</option>
+						<option value="strategy">Strategy</option>
+						<option value="shooter">Shooter</option>
+						<option value="casual">Casual</option>
+						<option value="clicker">Idle/Clicker</option>
+						<option value="sports">Sports</option>
+						<option value="arcade">Arcade</option>
+					</select>
+					<select id="sortMethod">
+						<option value="alphabetically">Alphabetically</option>
+						<option value="dateadded">Date Added</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="container"></div>
+		<h6 style="text-align: center">made with <3</h6>
+		<script
+			type="text/javascript"
+			src="//enabledetective.com/f6/6b/19/f66b199727e844c6fd4d4c67f3c67c72.js"
+		></script>
+	</body>
+	<script src="assets/js/cards.js"></script>
+	<script src="assets/js/cursor.js"></script>
+	<script src="assets/js/foxy.js"></script>
+	<script src="assets/js/settings.js"></script>
 </html>

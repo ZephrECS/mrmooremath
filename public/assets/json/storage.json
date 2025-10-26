@@ -1521,10 +1521,80 @@
 		"category": "Arcade"
 	},
 	{
-		"name": "I don't even know",
+		"name": "I Don't Even Know",
 		"id": "idek",
 		"path": "/flash/idek",
 		"img": "/idek.webp",
 		"category": "Arcade"
+	},
+	{
+		"name": "Cut the rope",
+		"id": "ctr",
+		"path": "/flash/ctr",
+		"img": "/ctr.webp",
+		"category": "Strategy"
+	},
+	{
+		"name": "This is the only level",
+		"id": "ol",
+		"path": "/flash/ol",
+		"img": "/ol.webp",
+		"category": "Arcade"
+	},
+	{
+		"name": "Interactive Buddy 2",
+		"id": "ib2",
+		"path": "/flash/ib2",
+		"img": "/ib2.webp",
+		"category": "Arcade"
+	},
+	{
+		"name": "Fancy Pants Adventure",
+		"id": "fpa",
+		"path": "/flash/fpa",
+		"img": "/fpa.webp",
+		"category": "Platformer"
+	},
+	{
+		"name": "Fancy Pants Adventure 2",
+		"id": "fpw2",
+		"path": "/flash/fpw2",
+		"img": "/fpw2.webp",
+		"category": "Platformer"
+	},
+	{
+		"name": "Portal",
+		"id": "portal",
+		"path": "/flash/portal",
+		"img": "/portal.webp",
+		"category": "Platformer"
+	},
+	{
+		"name": "The Impossible Quiz",
+		"id": "tiq",
+		"path": "/flash/tiq",
+		"img": "/tiq.webp",
+		"category": "Strategy"
+	},
+	{
+		"name": "The Impossible Quiz 2",
+		"id": "tiq2",
+		"path": "/flash/tiq2",
+		"img": "/tiq2.webp",
+		"category": "Strategy"
+	},
+	{
+		"name": "Pretend It's not There",
+		"id": "pint",
+		"path": "/webgl/pint",
+		"img": "/pint.webp",
+		"category": "Horror"
+	},
+	{
+		"name": "Karlson",
+		"id": "karlson",
+		"path": "/webgl/karlson",
+		"img": "/karlson.webp",
+		"category": "Horror"
 	}
 ]
