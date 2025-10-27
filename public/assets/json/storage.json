@@ -1600,7 +1600,7 @@
 	{
 		"name": "Superhot",
 		"id": "hot",
-		"path": "/webgl/hot",
+		"path": "/webgl/superhot",
 		"img": "/hot.webp",
 		"category": ["Shooter", "Webport"]
 	},
