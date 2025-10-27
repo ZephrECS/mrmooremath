@@ -47,7 +47,9 @@ async function renderGames() {
 	allGames = data;
 	activeGames = allGames.filter((game) => {
 		const categoryMatch =
-			game.category.toLowerCase() == activeCategory || activeCategory == "all";
+			game.category
+				.map((c) => c.toLowerCase())
+				.includes(activeCategory.toLowerCase()) || activeCategory === "all";
 
 		const searchMatch =
 			search === "" ||
