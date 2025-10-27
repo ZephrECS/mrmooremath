@@ -1596,5 +1596,19 @@
 		"path": "/webgl/karlson",
 		"img": "/karlson.webp",
 		"category": ["Horror", "Webport"]
+	},
+	{
+		"name": "Superhot",
+		"id": "hot",
+		"path": "/webgl/hot",
+		"img": "/hot.webp",
+		"category": ["Shooter", "Webport"]
+	},
+	{
+		"name": "Happy Wheels",
+		"id": "hw",
+		"path": "/flash/hw",
+		"img": "/hw.webp",
+		"category": ["Action", "Flash"]
 	}
 ]
