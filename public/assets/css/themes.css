@@ -8,7 +8,7 @@
 	--main-border: 1px solid white;
 	--main-radius: 6px;
 	--main-text: white;
-	--accent-border: 4px solid rgb(255, 255, 255);
+	--accent-border: 2px solid rgb(255, 255, 255);
 	--header-border: 1px solid rgba(255, 255, 255, 0.3);
 	--search-border: 1px solid rgb(185, 185, 185);
 	--notfound-bg: rgba(49, 49, 49, 0.322);
@@ -25,7 +25,7 @@
 	--main-border: 1px solid #8ecae6;
 	--main-radius: 6px;
 	--main-text: #caf0f8;
-	--accent-border: 4px solid #8ecae6;
+	--accent-border: 2px solid #8ecae6;
 	--header-border: 1px solid #8ecae6;
 	--search-border: 1px solid #8ecae6;
 	--notfound-bg: rgba(20, 22, 24, 0.7);
@@ -42,7 +42,7 @@
 	--main-border: 1px solid #6b5bf3;
 	--main-radius: 6px;
 	--main-text: #fff0e6;
-	--accent-border: 4px solid #5642db;
+	--accent-border: 2px solid #5642db;
 	--header-border: 1px solid #5642db;
 	--search-border: 1px solid #5642db;
 	--notfound-bg: rgba(255, 94, 98, 0.15);
@@ -59,7 +59,7 @@
 	--main-border: 1px solid #38ef7d;
 	--main-radius: 6px;
 	--main-text: #eafff5;
-	--accent-border: 4px solid #38ef7d;
+	--accent-border: 2px solid #38ef7d;
 	--header-border: 1px solid #11998e;
 	--search-border: 1px solid #38ef7d;
 	--notfound-bg: rgba(56, 239, 125, 0.15);
@@ -76,7 +76,7 @@
 	--main-border: 1px solid #ff99ac;
 	--main-radius: 6px;
 	--main-text: #fff0f6;
-	--accent-border: 4px solid #ff99ac;
+	--accent-border: 2px solid #ff99ac;
 	--header-border: 1px solid #ff6a88;
 	--search-border: 1px solid #ff99ac;
 	--notfound-bg: rgba(255, 153, 172, 0.15);
@@ -93,7 +93,7 @@
 	--main-border: 1px solid #6dd5ed;
 	--main-radius: 6px;
 	--main-text: #e0f7fa;
-	--accent-border: 4px solid #6dd5ed;
+	--accent-border: 2px solid #6dd5ed;
 	--header-border: 1px solid #2193b0;
 	--search-border: 1px solid #6dd5ed;
 	--notfound-bg: rgba(109, 213, 237, 0.15);
@@ -110,7 +110,7 @@
 	--main-border: 1px solid #377563;
 	--main-radius: 6px;
 	--main-text: #2e4d1c;
-	--accent-border: 4px solid #78ffd6;
+	--accent-border: 2px solid #78ffd6;
 	--header-border: 1px solid #a8ff78;
 	--search-border: 1px solid #a8ff78;
 	--notfound-bg: rgba(120, 255, 214, 0.15);
@@ -127,7 +127,7 @@
 	--main-border: 1px solid rgb(78, 38, 57);
 	--main-radius: 6px;
 	--main-text: #fff0f6;
-	--accent-border: 4px solid rgb(78, 38, 57);
+	--accent-border: 2px solid rgb(78, 38, 57);
 	--header-border: 1px solid rgb(78, 38, 57);
 	--search-border: 1px solid rgb(78, 38, 57);
 	--notfound-bg: rgba(255, 88, 88, 0.15);
@@ -144,7 +144,7 @@
 	--main-border: 1px solid #185a9d;
 	--main-radius: 6px;
 	--main-text: #e0f7fa;
-	--accent-border: 4px solid #43cea2;
+	--accent-border: 2px solid #43cea2;
 	--header-border: 1px solid #43cea2;
 	--search-border: 1px solid #43cea2;
 	--notfound-bg: rgba(24, 90, 157, 0.15);
@@ -161,7 +161,7 @@
 	--main-border: 1px solid #ffd200;
 	--main-radius: 6px;
 	--main-text: #fffbe6;
-	--accent-border: 4px solid #ffd200;
+	--accent-border: 2px solid #ffd200;
 	--header-border: 1px solid #f7971e;
 	--search-border: 1px solid #ffd200;
 	--notfound-bg: rgba(255, 210, 0, 0.15);
@@ -178,7 +178,7 @@
 	--main-border: 1px solid #444;
 	--main-radius: 6px;
 	--main-text: #e0e0e0;
-	--accent-border: 4px solid #444;
+	--accent-border: 2px solid #444;
 	--header-border: 1px solid #444;
 	--search-border: 1px solid #444;
 	--notfound-bg: rgba(40, 40, 40, 0.8);
@@ -194,7 +194,7 @@
 	--main-border: 1px solid #00fff7;
 	--main-radius: 6px;
 	--main-text: #00fff7;
-	--accent-border: 4px solid #00fff7;
+	--accent-border: 2px solid #00fff7;
 	--header-border: 1px solid #00fff7;
 	--search-border: 1px solid #00fff7;
 	--notfound-bg: rgba(0, 255, 247, 0.08);
@@ -210,7 +210,7 @@
 	--main-border: 1px solid #a044ff;
 	--main-radius: 6px;
 	--main-text: #e0d7ff;
-	--accent-border: 4px solid #a044ff;
+	--accent-border: 2px solid #a044ff;
 	--header-border: 1px solid #6a3093;
 	--search-border: 1px solid #a044ff;
 	--notfound-bg: rgba(160, 68, 255, 0.08);
@@ -226,7 +226,7 @@
 	--main-border: 1px solid #1976d2;
 	--main-radius: 6px;
 	--main-text: #b3cfff;
-	--accent-border: 4px solid #1976d2;
+	--accent-border: 2px solid #1976d2;
 	--header-border: 1px solid #1976d2;
 	--search-border: 1px solid #1976d2;
 	--notfound-bg: rgba(25, 118, 210, 0.08);
@@ -242,7 +242,7 @@
 	--main-border: 1px solid #888;
 	--main-radius: 6px;
 	--main-text: #eaeaea;
-	--accent-border: 4px solid #888;
+	--accent-border: 2px solid #888;
 	--header-border: 1px solid #888;
 	--search-border: 1px solid #888;
 	--notfound-bg: rgba(80, 80, 80, 0.08);

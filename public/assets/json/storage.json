@@ -1610,5 +1610,12 @@
 		"path": "/flash/hw",
 		"img": "/hw.webp",
 		"category": ["Action", "Flash"]
+	},
+	{
+		"name": "Red Ball 4",
+		"id": "rb4",
+		"path": "/flash/rb4",
+		"img": "/rb4.webp",
+		"category": ["Platformer", "Flash"]
 	}
 ]
