@@ -4,8 +4,12 @@ const panicButton = document.getElementById("panicKey");
 const panicURL = document.getElementById("panicURL");
 const abCloak = document.getElementById("abCloak");
 const abCloak2 = document.getElementById("abCloak2");
+const exportBtn = document.getElementById("export");
+const importBtn = document.getElementById("import");
+const clear = document.getElementById("clear");
 const themeOptions = document.querySelectorAll(".theme-option");
 let listening = false;
+let debounce = false;
 
 if (localStorage.getItem("activeTheme") == null) {
 	localStorage.setItem("activeTheme", "theme-classic");
@@ -32,8 +36,10 @@ window.addEventListener("keypress", (e) => {
 			}, 3000);
 		}
 	} else {
-		if (e.key == localStorage.getItem("panicKey")) {
+		if (e.key == localStorage.getItem("panicKey") && !debounce) {
+			debounce = true;
 			window.open(localStorage.getItem("panicURL"));
+			setTimeout((debounce = false), 100);
 		}
 	}
 });
@@ -164,6 +170,134 @@ document.addEventListener("DOMContentLoaded", () => {
 			if (!e.target.value.includes("https") || !e.target.value.includes("http"))
 				url = "https://" + url;
 			localStorage.setItem("panicURL", url);
+		});
+	}
+	if (exportBtn != null) {
+		exportBtn.addEventListener("click", async () => {
+			let saveData = { lStorage: [], iDB: [] };
+
+			for (const item in localStorage) {
+				if (localStorage.getItem(item)) {
+					saveData.lStorage.push({
+						name: item,
+						value: localStorage.getItem(item),
+					});
+				}
+			}
+			const dbNames = await indexedDB.databases();
+			for (const { name } of dbNames) {
+				const dbDump = await new Promise((resolve, reject) => {
+					const openReq = indexedDB.open(name);
+					const dbData = { name, stores: [] };
+
+					openReq.onsuccess = () => {
+						const db = openReq.result;
+
+						if (Array.from(db.objectStoreNames).length === 0) {
+							resolve(dbData);
+							db.close();
+							return;
+						}
+
+						const tx = db.transaction(db.objectStoreNames, "readonly");
+						let pending = db.objectStoreNames.length;
+
+						if (!pending) resolve(dbData);
+						for (const storeName of db.objectStoreNames) {
+							const store = tx.objectStore(storeName);
+							const getAllReq = store.getAll();
+
+							getAllReq.onsuccess = () => {
+								dbData.stores.push({ name: storeName, data: getAllReq.result });
+								if (--pending === 0) resolve(dbData);
+							};
+							getAllReq.onerror = () => reject(getAllReq.error);
+						}
+					};
+					openReq.onerror = () => reject(openReq.error);
+				});
+
+				saveData.iDB.push(dbDump);
+			}
+
+			console.log(saveData);
+			const blob = new Blob([JSON.stringify(saveData, null, 2)], {
+				type: "application/json",
+			});
+			const url = URL.createObjectURL(blob);
+			const a = document.createElement("a");
+			a.href = url;
+			a.download = `export-data-${
+				new Date().getMonth() + 1
+			}-${new Date().getDate()}-${new Date().getFullYear()}`;
+			a.click();
+			URL.revokeObjectURL(url);
+		});
+	}
+	if (importBtn != null) {
+		importBtn.addEventListener("click", async () => {
+			try {
+				const [fileHandle] = await window.showOpenFilePicker({
+					types: [
+						{
+							description: "JSON files",
+							accept: { "application/json": [".json"] },
+						},
+					],
+				});
+				const file = await fileHandle.getFile();
+				const text = await file.text();
+				const saveData = JSON.parse(text);
+
+				if (saveData.lStorage) {
+					for (const item of saveData.lStorage) {
+						localStorage.setItem(item.name, item.value);
+					}
+				}
+
+				if (saveData.iDB) {
+					for (const dbDump of saveData.iDB) {
+						const openReq = indexedDB.open(dbDump.name);
+						openReq.onupgradeneeded = () => {
+							const db = openReq.result;
+							for (const store of dbDump.stores) {
+								if (!db.objectStoreNames.contains(store.name)) {
+									db.createObjectStore(store.name, { autoIncrement: true });
+								}
+							}
+						};
+
+						openReq.onsuccess = () => {
+							const db = openReq.result;
+							const storeNames = dbDump.stores.map((s) => s.name);
+
+							if (storeNames.length === 0) {
+								db.close();
+								return;
+							}
+							const tx = db.transaction(
+								dbDump.stores.map((s) => s.name),
+								"readwrite"
+							);
+
+							for (const store of dbDump.stores) {
+								const objectStore = tx.objectStore(store.name);
+								for (const record of store.data) {
+									try {
+										objectStore.add(record);
+									} catch {}
+								}
+							}
+
+							tx.oncomplete = () => db.close();
+						};
+					}
+				}
+				alert("Import successful! Refresh to see the changes.");
+			} catch (err) {
+				console.log(err);
+				alert("Import failed! Try again later.");
+			}
 		});
 	}
 });

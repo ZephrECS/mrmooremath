@@ -51,7 +51,7 @@
 		<div class="settings-container">
 			<div class="settings-category">
 				<h2>QOL</h2>
-				<h3>CDN Switcher (Use if games fail to load)</h3>
+				<!--<h3>CDN Switcher (Use if games fail to load)</h3>
 				<select id="cdn-switcher">
 					<option value="https://cdn.statically.io/gl/3kh0/3kh0-assets/main/">
 						Statically
@@ -64,7 +64,7 @@
 					<option value="https://glcdn.rawgit.net/3kh0/3kh0-assets/-/raw/main/">
 						Rawgit
 					</option>
-				</select>
+				</select>-->
 				<h3>Panic</h3>
 				<h5>Panic Button</h5>
 				<button id="panicKey">N/A</button>
@@ -76,8 +76,15 @@
                     <div class="toggle-slider"></div>
                 </div>
 				<h5>about:blank Cloaking</h5>
-				<button id="abCloak">Normal about:blank</button>
-				<button id="abCloak2" style="margin-top: 5px;">Buffed about:blank</button>
+				<div style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; gap: 5px;">		
+					<button id="abCloak">Normal about:blank</button>
+					<button id="abCloak2">Buffed about:blank</button>
+				</div>
+				<h5>Data Saving</h5>
+				<div style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; gap: 5px;">				
+					<button id="export">Export save data</button>
+					<button id="import">Import save data</button>
+				</div>
 			</div>
 			<div class="settings-category">
 				<h2>UI</h2>
@@ -166,6 +173,5 @@
 		<script type='text/javascript' src='//enabledetective.com/f6/6b/19/f66b199727e844c6fd4d4c67f3c67c72.js'></script>
 	</body>
 	<script src="/assets/js/cursor.js"></script>
-	<script src="/assets/js/cdn.js"></script>
 	<script src="/assets/js/settings.js"></script>
 </html>

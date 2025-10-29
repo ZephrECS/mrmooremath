@@ -1617,5 +1617,47 @@
 		"path": "/flash/rb4",
 		"img": "/rb4.webp",
 		"category": ["Platformer", "Flash"]
+	},
+	{
+		"name": "Bad Time Simulator",
+		"id": "bts",
+		"path": "/html/bts",
+		"img": "/bts.webp",
+		"category": ["Strategy", "Action"]
+	},
+	{
+		"name": "Factory Balls",
+		"id": "fb",
+		"path": "/flash/fb",
+		"img": "/fb.webp",
+		"category": ["Strategy", "Flash"]
+	},
+	{
+		"name": "Factory Balls 2",
+		"id": "fb2",
+		"path": "/flash/fb2",
+		"img": "/fb2.webp",
+		"category": ["Strategy", "Flash"]
+	},
+	{
+		"name": "Factory Balls 3",
+		"id": "fb3",
+		"path": "/flash/fb3",
+		"img": "/fb3.webp",
+		"category": ["Strategy", "Flash"]
+	},
+	{
+		"name": "Factory Balls 4",
+		"id": "fb4",
+		"path": "/flash/fb4",
+		"img": "/fb4.webp",
+		"category": ["Strategy", "Flash"]
+	},
+	{
+		"name": "Sugar Sugar 2",
+		"id": "ss2",
+		"path": "/flash/ss2",
+		"img": "/ss2.webp",
+		"category": ["Strategy", "Flash"]
 	}
 ]
