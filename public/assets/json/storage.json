@@ -1194,9 +1194,9 @@
 	{
 		"name": "Drive Mad",
 		"id": "drivemad",
-		"path": "/webgl/drivemad/",
+		"path": "/html/drivemad/",
 		"img": "/drivemad.webp",
-		"category": ["Simulation", "Webport"]
+		"category": ["Simulation"]
 	},
 	{
 		"name": "Dad N' Me",
