@@ -1,14 +1,18 @@
 import express from "express";
 import path from "path";
 import fs from "fs";
-import { fileURLToPath } from "node:url";
-import cookieParser from "cookie-parser";
 import "dotenv/config";
 import cors from "cors";
+import { createServer } from "node:http";
+
+import { fileURLToPath } from "node:url";
+import { server as wisp, logging } from "@mercuryworkshop/wisp-js/server";
+import { scramjetPath } from "@mercuryworkshop/scramjet/path";
+import { epoxyPath } from "@mercuryworkshop/epoxy-transport";
+import { baremuxPath } from "@mercuryworkshop/bare-mux/node";
 
 const app = express();
 
-app.use(cookieParser());
 app.use(express.json());
 app.use(cors());
 
@@ -16,6 +20,8 @@ const publicDir = path.join(
 	path.dirname(fileURLToPath(import.meta.url)),
 	`../public`
 );
+
+const server = createServer(app);
 
 app.use((req, res, next) => {
 	res.setHeader("Cross-Origin-Opener-Policy", "same-origin");
@@ -28,6 +34,14 @@ app.use((req, res, next) => {
 	res.setHeader("Pragma", "no-cache");
 	res.setHeader("Expires", "0");
 	next();
+});
+
+server.on("upgrade", (req, socket, head) => {
+	if (req.url.endsWith("/wisp/")) {
+		wisp.routeRequest(req, socket, head);
+	} else {
+		socket.end();
+	}
 });
 
 app.use((req, res, next) => {
@@ -67,13 +81,16 @@ app.use((req, res, next) => {
 	express.static(publicDir)(req, res, next);
 });
 
+app.use("/marcs", express.static(scramjetPath));
+app.use("/mux", express.static(baremuxPath));
+app.use("/ep", express.static(epoxyPath));
 app.use((req, res) => {
 	res.status(404).sendFile(path.join(publicDir, "/404.html"));
 });
 
 const PORT = process.env.PORT || 3000;
 
-app.listen(PORT, "0.0.0.0", () => {
+server.listen(PORT, "0.0.0.0", () => {
 	console.log(`Listening on port ${PORT}`);
 	console.log(`http://localhost:${PORT}`);
 });

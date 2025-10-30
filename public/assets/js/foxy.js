@@ -7,7 +7,7 @@ document.addEventListener("click", () => {
 		pic.src = "/assets/img/getscared.gif";
 		pic.className = "surprisemf";
 
-		const sound = new Audio("/assets/audio/imaginegettingjumpscared.mp3");
+		const sound = new Audio("/assets/audio/thinking.mp3");
 		sound.volume = 1.0;
 		sound.play();
 
