@@ -41,9 +41,8 @@ const scramjet = new ScramjetController({
 
 scramjet.init();
 
-const form = document.getElementById("sj-form");
-const address = document.getElementById("sj-address");
-const searchEngine = document.getElementById("sj-search-engine");
+const form = document.getElementById("form");
+const address = document.getElementById("address");
 
 const connection = new BareMux.BareMuxConnection("/mux/worker.js");
 
@@ -58,7 +57,7 @@ form.addEventListener("submit", async (event) => {
 
 	const url = search(address.value, "https://duckduckgo.com/?q=%s");
 
-	let frame = document.getElementById("sj-frame");
+	let frame = document.getElementById("frame");
 	frame.style.display = "block";
 	let wispUrl =
 		(location.protocol === "https:" ? "wss" : "ws") +

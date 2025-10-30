@@ -408,3 +408,22 @@ p {
 	left: 26px;
 	background: var(--button-hover-bg, rgba(212, 212, 212, 0.753));
 }
+.wsearch {
+	display: flex;
+	justify-content: center;
+	margin: 5px;
+}
+
+.wsearch input {
+	background: transparent;
+	border: var(--main-border);
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	width: 250px;
+	text-align: center;
+	height: 30px;
+}
+.wsearch input::placeholder {
+	color: var(--main-text);
+}

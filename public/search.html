@@ -27,12 +27,24 @@
 			width="32px"
 			height="32px"
 		/>
-		<form id="sj-form" class="flex-center">
-			<input id="sj-address" type="text" placeholder="Search the web freely" />
+		<form id="form" class="wsearch">
+			<input
+				id="address"
+				type="text"
+				autocomplete="off"
+				placeholder="browse the internet"
+			/>
 		</form>
 		<iframe
-			style="display: none; width: 900px; height: 720px"
-			id="sj-frame"
+			style="
+				display: none;
+				width: 99vw;
+				height: 93vh;
+				margin: 0;
+				padding: 0;
+				border: none;
+			"
+			id="frame"
 		></iframe>
 		<script src="assets/js/cursor.js"></script>
 		<script src="assets/js/foxy.js"></script>
