@@ -22,6 +22,8 @@ const publicDir = path.join(
 	`../public`
 );
 
+wisp.options.dns_servers = ["1.1.1.3", "1.0.0.3"];
+
 const server = createServer(app);
 
 app.use((req, res, next) => {
