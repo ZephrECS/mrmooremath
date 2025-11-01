@@ -10,6 +10,7 @@ import { server as wisp, logging } from "@mercuryworkshop/wisp-js/server";
 import { scramjetPath } from "@mercuryworkshop/scramjet/path";
 import { epoxyPath } from "@mercuryworkshop/epoxy-transport";
 import { baremuxPath } from "@mercuryworkshop/bare-mux/node";
+import { libcurlPath } from "@mercuryworkshop/libcurl-transport";
 
 const app = express();
 
@@ -84,6 +85,19 @@ app.use((req, res, next) => {
 app.use("/marcs", express.static(scramjetPath));
 app.use("/mux", express.static(baremuxPath));
 app.use("/ep", express.static(epoxyPath));
+app.use("/lc", express.static(libcurlPath));
+
+app.get("/autoc", async (req, res) => {
+	const { q } = req.query;
+	if (!q) {
+		return res.status(400).send({ error: "Query parameter is required" });
+	}
+	const result = await fetch(
+		`https://duckduckgo.com/ac/?q=${q}&format=json`
+	).then((response) => response.json());
+	res.status(200).send(result);
+});
+
 app.use((req, res) => {
 	res.status(404).sendFile(path.join(publicDir, "/404.html"));
 });

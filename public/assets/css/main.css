@@ -39,8 +39,8 @@ body::-webkit-scrollbar {
 	justify-content: center;
 	align-items: center;
 	padding: 6px;
-	width: 15vw;
-	min-width: 275px;
+	width: 20vw;
+	min-width: 350px;
 	height: 5vh;
 	min-height: 45px;
 	border-radius: var(--main-radius);
@@ -408,22 +408,222 @@ p {
 	left: 26px;
 	background: var(--button-hover-bg, rgba(212, 212, 212, 0.753));
 }
+.w-container {
+	position: absolute;
+	background: rgba(44, 44, 44, 0.521);
+	backdrop-filter: blur(6px);
+	width: 99vw;
+	height: 98vh;
+	border: var(--main-border);
+	border-radius: 6px;
+	opacity: 0;
+	pointer-events: none;
+	z-index: 99999;
+}
+.w-container iframe {
+	display: none;
+	width: 100%;
+	height: 100%;
+	border-radius: 6px;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+.w-container.show {
+	opacity: 1;
+	pointer-events: all;
+}
+.wcontrols {
+	width: 100%;
+	position: absolute;
+	height: 75px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	bottom: 0;
+	background: var(--main-bg);
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 0 15px;
+	box-sizing: border-box;
+}
+
+.wcontrols .left-controls,
+.wcontrols .right-controls {
+	display: flex;
+	gap: 8px;
+}
+
+.wcontrols .url-bar {
+	flex: 1;
+	margin: 0 10px;
+}
+
+.wcontrols .url-bar input {
+	width: 98%;
+	padding: 10px 15px;
+	border: var(--main-border);
+	border-radius: var(--main-radius);
+	background: var(--main-bg);
+	color: var(--main-text);
+	font-size: 14px;
+	transition: 0.3s ease-in-out;
+}
+
+.wcontrols .url-bar input:hover {
+	background: var(--button-hover-bg, rgba(255, 255, 255, 0.1));
+}
+
+.wcontrols .url-bar input:focus {
+	outline: none;
+	border: var(--accent-border, var(--main-border));
+	background: var(--button-hover-bg, rgba(255, 255, 255, 0.1));
+}
+
+.wcontrols .url-bar input::placeholder {
+	color: var(--main-text);
+}
+
+.wcontrols button {
+	background: var(--button-bg, transparent);
+	border: var(--main-border);
+	border-radius: var(--main-radius);
+	padding: 8px;
+	width: 40px;
+	height: 40px;
+	color: var(--main-text);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.4s ease-in-out;
+}
+
+.wcontrols button:hover {
+	background: var(--button-hover-bg, rgba(255, 255, 255, 0.3));
+}
+
+.wcontrols button svg {
+	width: 20px;
+	height: 20px;
+	stroke: var(--main-text);
+}
+
+.action-menu {
+	display: none;
+	position: absolute;
+	bottom: 85px;
+	right: 20px;
+	background: var(--main-bg);
+	border: var(--main-border);
+	border-radius: var(--main-radius);
+	padding: 10px;
+	gap: 8px;
+	flex-direction: column;
+	backdrop-filter: blur(6px);
+	z-index: 1000;
+	min-width: 200px;
+}
+
+.action-menu.show {
+	display: flex;
+}
+
+.action-menu button {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 12px 15px;
+	background: var(--button-bg, transparent);
+	border: var(--main-border);
+	border-radius: var(--main-radius);
+	color: var(--main-text);
+	cursor: none;
+	font-size: 14px;
+	transition: 0.4s ease-in-out;
+	white-space: nowrap;
+	width: 100%;
+	height: auto;
+	justify-content: flex-start;
+}
+
+.action-menu button:hover {
+	background: var(--button-hover-bg, rgba(255, 255, 255, 0.3));
+}
+
+.action-menu button svg {
+	width: 18px;
+	height: 18px;
+	flex-shrink: 0;
+}
 .wsearch {
 	display: flex;
 	justify-content: center;
 	margin: 5px;
+	position: relative;
 }
-
 .wsearch input {
-	background: transparent;
+	background: var(--main-bg);
 	border: var(--main-border);
 	border-radius: 8px;
 	display: flex;
 	align-items: center;
-	width: 250px;
+	margin-top: 15px;
+	width: 35vw;
+	min-width: 350px;
 	text-align: center;
-	height: 30px;
+	height: 60px;
+	font-size: 20px;
+	transition: 0.3s ease;
+}
+.wsearch input:hover {
+	scale: 1.05;
+}
+.autoc {
+	position: absolute;
+	top: calc(100% + 15px);
+	left: 50%;
+	transform: translateX(-50%);
+	width: 35vw;
+	min-width: 350px;
+	background: var(--main-bg);
+	border: 1px solid var(--main-border);
+	border-radius: 12px;
+	margin-top: 0rem;
+	max-height: 0;
+	overflow: hidden;
+	transition: 0.3s ease;
+	z-index: 1000;
+}
+.autoc.show {
+	max-height: 400px;
+	transition: 0.3s ease;
+}
+.autoc-item {
+	padding: 0.75rem 1rem;
+	transition: background 0.2s;
+	text-align: left;
+	color: var(--main-text);
+}
+
+.autoc-item:hover {
+	background: rgba(255, 255, 255, 0.1);
 }
 .wsearch input::placeholder {
 	color: var(--main-text);
+	font-size: 20px;
+}
+
+.center {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.center h1 {
+	font-size: 4rem;
+	font-weight: 700;
+	margin: 0;
+	user-select: none;
+	letter-spacing: 2px;
 }
