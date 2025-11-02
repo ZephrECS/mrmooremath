@@ -524,35 +524,35 @@
 		"name": "Henry Stickmin: Breaking the Bank",
 		"img": "/btb.webp",
 		"path": "/flash/btb",
-		"category": ["puzzle", "Flash"]
+		"category": ["Puzzle", "Flash"]
 	},
 	{
 		"id": "hsetp",
 		"name": "Henry Stickmin: Escaping the Prison",
 		"img": "/etp.webp",
 		"path": "/flash/etp",
-		"category": ["puzzle", "Flash"]
+		"category": ["Puzzle", "Flash"]
 	},
 	{
 		"id": "hsstd",
 		"name": "Henry Stickmin: Stealing the Diamond",
 		"img": "/std.webp",
 		"path": "/flash/std",
-		"category": ["puzzle", "Flash"]
+		"category": ["Puzzle", "Flash"]
 	},
 	{
 		"id": "hsita",
 		"name": "Henry Stickmin: Infiltrating the Airship",
 		"img": "/ita.webp",
 		"path": "/flash/ita",
-		"category": ["puzzle", "Flash"]
+		"category": ["Puzzle", "Flash"]
 	},
 	{
 		"id": "hsftc",
 		"name": "Henry Stickmin: Fleeing the Complex",
 		"img": "/ftc.webp",
 		"path": "/flash/ftc",
-		"category": ["puzzle", "Flash"]
+		"category": ["Puzzle", "Flash"]
 	},
 	{
 		"id": "tomoc",
@@ -629,7 +629,7 @@
 		"name": "Parappa the Rapper",
 		"img": "/ptr.webp",
 		"path": "/emulator/psx/ptr",
-		"category": ["puzzle"]
+		"category": ["Puzzle", "Adventure"]
 	},
 	{
 		"id": "re3nem",
@@ -1659,5 +1659,26 @@
 		"path": "/flash/ss2",
 		"img": "/ss2.webp",
 		"category": ["Strategy", "Flash"]
+	},
+	{
+		"name": "Basketball Stars",
+		"id": "bbs",
+		"path": "/html/bbs",
+		"img": "/bbs.webp",
+		"category": ["Strategy", "Sports", "Arcade"]
+	},
+	{
+		"name": "Bloxorz",
+		"id": "bloxorz",
+		"path": "/flash/bloxorz",
+		"img": "/bloxorz.webp",
+		"category": ["Flash", "Strategy", "Arcade"]
+	},
+	{
+		"name": "Wordle",
+		"id": "wordle",
+		"path": "/html/wordle",
+		"img": "/wordle.webp",
+		"category": ["Puzzle", "Strategy"]
 	}
 ]
