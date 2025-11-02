@@ -3,8 +3,9 @@ import path from "path";
 import fs from "fs";
 import "dotenv/config";
 import cors from "cors";
-import { createServer } from "node:http";
+import dns from "node:dns";
 
+import { createServer } from "node:http";
 import { fileURLToPath } from "node:url";
 import { server as wisp, logging } from "@mercuryworkshop/wisp-js/server";
 import { scramjetPath } from "@mercuryworkshop/scramjet/path";
@@ -22,8 +23,6 @@ const publicDir = path.join(
 	`../public`
 );
 
-wisp.options.dns_servers = ["1.1.1.3", "1.0.0.3"];
-
 const server = createServer(app);
 
 app.use((req, res, next) => {
@@ -38,6 +37,10 @@ app.use((req, res, next) => {
 	res.setHeader("Expires", "0");
 	next();
 });
+dns.setServers(["94.140.14.14", "94.140.15.15"]);
+wisp.options.dns_method = "resolve";
+wisp.options.dns_servers = ["94.140.14.14", "94.140.15.15"];
+wisp.options.dns_result_order = "ipv4first";
 
 server.on("upgrade", (req, socket, head) => {
 	if (req.url.endsWith("/wisp/")) {
