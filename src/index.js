@@ -37,6 +37,9 @@ app.use((req, res, next) => {
 	res.setHeader("Expires", "0");
 	next();
 });
+
+logging.set_level(logging.NONE);
+
 dns.setServers(["94.140.14.14", "94.140.15.15"]);
 wisp.options.dns_method = "resolve";
 wisp.options.dns_servers = ["94.140.14.14", "94.140.15.15"];

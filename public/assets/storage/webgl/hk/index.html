@@ -33,30 +33,36 @@
 
 			function unityShowBanner(msg, type) {}
 
-			function mergeFiles(fileParts) {
-				return new Promise((resolve, reject) => {
-					let buffers = [];
+			async function mergeFiles(fileParts, concurrency = 4) {
+				const results = new Array(fileParts.length);
+				let completed = 0;
 
-					function fetchPart(index) {
-						if (index >= fileParts.length) {
-							let mergedBlob = new Blob(buffers);
-							let mergedFileUrl = URL.createObjectURL(mergedBlob);
-							resolve(mergedFileUrl);
-							return;
-						}
-						fetch(fileParts[index])
-							.then((response) => response.arrayBuffer())
-							.then((data) => {
-								buffers.push(data);
-								document.getElementById(
-									"loading-text"
-								).textContent = `Parts downloaded (${index + 1}/9)`;
-								fetchPart(index + 1);
-							})
-							.catch(reject);
+				async function fetchPart(index) {
+					const response = await fetch(fileParts[index]);
+					const buf = await response.arrayBuffer();
+					results[index] = buf;
+					completed++;
+					document.getElementById(
+						"loading-text"
+					).textContent = `Parts downloaded (${completed}/${fileParts.length})`;
+				}
+				let currentIndex = 0;
+				async function worker() {
+					while (currentIndex < fileParts.length) {
+						const index = currentIndex++;
+						await fetchPart(index);
 					}
-					fetchPart(0);
-				});
+				}
+
+				const workers = [];
+				for (let i = 0; i < Math.min(concurrency, fileParts.length); i++) {
+					workers.push(worker());
+				}
+
+				await Promise.all(workers);
+
+				const mergedBlob = new Blob(results);
+				return URL.createObjectURL(mergedBlob);
 			}
 
 			function getParts(file, start, end) {

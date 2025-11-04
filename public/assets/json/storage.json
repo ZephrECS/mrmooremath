@@ -1680,5 +1680,33 @@
 		"path": "/html/wordle",
 		"img": "/wordle.webp",
 		"category": ["Puzzle", "Strategy"]
+	},
+	{
+		"name": "Roblox",
+		"id": "rbx",
+		"path": "/html/rbx",
+		"img": "/rbx.webp",
+		"category": ["Sandbox"]
+	},
+	{
+		"name": "Stumble Guys",
+		"id": "stg",
+		"path": "/html/stg",
+		"img": "/stg.webp",
+		"category": ["Platformer", "Arcade"]
+	},
+	{
+		"name": "Fortnite",
+		"id": "fn",
+		"path": "/html/fn",
+		"img": "/fn.webp",
+		"category": ["Shooter", "Arcade"]
+	},
+	{
+		"name": "Cookie Run Kingdom",
+		"id": "crk",
+		"path": "/html/crk",
+		"img": "/crk.webp",
+		"category": ["Strategy", "Arcade"]
 	}
 ]

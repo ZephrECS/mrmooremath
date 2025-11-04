@@ -172,6 +172,22 @@ document.addEventListener("DOMContentLoaded", () => {
 			localStorage.setItem("panicURL", url);
 		});
 	}
+	if (clear != null) {
+		clear.addEventListener("click", () => {
+			const res = confirm("Are you sure you want to wipe your data?");
+			if (res) {
+				localStorage.clear();
+				if ("indexedDB" in window) {
+					indexedDB.databases().then((dbs) => {
+						dbs.forEach((db) => {
+							indexedDB.deleteDatabase(db.name);
+						});
+					});
+				}
+				alert("Data wiped, refresh to see changes.");
+			}
+		});
+	}
 	if (exportBtn != null) {
 		exportBtn.addEventListener("click", async () => {
 			let saveData = { lStorage: [], iDB: [] };
